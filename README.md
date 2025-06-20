@@ -12,9 +12,9 @@ Adds new wood-based materials and integration with Mekanism. Features two new cr
 ### Wood Sheets
 <img src="src/main/resources/assets/blockmod/textures/item/woodsheet.png" alt="Wood Sheet Item" width="64"> 
 
-- **Obtained by**: 
-  - Crafting recipes
-  - Chopping wood (I modified vanilla loot tables)
+- **Obtained by**:
+  1. Crafting recipes
+  2. Chopping wood (I modified vanilla loot tables)
 - **Primary use**: Base material for advanced components eg the hard wood then hard wood into hardwood alloy
 
 ### Hard Wood
