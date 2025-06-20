@@ -1,0 +1,10 @@
+{
+  "itemGroup.examplemod": "Example Mod Tab",
+  "block.examplemod.example_block": "Example Block",
+
+
+  "item.blockmod.woodsheet": "Wood Sheet",
+  "item.blockmod.hardwood": "Hard Wood",
+  "item.blockmod.hardwood_alloy": "Hardwood Alloy"
+}
+
