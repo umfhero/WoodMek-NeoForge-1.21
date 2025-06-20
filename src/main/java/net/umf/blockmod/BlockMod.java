@@ -68,6 +68,7 @@ public class BlockMod {
             event.accept(ModItems.WOODSHEET);
             event.accept(ModItems.HARDWOOD);
             event.accept(ModItems.HARDWOOD_ALLOY);
+            event.accept(ModItems.WOOD_DUST);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

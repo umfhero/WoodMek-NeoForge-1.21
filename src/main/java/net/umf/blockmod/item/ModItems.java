@@ -19,6 +19,9 @@ public class ModItems {
     public static final DeferredItem<Item> HARDWOOD_ALLOY = ITEMS.register("hardwood_alloy",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> WOOD_DUST = ITEMS.register("wood_dust",
+            () -> new Item(new Item.Properties()));
+
 
 
 
