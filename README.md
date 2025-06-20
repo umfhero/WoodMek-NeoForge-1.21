@@ -7,10 +7,10 @@ Adds new wood-based materials and integration with Mekanism. Features two new cr
 ## Showcase
 <img src="src/main/resources/assets/blockmod/textures/item/WoodMek.png" alt="BlockMod Items Showcase" width="500">
 
-## Key Features
+## Items
 
-### 🪵 Wood Sheets
-<img src="src/main/resources/assets/blockmod/textures/item/woodsheet.png" alt="Wood Sheet Item" width="32">
+
+<img src="src/main/resources/assets/blockmod/textures/item/woodsheet.png" alt="Wood Sheet Item" width="32"> ### Wood Sheets
 - **Obtained by**: 
   - Crafting recipes
   - Chopping wood (modified vanilla loot tables)
