@@ -22,10 +22,10 @@ public class ModBlocks {
 
 
     public static final DeferredBlock<Block> HARDWOOD_BLOCK = registerBlock("hardwood_block",
-            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.BAMBOO).strength(4f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.BAMBOO).strength(3f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> HAZARD_BLOCK = registerBlock("hazard_block",
-            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(1f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(3f).requiresCorrectToolForDrops()));
 
 
 
