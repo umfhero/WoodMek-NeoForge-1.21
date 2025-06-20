@@ -1,6 +1,8 @@
 package net.umf.blockmod;
 
 import net.minecraft.world.item.CreativeModeTabs;
+import net.umf.blockmod.block.ModBlocks;
+import net.umf.blockmod.item.ModCreativeModeTabs;
 import net.umf.blockmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -37,8 +39,10 @@ public class BlockMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
 
@@ -67,7 +71,8 @@ public class BlockMod {
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-
+            event.accept(ModBlocks.HARDWOOD_BLOCK);
+            event.accept(ModBlocks.HAZARD_BLOCK);
         }
     }
 
