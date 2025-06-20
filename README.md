@@ -8,21 +8,23 @@ Adds new wood-based materials and integration with Mekanism. Features two new cr
 ### Mod Items
 <img src="src/main/resources/assets/blockmod/textures/item/ModShowCase.png" alt="BlockMod Items" width="500">
 
-### Mekanism Integration
+### Mekanism Integration (Proof of compatability) 
 <img src="src/main/resources/assets/blockmod/textures/item/WoodMek.png" alt="Mekanism Integration" width="500">
 
 ## Items
 
 ### Wood Sheets
 <img src="src/main/resources/assets/blockmod/textures/item/woodsheet.png" alt="Wood Sheet Item" width="64"> 
-- **Updated in v2.0**: Improved texture with detailed wood grain
-- **Obtained by**:
+
+**Updated in v2.0**: Improved texture with detailed wood grain
+**Obtained by**:
   1. Crafting recipes
   2. Chopping wood (modified vanilla loot tables)
 - **Primary use**: Base material for advanced components
 
 ### Hard Wood
 <img src="src/main/resources/assets/blockmod/textures/item/hardwood.png" alt="Hard Wood Item" width="64">
+
 - **Updated in v2.0**: Enhanced texture with carbonized appearance
 - Created by smelting Wood Sheets
 - **Uses**:
@@ -31,12 +33,14 @@ Adds new wood-based materials and integration with Mekanism. Features two new cr
 
 ### Wood Dust
 <img src="src/main/resources/assets/blockmod/textures/item/wood_dust.png" alt="Wood Dust Item" width="64">
+
 - **New in v2.0**: Fine powder created from crushing wood
 - Obtained by processing Wood Sheets in Mekanism's Crusher
 - **Purpose**: Intermediate material for advanced alloys
 
 ### Hardwood Alloy
 <img src="src/main/resources/assets/blockmod/textures/item/hardwood_alloy.png" alt="Hardwood Alloy Item" width="64">
+
 - Created in Mekanism's **Metallurgic Infuser**:
   - Input: Hard Wood + Carbon (coal/charcoal or any carbon mod ID)
 - **Purpose**: Base material for hazard blocks and future tech items
