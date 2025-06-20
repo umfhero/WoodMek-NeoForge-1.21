@@ -5,13 +5,17 @@
 Adds new wood-based materials and integration with Mekanism. Features two new creative tabs for organization and seamless building blocks.
 
 ## Showcase
-<img src="src/main/resources/assets/blockmod/textures/item/ModShowCase.png" alt="BlockMod Items Showcase" width="500">
+### Mod Items
+<img src="src/main/resources/assets/blockmod/textures/item/ModShowCase.png" alt="BlockMod Items" width="500">
+
+### Mekanism Integration
+<img src="src/main/resources/assets/blockmod/textures/item/WoodMek.png" alt="Mekanism Integration" width="500">
 
 ## Items
 
 ### Wood Sheets
 <img src="src/main/resources/assets/blockmod/textures/item/woodsheet.png" alt="Wood Sheet Item" width="64"> 
-- **Updated in v2.0**: Improved texture with better wood grain detail
+- **Updated in v2.0**: Improved texture with detailed wood grain
 - **Obtained by**:
   1. Crafting recipes
   2. Chopping wood (modified vanilla loot tables)
@@ -46,7 +50,7 @@ Adds new wood-based materials and integration with Mekanism. Features two new cr
    - Decorative block with warning styling
    - Seamless edge design
 
-*(Both blocks visible in Showcase)*
+*(Both blocks visible in Showcase images)*
 
 ### 📦 Creative Tabs
 <img src="src/main/resources/assets/blockmod/textures/item/Creativetabs.png" alt="Creative Tabs" width="400">
