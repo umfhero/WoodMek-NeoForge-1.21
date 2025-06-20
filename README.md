@@ -63,9 +63,7 @@ Adds new wood-based materials and integration with Mekanism. Features two new cr
 
 ## Installation
 
-I'll post it once fully polished onto CurseForge launcher + modpack with Mekanism
-
----
+Available now on CurseForge launcher - Code: EZeorNuJ
 
 ## Changelog
 
