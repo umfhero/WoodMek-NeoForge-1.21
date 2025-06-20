@@ -1,4 +1,4 @@
-# BlockMod - A Minecraft Mod for NeoForge
+# WoodMek! - A 1.21-1.21.1 NeoForge Minecraft Mod for intergration with vanillia lootables (wood) into Mekanism 
 
 <img src="src/main/resources/assets/blockmod/textures/item/hardwood_alloy.png" alt="Hardwood Alloy Logo" width="126">
 
