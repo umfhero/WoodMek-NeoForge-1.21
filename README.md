@@ -56,7 +56,7 @@ Adds new wood-based materials and integration with Mekanism. Features two new cr
 
 *(Both blocks visible in Showcase images)*
 
-### 📦 Creative Tabs
+### 📦 Creative Tabs (Old textures) 
 <img src="src/main/resources/assets/blockmod/textures/item/Creativetabs.png" alt="Creative Tabs" width="400">
 
 ---
