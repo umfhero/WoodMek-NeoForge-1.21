@@ -8,9 +8,6 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ### Mod Items
 <img src="src/main/resources/assets/blockmod/textures/item/ModShowCase.png" alt="BlockMod Items" width="500">
 
-### Mekanism Integration
-<img src="src/main/resources/assets/blockmod/textures/item/WoodMek.png" alt="Mekanism Integration" width="500">
-
 ### 🛠️ Processing Workflows (New in v3.0.0)
 **Smelting Wood Sheets**  
 <img src="src/main/resources/assets/blockmod/pics/hardwood1.png" alt="Smelting Factory" width="400">
