@@ -95,9 +95,9 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ## Changelog
 ### Latest Release = 3.0.0
 #### [3.0.0] - Cross-Mod Compatibility & Recipes
-- **NEW**: Full Mekanism recipe integration via datapacks
-- **NEW**: Custom processing GUIs (see Processing Workflows)
-- **NEW**: Compact machine workflows
+- Full Mekanism recipe integration via datapacks
+- Custom processing GUIs (see Processing Workflows)
+- Compact machine workflows
 - Added `pics` folder for this repo documentation and assets
 - FTB Quest intergration (shown in quests)
 - Backend support for modpack recipe overrides
