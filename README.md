@@ -8,9 +8,10 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ### Mod Items
 <img src="src/main/resources/assets/blockmod/pics (github)/showcase.png" alt="BlockMod Items" width="500">
 
-### 📦 Mod Creative Tabs 
+### WoodMek Creative Tabs (Wood Items & Blocks)
 <img src="src/main/resources/assets/blockmod/pics (github)/creativetabs.png" alt="Creative Tabs" width="400">
 
+---
 
 ### Processing Workflows (New in v3.0.0)
 **1. Harvest Logs**  
@@ -79,6 +80,13 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 - **Crafting**: Metallurgic Infuser (Hard Wood + Carbon)
 - **v3.0 Feature**: Cross-mod recipe support via datapacks
 
+### Chisel
+<img src="src/main/resources/assets/blockmod/textures/item/chisel.png" width="64">  
+
+- **v3.5.0 Update**: Chisel
+- **Uses**:
+  - Turn set blocks into its counterpart
+
 ---
 
 ## 🏗️ Building Blocks
@@ -94,9 +102,9 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ## Changelog
 ### Latest Release = 3.0.0
 #### [3.0.0] - Cross-Mod Compatibility & Recipes
-- **NEW**: Full Mekanism recipe integration via datapacks
-- **NEW**: Custom processing GUIs (see Processing Workflows)
-- **NEW**: Compact machine workflows
+- Full Mekanism recipe integration via datapacks
+- Custom processing GUIs (see Processing Workflows)
+- Compact machine workflows
 - Added `pics` folder for this repo documentation and assets
 - FTB Quest intergration (shown in quests)
 - Backend support for modpack recipe overrides
