@@ -1,98 +1,90 @@
-# WoodMek! - A 1.21-1.21.1 NeoForge Minecraft Mod for integration with vanilla lootables (wood) into Mekanism 
+# WoodMek! - A 1.21-1.21.1 NeoForge Minecraft Mod 
 
 <img src="src/main/resources/assets/blockmod/textures/item/hardwood_alloy.png" alt="Hardwood Alloy Logo" width="126">
 
-Adds new wood-based materials and integration with Mekanism. Features two new creative tabs for organization and seamless building blocks.
+Adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
 
 ## Showcase
 ### Mod Items
 <img src="src/main/resources/assets/blockmod/textures/item/ModShowCase.png" alt="BlockMod Items" width="500">
 
-### Mekanism Integration (Proof of compatability) 
+### Mekanism Integration
 <img src="src/main/resources/assets/blockmod/textures/item/WoodMek.png" alt="Mekanism Integration" width="500">
+
+### 🛠️ Processing Workflows (New in v3.0.0)
+**Smelting Wood Sheets**  
+<img src="src/main/resources/assets/blockmod/pics/hardwood1.png" alt="Smelting Factory" width="400">
+
+**Infusing Hardwood Alloy**  
+<img src="src/main/resources/assets/blockmod/pics/Hardwood_alloy1.png" alt="Infusing Factory" width="400">
+
+**Compact Alloy Production**  
+<img src="src/main/resources/assets/blockmod/pics/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">
+
+**Crushing to Wood Dust**  
+<img src="src/main/resources/assets/blockmod/pics/wooddust.png" alt="Crusher" width="400">
+
+---
 
 ## Items
 
 ### Wood Sheets
-<img src="src/main/resources/assets/blockmod/textures/item/woodsheet.png" alt="Wood Sheet Item" width="64"> 
-
-**Updated in v2.0**: Improved texture with detailed wood grain
-**Obtained by**:
-  1. Crafting recipes
-  2. Chopping wood (modified vanilla loot tables)
-- **Primary use**: Base material for advanced components
+<img src="src/main/resources/assets/blockmod/textures/item/woodsheet.png" width="64">  
+- **v2.0 Update**: Detailed wood grain texture
+- **Obtained by**:
+  - Crafting recipes
+  - Chopping wood (vanilla loot tables)
+- **Processing**: Smelt into Hard Wood or crush into Wood Dust
 
 ### Hard Wood
-<img src="src/main/resources/assets/blockmod/textures/item/hardwood.png" alt="Hard Wood Item" width="64">
-
-- **Updated in v2.0**: Enhanced texture with carbonized appearance
-- Created by smelting Wood Sheets
+<img src="src/main/resources/assets/blockmod/textures/item/hardwood.png" width="64">  
+- **v2.0 Update**: Carbonized texture
 - **Uses**:
-  1. Crafted into Hard Wood Blocks (2x2 pattern)
-  2. Processed into Hardwood Alloy
+  - Crafted into Hard Wood Blocks (2x2 pattern)
+  - Processed into Hardwood Alloy via Infusion
 
 ### Wood Dust
-<img src="src/main/resources/assets/blockmod/textures/item/wood_dust.png" alt="Wood Dust Item" width="64">
-
-- **New in v2.0**: Fine powder created from crushing wood
-- Obtained by processing Wood Sheets in Mekanism's Crusher
-- **Purpose**: Intermediate material for advanced alloys
+<img src="src/main/resources/assets/blockmod/textures/item/wood_dust.png" width="64">  
+- **New in v2.0**: Fine wood powder
+- **Creation**: Crush Wood Sheets in Crusher
+- **Purpose**: Intermediate for advanced alloys
 
 ### Hardwood Alloy
-<img src="src/main/resources/assets/blockmod/textures/item/hardwood_alloy.png" alt="Hardwood Alloy Item" width="64">
+<img src="src/main/resources/assets/blockmod/textures/item/hardwood_alloy.png" width="64">  
+- **Crafting**: Metallurgic Infuser (Hard Wood + Carbon)
+- **v3.0 Feature**: Cross-mod recipe support via datapacks
 
-- Created in Mekanism's **Metallurgic Infuser**:
-  - Input: Hard Wood + Carbon (coal/charcoal or any carbon mod ID)
-- **Purpose**: Base material for hazard blocks and future tech items
+---
 
-### 🏗️ Building Blocks
+## 🏗️ Building Blocks
 1. **Hard Wood Block**:
-   - Crafted from 4 Hard Wood (2x2 pattern)
-   - Textured seamless edges
-   
-2. **Hazard Block**:
-   - Decorative block with warning styling
+   - Crafted from 4 Hard Wood (2x2)
    - Seamless edge design
+2. **Hazard Block**:
+   - Decorative warning block
+   - Seamless texture integration
 
-*(Both blocks visible in Showcase images)*
+---
 
-### 📦 Creative Tabs (Old textures) 
-<img src="src/main/resources/assets/blockmod/textures/item/Creativetabs.png" alt="Creative Tabs" width="400">
+## Changelog
+### Latest Release = 3.0.0
+#### [3.0.0] - Cross-Mod Compatibility & Recipes
+- **NEW**: Full Mekanism recipe integration via datapacks
+- **NEW**: Custom processing GUIs (see Showcase)
+- **NEW**: Compact machine workflows
+- Added `pics` folder for expanded documentation assets
+- Backend support for modpack recipe overrides
+
+#### [2.0.0] - Loot tables, Recipes & New Content
+- Texture updates for Hard Wood/Wood Sheets
+- Wood Dust item + crusher recipes
+- Loot table fixes for block drops
+- Sound type additions for blocks
+
+*(Older versions unchanged)*
 
 ---
 
 ## Installation
-
-Available now on CurseForge launcher - Code: EZeorNuJ
-
-## Changelog
-
-## Latest Release = 2.0.0
-
-### [2.0.0] - Loot tables, Recipes & New Content
-- **Texture updates** for Hard Wood and Wood Sheets
-- **New item**: Wood Dust with custom texture
-- Bug fixes with textures on both inventory and dropped items
-- Created basic crafting/smelting recipes
-- Added loot tables so blocks now drop themselves (tool required)
-- Added sound types to both blocks
-- Added backend for next release for custom interactive item (Magic Wand)
-
-### [1.5.1] - Modpack compatible with NeoForge Mods (Mekanism, Create, FTB Ultimine and JEI)
-- Modpack 'WoodMek' on CurseForge with Mekanism, JEI, FTB Ultimine (Forge) and Create (Version 6)
-- Arguably most important version and proof the swap to NeoForge from Forge was for the best
-
-### [1.0.5] - Blocks
-- Added blocks: Hazard and Hardwood Blocks alongside their inventory counterpart items (rendering on minecraft:block/cube_all) 
-- Created building blocks category for the creative tab
-
-### [1.0.0] - Initial Release + Items
-- Added base items: Wood Sheets, Hard Wood and Hardwood Alloy
-- Added two creative inventory tabs for wood items and another for building blocks
-- Backend for future releases (e.g., loot tables, recipes, textures)
-
-### [0.0.1] - Pre-Release
-- Base foundation porting all previous code from Forge to NeoForge for future compatibility, performance and more
-- Setting up directories, Minecraft documentation, build files etc.
-- Established gradle.properties for mod name (now officially WoodMek)
-- Mod_id=blockmod + MIT license + mod_group_id=net.umf.blockmod
+CurseForge Code: `EZeorNuJ`  
+**Requires Mekanism 10.4+**
