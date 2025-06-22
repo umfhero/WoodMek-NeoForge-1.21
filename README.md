@@ -10,16 +10,16 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 ### 🛠️ Processing Workflows (New in v3.0.0)
 **Smelting Wood Sheets**  
-<img src="src/main/resources/assets/blockmod/pics/hardwood1.png" alt="Smelting Factory" width="400">
+<img src="src/main/resources/assets/blockmod/pics (github)/hardwood1.png" alt="Smelting Factory" width="400">
 
 **Infusing Hardwood Alloy**  
-<img src="src/main/resources/assets/blockmod/pics/Hardwood_alloy1.png" alt="Infusing Factory" width="400">
+<img src="src/main/resources/assets/blockmod/pics (github)/Hardwood_alloy1.png" alt="Infusing Factory" width="400">
 
 **Compact Alloy Production**  
-<img src="src/main/resources/assets/blockmod/pics/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">
+<img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">
 
 **Crushing to Wood Dust**  
-<img src="src/main/resources/assets/blockmod/pics/wooddust.png" alt="Crusher" width="400">
+<img src="src/main/resources/assets/blockmod/pics (github)/wooddust.png" alt="Crusher" width="400">
 
 ---
 
