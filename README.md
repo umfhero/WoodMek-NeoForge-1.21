@@ -30,7 +30,6 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 ### Wood Sheets
 <img src="src/main/resources/assets/blockmod/textures/item/woodsheet.png" width="64">  
-
 - **v2.0 Update**: Detailed wood grain texture
 - **Obtained by**:
   - Crafting recipes
@@ -39,7 +38,6 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 ### Hard Wood
 <img src="src/main/resources/assets/blockmod/textures/item/hardwood.png" width="64">  
-
 - **v2.0 Update**: Carbonized texture
 - **Uses**:
   - Crafted into Hard Wood Blocks (2x2 pattern)
@@ -47,14 +45,12 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 ### Wood Dust
 <img src="src/main/resources/assets/blockmod/textures/item/wood_dust.png" width="64">  
-
 - **New in v2.0**: Fine wood powder
 - **Creation**: Crush Wood Sheets in Crusher
 - **Purpose**: Intermediate for advanced alloys
 
 ### Hardwood Alloy
 <img src="src/main/resources/assets/blockmod/textures/item/hardwood_alloy.png" width="64">  
-
 - **Crafting**: Metallurgic Infuser (Hard Wood + Carbon)
 - **v3.0 Feature**: Cross-mod recipe support via datapacks
 
