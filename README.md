@@ -80,6 +80,13 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 - **Crafting**: Metallurgic Infuser (Hard Wood + Carbon)
 - **v3.0 Feature**: Cross-mod recipe support via datapacks
 
+### Chisel
+<img src="src/main/resources/assets/blockmod/textures/item/chisel.png" width="64">  
+
+- **v3.5.0 Update**: Chisel
+- **Uses**:
+  - Turn set blocks into its counterpart
+
 ---
 
 ## 🏗️ Building Blocks
