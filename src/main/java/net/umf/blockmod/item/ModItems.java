@@ -5,6 +5,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.umf.blockmod.BlockMod;
+import net.umf.blockmod.item.custom.ChiselItem;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(BlockMod.MOD_ID);
@@ -21,6 +22,12 @@ public class ModItems {
 
     public static final DeferredItem<Item> WOOD_DUST = ITEMS.register("wood_dust",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties()));
+
+
+
 
 
 

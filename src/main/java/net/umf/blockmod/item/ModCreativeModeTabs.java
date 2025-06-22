@@ -20,14 +20,14 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> WOOD_ITEMS_TAB = CREATIVE_MODE_TAB.register("wood_items_tab", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(ModItems.HARDWOOD_ALLOY.get())).title(Component.translatable("creativetab.blockmod.wood_items"))
             .displayItems((itemDisplayParameters, output) -> {
-                output.accept(ModItems.WOOD_DUST.get());
-                output.accept(ModItems.WOODSHEET.get());
-                output.accept(ModItems.HARDWOOD.get());
-                output.accept(ModItems.HARDWOOD_ALLOY.get());
+                output.accept(ModItems.WOOD_DUST);
+                output.accept(ModItems.WOODSHEET);
+                output.accept(ModItems.HARDWOOD);
+                output.accept(ModItems.HARDWOOD_ALLOY);
 
-                output.accept(ModBlocks.HARDWOOD_BLOCK.get());
+                output.accept(ModBlocks.HARDWOOD_BLOCK);
 
-
+                output.accept(ModItems.CHISEL);
 
 
 

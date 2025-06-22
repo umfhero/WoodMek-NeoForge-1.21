@@ -10,6 +10,7 @@
   "creativetab.blockmod.wood_items": "Wood Items",
   "block.blockmod.hardwood_block": "Hard Wood Block",
   "block.blockmod.hazard_block": "Hazard Block",
-  "creativetab.blockmod.custom_items": "Building Blocks"
+  "creativetab.blockmod.custom_items": "Building Blocks",
+  "item.blockmod.chisel": "Chisel"
 }
 
