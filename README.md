@@ -8,7 +8,11 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ### Mod Items
 <img src="src/main/resources/assets/blockmod/pics (github)/showcase.png" alt="BlockMod Items" width="500">
 
-### 🛠️ Processing Workflows (New in v3.0.0)
+### 📦 Mod Creative Tabs 
+<img src="src/main/resources/assets/blockmod/pics (github)/creativetabs.png" alt="Creative Tabs" width="400">
+
+
+### Processing Workflows (New in v3.0.0)
 **1. Harvest Logs**  
 *Gathered from vanilla loot tables when chopping trees*  
 <img src="src/main/resources/assets/blockmod/pics (github)/log.jpg" alt="log" width="400">  
@@ -28,14 +32,26 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 **5. Compact Alloy Production (Efficiency Boost)**  
 <img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">  
-*Process Hard Wood Blocks (2x2 craft) to get 9x Hardwood Alloy - 125% more efficient!*
+*Process Hard Wood Blocks (each made from 9 Hard Wood in a 3x3 craft) to get 9x Hardwood Alloy - more efficient than processing individual Hard Wood items!*
 
 ---
+## FTB Quests
 
+**Overview**  
+<img src="src/main/resources/assets/blockmod/pics (github)/quest.png" alt="quests" width="400">  
+*With any new mod/modpack, a quest is needed and so using FTB quests. Iv created just that.*
+
+**Quest Item**  
+<img src="src/main/resources/assets/blockmod/pics (github)/quest1.png" alt="quest item" width="400">  
+*With each item, comes a description and a linear progression to help players know what steps to take to get to each milestone with custom rewards!*
+
+
+---
 ## Items
 
 ### Wood Sheets
 <img src="src/main/resources/assets/blockmod/textures/item/woodsheet.png" width="64">  
+
 - **v2.0 Update**: Detailed wood grain texture
 - **Obtained by**:
   - Crafting recipes
@@ -44,19 +60,22 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 ### Hard Wood
 <img src="src/main/resources/assets/blockmod/textures/item/hardwood.png" width="64">  
+
 - **v2.0 Update**: Carbonized texture
 - **Uses**:
   - Crafted into Hard Wood Blocks (2x2 pattern)
   - Processed into Hardwood Alloy via Infusion
 
 ### Wood Dust
-<img src="src/main/resources/assets/blockmod/textures/item/wood_dust.png" width="64">  
+<img src="src/main/resources/assets/blockmod/textures/item/wood_dust.png" width="64"> 
+
 - **New in v2.0**: Fine wood powder
 - **Creation**: Crush Wood Sheets in Crusher
 - **Purpose**: Intermediate for advanced alloys
 
 ### Hardwood Alloy
 <img src="src/main/resources/assets/blockmod/textures/item/hardwood_alloy.png" width="64">  
+
 - **Crafting**: Metallurgic Infuser (Hard Wood + Carbon)
 - **v3.0 Feature**: Cross-mod recipe support via datapacks
 
@@ -76,9 +95,10 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ### Latest Release = 3.0.0
 #### [3.0.0] - Cross-Mod Compatibility & Recipes
 - **NEW**: Full Mekanism recipe integration via datapacks
-- **NEW**: Custom processing GUIs (see Showcase)
+- **NEW**: Custom processing GUIs (see Processing Workflows)
 - **NEW**: Compact machine workflows
-- Added `pics` folder for expanded documentation assets
+- Added `pics` folder for this repo documentation and assets
+- FTB Quest intergration (shown in quests)
 - Backend support for modpack recipe overrides
 
 #### [2.0.0] - Loot tables, Recipes & New Content
