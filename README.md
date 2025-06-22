@@ -6,23 +6,29 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 ## Showcase
 ### Mod Items
-<img src="src/main/resources/assets/blockmod/textures/item/ModShowCase.png" alt="BlockMod Items" width="500">
-
-### Mekanism Integration
-<img src="src/main/resources/assets/blockmod/textures/item/WoodMek.png" alt="Mekanism Integration" width="500">
+<img src="src/main/resources/assets/blockmod/pics (github)/showcase.png" alt="BlockMod Items" width="500">
 
 ### 🛠️ Processing Workflows (New in v3.0.0)
-**Smelting Wood Sheets**  
-<img src="src/main/resources/assets/blockmod/pics/hardwood1.png" alt="Smelting Factory" width="400">
+**1. Harvest Logs**  
+*Gathered from vanilla loot tables when chopping trees*  
+<img src="src/main/resources/assets/blockmod/pics (github)/log.jpg" alt="log" width="400">  
+*(standard Minecraft wood collection)*
 
-**Infusing Hardwood Alloy**  
-<img src="src/main/resources/assets/blockmod/pics/Hardwood_alloy1.png" alt="Infusing Factory" width="400">
+**2. Crush Logs to Wood Dust**  
+<img src="src/main/resources/assets/blockmod/pics (github)/wooddust.png" alt="Crusher" width="400">  
+*Process logs through Mekanism's Crusher to create Wood Dust*
 
-**Compact Alloy Production**  
-<img src="src/main/resources/assets/blockmod/pics/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">
+**3. Smelt Wood Dust to Hard Wood**  
+<img src="src/main/resources/assets/blockmod/pics (github)/hardwood1.png" alt="Smelting Factory" width="400">  
+*Smelt Wood Dust in any furnace to create Hard Wood, note that mekanism has a furnance like machine (any furnace will work)*
 
-**Crushing to Wood Dust**  
-<img src="src/main/resources/assets/blockmod/pics/wooddust.png" alt="Crusher" width="400">
+**4. Infuse Hard Wood to Hardwood Alloy**  
+<img src="src/main/resources/assets/blockmod/pics (github)/Hardwood_alloy1.png" alt="Infusing Factory" width="400">  
+*Infuse Hard Wood with Carbon in a Metallurgic Infuser to create Hardwood Alloy*
+
+**5. Compact Alloy Production (Efficiency Boost)**  
+<img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">  
+*Process Hard Wood Blocks (2x2 craft) to get 9x Hardwood Alloy - 125% more efficient!*
 
 ---
 
@@ -81,10 +87,29 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 - Loot table fixes for block drops
 - Sound type additions for blocks
 
-*(Older versions unchanged)*
+### [1.5.1] - Modpack compatible with NeoForge Mods (Mekanism, Create, FTB Ultimine and JEI)
+- Modpack 'WoodMek' on CurseForge with Mekanism, JEI, FTB Ultimine (Forge) and Create (Version 6)
+- Arguably most important version and proof the swap to NeoForge from Forge was for the best
+
+### [1.0.5] - Blocks
+- Added blocks: Hazard and Hardwood Blocks alongside their inventory counterpart items (rendering on minecraft:block/cube_all) 
+- Created building blocks category for the creative tab
+
+### [1.0.0] - Initial Release + Items
+- Added base items: Wood Sheets, Hard Wood and Hardwood Alloy
+- Added two creative inventory tabs for wood items and another for building blocks
+- Backend for future releases (e.g., loot tables, recipes, textures)
+
+### [0.0.1] - Pre-Release
+- Base foundation porting all previous code from Forge to NeoForge for future compatibility, performance and more
+- Setting up directories, Minecraft documentation, build files etc.
+- Established gradle.properties for mod name (now officially WoodMek)
+- Mod_id=blockmod + MIT license + mod_group_id=net.umf.blockmod
 
 ---
 
 ## Installation
 CurseForge Code: `EZeorNuJ`  
 **Requires Mekanism 10.4+**
+
+
