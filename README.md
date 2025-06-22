@@ -85,10 +85,29 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 - Loot table fixes for block drops
 - Sound type additions for blocks
 
-*(Older versions unchanged)*
+### [1.5.1] - Modpack compatible with NeoForge Mods (Mekanism, Create, FTB Ultimine and JEI)
+- Modpack 'WoodMek' on CurseForge with Mekanism, JEI, FTB Ultimine (Forge) and Create (Version 6)
+- Arguably most important version and proof the swap to NeoForge from Forge was for the best
+
+### [1.0.5] - Blocks
+- Added blocks: Hazard and Hardwood Blocks alongside their inventory counterpart items (rendering on minecraft:block/cube_all) 
+- Created building blocks category for the creative tab
+
+### [1.0.0] - Initial Release + Items
+- Added base items: Wood Sheets, Hard Wood and Hardwood Alloy
+- Added two creative inventory tabs for wood items and another for building blocks
+- Backend for future releases (e.g., loot tables, recipes, textures)
+
+### [0.0.1] - Pre-Release
+- Base foundation porting all previous code from Forge to NeoForge for future compatibility, performance and more
+- Setting up directories, Minecraft documentation, build files etc.
+- Established gradle.properties for mod name (now officially WoodMek)
+- Mod_id=blockmod + MIT license + mod_group_id=net.umf.blockmod
 
 ---
 
 ## Installation
 CurseForge Code: `EZeorNuJ`  
 **Requires Mekanism 10.4+**
+
+
