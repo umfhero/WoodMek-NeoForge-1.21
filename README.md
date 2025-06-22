@@ -24,7 +24,7 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 **4. Infuse Hard Wood to Hardwood Alloy**  
 <img src="src/main/resources/assets/blockmod/pics (github)/Hardwood_alloy1.png" alt="Infusing Factory" width="400">  
-*Infuse Hard Wood with Carbon in Metallurgic Infuser to create Hardwood Alloy*
+*Infuse Hard Wood with Carbon in a Metallurgic Infuser to create Hardwood Alloy*
 
 **5. Compact Alloy Production (Efficiency Boost)**  
 <img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">  
