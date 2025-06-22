@@ -8,9 +8,10 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ### Mod Items
 <img src="src/main/resources/assets/blockmod/pics (github)/showcase.png" alt="BlockMod Items" width="500">
 
-### 📦 Mod Creative Tabs 
+### WoodMek Creative Tabs (Wood Items & Blocks)
 <img src="src/main/resources/assets/blockmod/pics (github)/creativetabs.png" alt="Creative Tabs" width="400">
 
+---
 
 ### Processing Workflows (New in v3.0.0)
 **1. Harvest Logs**  
