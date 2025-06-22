@@ -28,7 +28,7 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 **5. Compact Alloy Production (Efficiency Boost)**  
 <img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">  
-*Process Hard Wood Blocks (each made from 9 Hard Wood in a 3x3 craft) to get 9x Hardwood Alloy - 125% more efficient than processing individual Hard Wood items!*
+*Process Hard Wood Blocks (each made from 9 Hard Wood in a 3x3 craft) to get 9x Hardwood Alloy - more efficient than processing individual Hard Wood items!*
 
 ---
 ## FTB Quests
