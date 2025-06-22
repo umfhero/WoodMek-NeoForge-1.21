@@ -34,11 +34,11 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ## FTB Quests
 
 **Overview**  
-<img src="src/main/resources/assets/blockmod/pics (github)/quest.png" alt="Compact Infuser" width="400">  
+<img src="src/main/resources/assets/blockmod/pics (github)/quest.png" alt="quests" width="400">  
 *With any new mod/modpack, a quest is needed and so using FTB quests. Iv created just that.*
 
 **Quest Item**  
-<img src="src/main/resources/assets/blockmod/pics (github)/quest1" alt="Compact Infuser" width="400">  
+<img src="src/main/resources/assets/blockmod/pics (github)/quest1" alt="quest item" width="400">  
 *With each item, comes a description and a linear progression to help players know what steps to take to get to each milestone with custom rewards!*
 
 
