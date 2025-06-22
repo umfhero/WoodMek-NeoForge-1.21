@@ -20,7 +20,7 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 **3. Smelt Wood Dust to Hard Wood**  
 <img src="src/main/resources/assets/blockmod/pics (github)/hardwood1.png" alt="Smelting Factory" width="400">  
-*Smelt Wood Dust in any furnace to create Hard Wood*
+*Smelt Wood Dust in any furnace to create Hard Wood, note that mekanism has a furnance like machine (any furnace will work)*
 
 **4. Infuse Hard Wood to Hardwood Alloy**  
 <img src="src/main/resources/assets/blockmod/pics (github)/Hardwood_alloy1.png" alt="Infusing Factory" width="400">  
