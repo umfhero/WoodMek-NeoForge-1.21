@@ -6,20 +6,28 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 ## Showcase
 ### Mod Items
-<img src="src/main/resources/assets/blockmod/textures/item/ModShowCase.png" alt="BlockMod Items" width="500">
+<img src="src/main/resources/assets/blockmod/pics (github)/showcase.png" alt="BlockMod Items" width="500">
 
 ### 🛠️ Processing Workflows (New in v3.0.0)
-**Smelting Wood Sheets**  
-<img src="src/main/resources/assets/blockmod/pics (github)/hardwood1.png" alt="Smelting Factory" width="400">
+**1. Harvest Logs**  
+*Gathered from vanilla loot tables when chopping trees*  
+*(No image needed - standard Minecraft wood collection)*
 
-**Infusing Hardwood Alloy**  
-<img src="src/main/resources/assets/blockmod/pics (github)/Hardwood_alloy1.png" alt="Infusing Factory" width="400">
+**2. Crush Logs to Wood Dust**  
+<img src="src/main/resources/assets/blockmod/pics (github)/wooddust.png" alt="Crusher" width="400">  
+*Process logs through Mekanism's Crusher to create Wood Dust*
 
-**Compact Alloy Production**  
-<img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">
+**3. Smelt Wood Dust to Hard Wood**  
+<img src="src/main/resources/assets/blockmod/pics (github)/hardwood1.png" alt="Smelting Factory" width="400">  
+*Smelt Wood Dust in any furnace to create Hard Wood*
 
-**Crushing to Wood Dust**  
-<img src="src/main/resources/assets/blockmod/pics (github)/wooddust.png" alt="Crusher" width="400">
+**4. Infuse Hard Wood to Hardwood Alloy**  
+<img src="src/main/resources/assets/blockmod/pics (github)/Hardwood_alloy1.png" alt="Infusing Factory" width="400">  
+*Infuse Hard Wood with Carbon in Metallurgic Infuser to create Hardwood Alloy*
+
+**5. Compact Alloy Production (Efficiency Boost)**  
+<img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">  
+*Process Hard Wood Blocks (2x2 craft) to get 9x Hardwood Alloy - 125% more efficient!*
 
 ---
 
