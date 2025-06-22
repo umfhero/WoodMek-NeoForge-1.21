@@ -11,7 +11,8 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ### 🛠️ Processing Workflows (New in v3.0.0)
 **1. Harvest Logs**  
 *Gathered from vanilla loot tables when chopping trees*  
-*(No image needed - standard Minecraft wood collection)*
+<img src="src/main/resources/assets/blockmod/pics (github)/log.jpg" alt="log" width="400">  
+*(standard Minecraft wood collection)*
 
 **2. Crush Logs to Wood Dust**  
 <img src="src/main/resources/assets/blockmod/pics (github)/wooddust.png" alt="Crusher" width="400">  
