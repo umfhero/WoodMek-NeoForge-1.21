@@ -7,9 +7,12 @@
   "item.blockmod.hardwood": "Hard Wood",
   "item.blockmod.hardwood_alloy": "Hardwood Alloy",
   "item.blockmod.wood_dust": "Wood Dust",
+
   "creativetab.blockmod.wood_items": "Wood Items",
+
   "block.blockmod.hardwood_block": "Hard Wood Block",
   "block.blockmod.hazard_block": "Hazard Block",
+  "block.blockmod.transformer_block": "Transformer Block",
   "creativetab.blockmod.custom_items": "Building Blocks",
   "item.blockmod.chisel": "Chisel"
 }

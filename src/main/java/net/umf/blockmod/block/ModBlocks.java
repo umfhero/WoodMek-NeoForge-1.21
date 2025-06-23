@@ -9,6 +9,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.umf.blockmod.BlockMod;
+import net.umf.blockmod.block.custom.transformer;
 import net.umf.blockmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -27,6 +28,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> HAZARD_BLOCK = registerBlock("hazard_block",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(3f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> TRANSFORMER_BLOCK = registerBlock("transformer_block",
+            () -> new transformer(BlockBehaviour.Properties.of().sound(SoundType.TRIAL_SPAWNER).strength(3f).requiresCorrectToolForDrops()));
 
 
 
