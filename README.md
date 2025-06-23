@@ -32,7 +32,7 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 *Infuse Hard Wood with Carbon in a Metallurgic Infuser to create Hardwood Alloy*
 
 **5. Compact Alloy Production (Efficiency Boost)**  
-<img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">  
+<img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="1200">  
 *Process Hard Wood Blocks (each made from 9 Hard Wood in a 3x3 craft) to get 9x Hardwood Alloy - more efficient than processing individual Hard Wood items!*
 
 ---
