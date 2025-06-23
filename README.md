@@ -110,7 +110,12 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ---
 
 ## Changelog
-### Latest Release = 4.0.0
+### Latest Release = 4.0.2
+
+#### [4.0.2] - Burn Rates
+- Added a `burn time` to all wooden items with all  values based on the level on compactness and difficulty
+- <img src="src/main/resources/assets/blockmod/pics (github)/burntime" width="300">  
+
 
 #### [4.0.0] - Custom Block (Transformer)
 - Added a `Transformer` block that can turn items (non modded and modded) into there `upgraded` counterparts
@@ -122,11 +127,11 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 
 #### [3.0.0] - Cross-Mod Compatibility & Recipes
-- Full Mekanism recipe integration via datapacks
-- Custom processing GUIs (see Processing Workflows)
+- Full `Mekanism` recipe integration via datapacks
+- Custom `processing GUIs` (see Processing Workflows)
 - Compact machine workflows
 - Added `pics` folder for this repo documentation and assets
-- FTB Quest intergration (shown in quests)
+- `FTB Quest` intergration (shown in quests)
 - Backend support for modpack recipe overrides
 
 #### [2.0.0] - Loot tables, Recipes & New Content
@@ -136,7 +141,7 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 - Sound type additions for blocks
 
 ### [1.5.1] - Modpack compatible with NeoForge Mods (Mekanism, Create, FTB Ultimine and JEI)
-- Modpack 'WoodMek' on CurseForge with Mekanism, JEI, FTB Ultimine (Forge) and Create (Version 6)
+- Modpack `WoodMek` on CurseForge with Mekanism, JEI, FTB Ultimine (Forge) and Create (Version 6)
 - Arguably most important version and proof the swap to NeoForge from Forge was for the best
 
 ### [1.0.5] - Blocks
@@ -157,7 +162,7 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ---
 
 ## Installation
-CurseForge Code: `dmKq7kU4`  
+CuresForge Mod coming soon!
 **Requires Mekanism 10.4+**
 
 
