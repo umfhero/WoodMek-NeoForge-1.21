@@ -88,7 +88,7 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
   - Turn set blocks into its counterpart
 
 ### Transformer Block
-<img src="src/main/resources/assets/blockmod/textures/item/transformer.png" width="64">  
+<img src="src/main/resources/assets/blockmod/pics (github)/transformer.png" width="64">  
 
 - **v4.0.0 Update**: Transformer
 - **Uses**:
