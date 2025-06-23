@@ -137,7 +137,7 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ---
 
 ## Installation
-CurseForge Code: `EZeorNuJ`  
+CurseForge Code: `dmKq7kU4`  
 **Requires Mekanism 10.4+**
 
 
