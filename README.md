@@ -32,7 +32,7 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 *Infuse Hard Wood with Carbon in a Metallurgic Infuser to create Hardwood Alloy*
 
 **5. Compact Alloy Production (Efficiency Boost)**  
-<img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="1200">  
+<img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">  
 *Process Hard Wood Blocks (each made from 9 Hard Wood in a 3x3 craft) to get 9x Hardwood Alloy - more efficient than processing individual Hard Wood items!*
 
 ---
@@ -88,7 +88,7 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
   - Turn set blocks into its counterpart
 
 ### Transformer Block
-<img src="src/main/resources/assets/blockmod/pics (github)/transformer.png" width="64">  
+<img src="src/main/resources/assets/blockmod/pics (github)/transformer.png" width="400">  
 
 - **v4.0.0 Update**: Transformer
 - **Uses**:
