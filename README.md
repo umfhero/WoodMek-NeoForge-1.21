@@ -87,6 +87,16 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 - **Uses**:
   - Turn set blocks into its counterpart
 
+### Transformer Block
+<img src="src/main/resources/assets/blockmod/pics (github)/transformer.png" width="400">  
+
+- **v4.0.0 Update**: Transformer
+- **Uses**:
+  - Turns entities thrown ontop to their upgraded versions
+  - Wood dust into hardwood alloys
+  - Hardwood into hardwood block
+  - Works for single items and stacks of items
+
 ---
 
 ## 🏗️ Building Blocks
@@ -105,6 +115,7 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 #### [4.0.0] - Custom Block (Transformer)
 - Added a `Transformer` block that can turn items (non modded and modded) into there `upgraded` counterparts
 - Example of transformations include wood dust into hardwood alloy. hardwood into hardwood_block
+- Added recipe for the transformer
 
 #### [3.8.0] - Custom Items (Chisel)
 - Added a building `Chisel` that can turn basic blocks into there building block counterparts 
