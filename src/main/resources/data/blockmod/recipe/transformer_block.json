@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DND",
+    "AEA",
+    "DAD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "E": {
+      "item": "minecraft:enchanting_table"
+    },
+    "A": {
+      "item": "blockmod:hardwood_alloy"
+    }
+  },
+  "result": {
+    "id": "blockmod:transformer_block",
+    "count": 1
+  }
+}
