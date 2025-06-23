@@ -100,7 +100,16 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ---
 
 ## Changelog
-### Latest Release = 3.0.0
+### Latest Release = 4.0.0
+
+#### [3.8.0] - Custom Block (Transformer)
+- Added a `Transformer` block that can turn items (non modded and modded) into there `upgraded` counterparts
+- Example of transformations include wood dust into hardwood alloy. hardwood into hardwood_block
+
+#### [3.8.0] - Custom Items (Chisel)
+- Added a building `Chisel` that can turn basic blocks into there building block counterparts 
+
+
 #### [3.0.0] - Cross-Mod Compatibility & Recipes
 - Full Mekanism recipe integration via datapacks
 - Custom processing GUIs (see Processing Workflows)
