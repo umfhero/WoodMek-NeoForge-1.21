@@ -19,6 +19,10 @@
   "tooltip.woodmek.transformer_block.tooltip": "The §d§lTransformer Block§r  is a entity §oreality shifter§r,\nreplacing all contents dropped on top of it with its §c§lsuperior counterpart§r.",
   "tooltip.woodmek.chisel.tooltip": "Hold §eShift§r for more info",
   "tooltip.woodmek.shiftchisel.tooltip": "The §dChisel§r is a automatic building tool, turning blocks clicked into its building block counterpart.\nThe §dChisel§r can cycle through building blocks.",
-  "tooltip.woodmek.hardwood_alloy.tooltip": "The pinnacle of wood, §dHardwood Alloys§r,\nA late game item used for advanced crafting recipes and processes"
+  "tooltip.woodmek.hardwood_alloy.tooltip": "The pinnacle of wood, §dHardwood Alloys§r,\nA late game item used for advanced crafting recipes and processes",
+
+  "tooltip.blockmod.hardwood_alloy.tooltip": "The pinnacle of wood, Hardwood Alloys, an early game item that is used for late game crafts and processing"
 }
+
+
 
