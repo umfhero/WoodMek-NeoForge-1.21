@@ -20,6 +20,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.umf.blockmod.BlockMod;
 import net.umf.blockmod.block.ModBlocks;
 import net.umf.blockmod.item.ModItems;
+import net.umf.blockmod.util.ModTags;
 
 import java.util.List;
 
@@ -43,10 +44,13 @@ public class transformer extends Block {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity) {
+            if(isValidItem(itemEntity.getItem())) {
+                itemEntity.setItem(new ItemStack(ModItems.HARDWOOD.get(), itemEntity.getItem().getCount()));
+            }
             if(itemEntity.getItem().getItem() == ModItems.WOOD_DUST.get()) {
                 itemEntity.setItem(new ItemStack(ModItems.HARDWOOD_ALLOY.get(), itemEntity.getItem().getCount()));
             }
-            if(itemEntity.getItem().getItem() == Items.YELLOW_CONCRETE) {
+            if(isValidItemConcrete(itemEntity.getItem())) {
                 itemEntity.setItem(new ItemStack(ModBlocks.HAZARD_BLOCK.get(), itemEntity.getItem().getCount()));
             }
             if(itemEntity.getItem().getItem() == ModItems.HARDWOOD.get()) {
@@ -55,6 +59,15 @@ public class transformer extends Block {
         }
 
         super.stepOn(level, pos, state, entity);
+    }
+
+    private boolean isValidItemConcrete(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_CONCRETE);
+    }
+
+
+    private boolean isValidItem(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     @Override
