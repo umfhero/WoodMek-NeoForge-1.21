@@ -118,9 +118,9 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
   
   <img src="src/main/resources/assets/blockmod/pics (github)/tooltip.png" width="250">
   
-  <img src="src/main/resources/assets/blockmod/pics (github)/tooltip1.png" width="250">
+  <img src="src/main/resources/assets/blockmod/pics (github)/tooltip1.png" width="550">
   
-  <img src="src/main/resources/assets/blockmod/pics (github)/tooltip2.png" width="250">  
+  <img src="src/main/resources/assets/blockmod/pics (github)/tooltip2.png" width="550">  
 
 #### [4.0.2] - Burn Rates
 - Added a `burn time` to all wooden items with all  values based on the level on compactness and difficulty
