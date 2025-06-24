@@ -14,6 +14,10 @@
   "block.blockmod.hazard_block": "Hazard Block",
   "block.blockmod.transformer_block": "Transformer Block",
   "creativetab.blockmod.custom_items": "Building Blocks",
-  "item.blockmod.chisel": "Chisel"
+  "item.blockmod.chisel": "Chisel",
+
+  "tooltip.blockmod.transformer_block.tooltip": "The §d§lTransformer Block§r  is a entity §oreality shifter§r,\nreplacing all contents dropped on top of it with its §c§lsuperior counterpart§r.",
+  "tooltip.blockmod.chisel.tooltip": "Hold §eShift§r for more info",
+  "tooltip.blockmod.shiftchisel.tooltip": "The §dChisel§r is a automatic building tool, turning blocks clicked into its building block counterpart.\nThe §dChisel§r can cycle through building blocks."
 }
 

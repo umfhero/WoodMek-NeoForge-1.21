@@ -1,6 +1,7 @@
 package net.umf.blockmod.block.custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -11,6 +12,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -18,6 +20,8 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.umf.blockmod.BlockMod;
 import net.umf.blockmod.block.ModBlocks;
 import net.umf.blockmod.item.ModItems;
+
+import java.util.List;
 
 public class transformer extends Block {
 
@@ -51,5 +55,12 @@ public class transformer extends Block {
         }
 
         super.stepOn(level, pos, state, entity);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        tooltipComponents.add(Component.translatable("tooltip.blockmod.transformer_block.tooltip"));
+
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }
