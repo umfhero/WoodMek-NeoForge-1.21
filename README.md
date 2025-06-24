@@ -111,7 +111,13 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ---
 
 ## Changelog
-### Latest Release = 4.0.2
+### Latest Release = 4.0.5
+
+#### [4.0.5] - Tool Tips
+- Added a `Tool tips` to complex items such as the Chisel and the Transformer block
+  <img src="src/main/resources/assets/blockmod/pics (github)/tooltip.png" width="250">
+  <img src="src/main/resources/assets/blockmod/pics (github)/tooltip1.png" width="250">
+  <img src="src/main/resources/assets/blockmod/pics (github)/tooltip2.png" width="250">  
 
 #### [4.0.2] - Burn Rates
 - Added a `burn time` to all wooden items with all  values based on the level on compactness and difficulty
