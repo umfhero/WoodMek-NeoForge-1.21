@@ -5,19 +5,20 @@
 
   "item.blockmod.woodsheet": "Wood Sheet",
   "item.blockmod.hardwood": "Hard Wood",
-  "item.blockmod.hardwood_alloy": "Hardwood Alloy",
+  "item.blockmod.hardwood_alloy": "§dHardwood Alloy§r",
   "item.blockmod.wood_dust": "Wood Dust",
 
-  "creativetab.blockmod.wood_items": "Wood Items",
+  "creativetab.blockmod.wood_items": "WookMek",
 
   "block.blockmod.hardwood_block": "Hard Wood Block",
   "block.blockmod.hazard_block": "Hazard Block",
-  "block.blockmod.transformer_block": "Transformer Block",
+  "block.blockmod.transformer_block": "§dTransformer Block",
   "creativetab.blockmod.custom_items": "Building Blocks",
   "item.blockmod.chisel": "Chisel",
 
   "tooltip.blockmod.transformer_block.tooltip": "The §d§lTransformer Block§r  is a entity §oreality shifter§r,\nreplacing all contents dropped on top of it with its §c§lsuperior counterpart§r.",
   "tooltip.blockmod.chisel.tooltip": "Hold §eShift§r for more info",
-  "tooltip.blockmod.shiftchisel.tooltip": "The §dChisel§r is a automatic building tool, turning blocks clicked into its building block counterpart.\nThe §dChisel§r can cycle through building blocks."
+  "tooltip.blockmod.shiftchisel.tooltip": "The §dChisel§r is a automatic building tool, turning blocks clicked into its building block counterpart.\nThe §dChisel§r can cycle through building blocks.",
+  "tooltip.blockmod.hardwood_alloy.tooltip": "The pinnacle of wood, §dHardwood Alloys§r,\nA late game item used for advanced crafting recipes and processes"
 }
 
