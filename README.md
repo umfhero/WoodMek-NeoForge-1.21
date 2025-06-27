@@ -68,11 +68,11 @@ WookMek is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with de
 
 ---
 
-## Future Plans
+# Future Plans
 
 WoodMek isn’t just about early-game mod you use once or twice, there’s much more on the horizon im planning to add. 
 
-# Planned features include:
+## Planned features include:
 • **Axe progression overhaul:** introducing stronger, more efficient axes with a meaningful upgrade path  
 • **Treecapitator-style mechanics:**  cut entire trees with one swing  
 • **No-block tree farming (generators):**  automatic tree growth and harvesting  
