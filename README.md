@@ -56,7 +56,9 @@ WookMek is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with de
 *Smelt Wood Dust in any furnace to create Hard Wood, note that mekanism has a furnance like machine (any furnace will work)*
 
 **4. Infuse Hard Wood to Hardwood Alloy**  
-#### [Mekanism]([https://learn.microsoft.com/en-us/windows/package-manager/winget](https://www.curseforge.com/minecraft/mc-mods/mekanism)) for _NeoForge_
+
+
+
 <img src="src/main/resources/assets/blockmod/pics (github)/Hardwood_alloy1.png" alt="Infusing Factory" width="400">  
 *Infuse Hard Wood with Carbon in a Metallurgic Infuser to create Hardwood Alloy*
 
@@ -66,10 +68,21 @@ WookMek is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with de
 
 ---
 
+## Future Plans
 
+WoodMek isn’t just about early-game mod you use once or twice, there’s much more on the horizon im planning to add. 
 
+# Planned features include:
+• **Axe progression overhaul:** introducing stronger, more efficient axes with a meaningful upgrade path  
+• **Treecapitator-style mechanics:**  cut entire trees with one swing  
+• **No-block tree farming (generators):**  automatic tree growth and harvesting  
+• **Auto item pickup:**  seamless integration with existing farms  
+• **Late-game wood usage:**  features that give purpose to large stockpiles of wood
+
+These additions aim to make WoodMek a long-term companion in your modpack, especially in mid to late game stages where bulk wood production and usage become key.
 
 ---
+
 ## FTB Quests
 
 **Overview**  
