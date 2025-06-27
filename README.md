@@ -1,6 +1,33 @@
-# WoodMek! - A 1.21-1.21.1 NeoForge Minecraft Mod 
+<div align="center">
+
+<h2><strong>WoodMek! - A 1.21–1.21.1 NeoForge Minecraft Mod</strong></h2>
+
+<a href="https://www.curseforge.com/minecraft/mc-mods/woodmek">
+  CurseForge Mod Page
+</a>
+
+<br><br>
 
 <img src="src/main/resources/assets/blockmod/textures/item/hardwood_alloy.png" alt="Hardwood Alloy Logo" width="126">
+
+<br><br>
+
+![Static Badge](https://img.shields.io/badge/Requires%20Mekanism-%2010.4%2B-red)
+![Total downloads](https://img.shields.io/badge/CurseForge-17-blue)
+![Commits](https://img.shields.io/github/commit-activity/w/umfhero/WoodMek-NeoForge-1.21)
+![Last commit](https://img.shields.io/github/last-commit/umfhero/WoodMek-NeoForge-1.21)
+
+<br>
+
+![Minecraft](https://img.shields.io/badge/Minecraft-1.21-green)
+![Mod Loader](https://img.shields.io/badge/ModLoader-NeoForge-blueviolet)
+![Issues](https://img.shields.io/github/issues/umfhero/WoodMek-NeoForge-1.21)
+![License](https://img.shields.io/github/license/umfhero/WoodMek-NeoForge-1.21)
+![Status](https://img.shields.io/badge/status-WIP-yellow)
+
+</div>
+
+
 
 Adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
 
@@ -173,12 +200,6 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 
 ## Installation
 CuresForge Mod: https://www.curseforge.com/minecraft/mc-mods/woodmek
-
-![Static Badge](https://img.shields.io/badge/Requires%20Mekanism-%2010.4%2B-red)
-![Total downloads](https://img.shields.io/badge/CurseForge-17-blue)
-![Commits](https://img.shields.io/github/commit-activity/w/umfhero/WoodMek-NeoForge-1.21)
-![Lines of code](https://img.shields.io/badge/LOC‑approx‑12345‑orange)
-![Last commit](https://img.shields.io/github/last-commit/umfhero/WoodMek-NeoForge-1.21)
 
 
 
