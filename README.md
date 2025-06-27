@@ -175,6 +175,11 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 CuresForge Mod: https://www.curseforge.com/minecraft/mc-mods/woodmek
 
 ![Static Badge](https://img.shields.io/badge/Requires%20Mekanism-%2010.4%2B-red)
+![Total downloads](https://img.shields.io/badge/CurseForge-17-blue)
+![Commits](https://img.shields.io/github/commit-activity/w/umfhero/WoodMek-NeoForge-1.21)
+![Lines of code](https://img.shields.io/badge/LOC‑approx‑12345‑orange)
+![Last commit](https://img.shields.io/github/last-commit/umfhero/WoodMek-NeoForge-1.21)
+
 
 
 
