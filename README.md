@@ -172,7 +172,10 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ---
 
 ## Installation
-CuresForge Mod coming soon!
-**Requires Mekanism 10.4+**
+CuresForge Mod: https://www.curseforge.com/minecraft/mc-mods/woodmek
+
+![Static Badge](https://img.shields.io/badge/Requires%20Mekanism-%2010.4%2B-red)
+
+
 
 
