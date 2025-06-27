@@ -29,7 +29,10 @@ WookMek is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with de
 <br><br><br>
 
 ## Showcase
+> [!IMPORTANT]
+> This mod is a WIP, these ingame screenshots may or may not be the latest reflection of the WoodMek mod (Including blocks, items, features or functions).
 ### Mod Items
+
 <img src="src/main/resources/assets/blockmod/pics (github)/showcase.png" alt="BlockMod Items" width="500">
 
 ### WoodMek Creative Tabs (Wood Items & Blocks)
@@ -59,6 +62,11 @@ WookMek is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with de
 **5. Compact Alloy Production (Efficiency Boost)**  
 <img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">  
 *Process Hard Wood Blocks (each made from 9 Hard Wood in a 3x3 craft) to get 9x Hardwood Alloy - more efficient than processing individual Hard Wood items!*
+
+---
+
+#### [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget) for _Windows_
+[![winget](https://img.shields.io/badge/winget_package-gray)](https://winstall.app/apps/GorillaDevs.Ferium)
 
 ---
 ## FTB Quests
@@ -121,16 +129,6 @@ WookMek is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with de
   - Wood dust into hardwood alloys
   - Hardwood into hardwood block
   - Works for single items and stacks of items
-
----
-
-## 🏗️ Building Blocks
-1. **Hard Wood Block**:
-   - Crafted from 4 Hard Wood (2x2)
-   - Seamless edge design
-2. **Hazard Block**:
-   - Decorative warning block
-   - Seamless texture integration
 
 ---
 
