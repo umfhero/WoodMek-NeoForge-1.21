@@ -27,7 +27,7 @@
 </a>
 
 <h1><strong>WoodMek</strong></h1>
-WookMek is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
+Wood Mekanism or WookMek for short is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
 ### Latest Release 5.0.0
 </div>
 
