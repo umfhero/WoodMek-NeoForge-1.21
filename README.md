@@ -148,7 +148,8 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 ---
 
 ## Changelog
-### Latest Release = 5.0.0
+
+#### [5.0.0] - DataGen
 - Converted all loot tables, block states, block/item tags, data maps, item models, and recipes to data generators for easier maintenance and future updates.
 
 #### [4.0.5] - Tool Tips
