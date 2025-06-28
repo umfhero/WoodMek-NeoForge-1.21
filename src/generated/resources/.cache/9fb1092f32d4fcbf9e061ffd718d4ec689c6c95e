@@ -1,0 +1,11 @@
+// 1.21	2025-06-28T02:46:39.8910057	Recipes
+bb7e333581a6de86315ec274d33c82709dff4fc0 data/blockmod/advancement/recipes/misc/chisel.json
+3bfa9a92bf64789bfeb070ee2cadd6e7960e2070 data/blockmod/advancement/recipes/misc/hardwood_block.json
+d8268d5553b38f2d05fbed353b822ce2a4630fa4 data/blockmod/advancement/recipes/misc/hardwood_from_block.json
+4af0171985bf75b1489182f7d24b7e6ba569d1d8 data/blockmod/advancement/recipes/misc/hardwood_from_smelting_wood_dust.json
+71d91644a2ee86fc3337b9d6869e656b712e51aa data/blockmod/advancement/recipes/misc/transformer_block.json
+08f5b644aa656a0d602ec29912e5cf2b86144e43 data/blockmod/recipe/chisel.json
+6dfab76a1e813863b542fe3ac15d4a58f42d3100 data/blockmod/recipe/hardwood_block.json
+2a20b076964284a375a66057f3a05c835e92f2f9 data/blockmod/recipe/hardwood_from_block.json
+ef7825b54951ae735b0dca3ecd41344d424fb138 data/blockmod/recipe/hardwood_from_smelting_wood_dust.json
+2311210e8c0a65153413954b906a3772177f607a data/blockmod/recipe/transformer_block.json
