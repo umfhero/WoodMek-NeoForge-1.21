@@ -1,4 +1,13 @@
-// 1.21	2025-06-28T00:17:16.6579479	Loot Tables
+// 1.21	2025-06-28T15:58:27.5064555	Loot Tables
 97db52851304580e6c6f84777b72c04df7577812 data/blockmod/loot_table/blocks/hardwood_block.json
+7880984a54a59a7934e2847eccdc4ac04008a59e data/blockmod/loot_table/blocks/hardwood_button.json
+38bee1143141adb93a7b39469a161cd5ef98d600 data/blockmod/loot_table/blocks/hardwood_door.json
+4e4923bf6059715c64c91feb7563733eccdf06e2 data/blockmod/loot_table/blocks/hardwood_fence.json
+6274f4cd0c97d172e32114e335c550cfc5f921db data/blockmod/loot_table/blocks/hardwood_fence_gate.json
+9d4c5c4c80db1ba4c13de0e152fcd0fb5a12f951 data/blockmod/loot_table/blocks/hardwood_pressure_plate.json
+888d765637993633f6724d213128f433908318bc data/blockmod/loot_table/blocks/hardwood_slab.json
+2f6dd173d151d0a9099dabaf5cd37f259d58c9f0 data/blockmod/loot_table/blocks/hardwood_stairs.json
+0cc7daf8dcf68fd5059cfa442c8987c9525afc40 data/blockmod/loot_table/blocks/hardwood_trapdoor.json
+fab68f393e6b9d54d7fcb4c622a12a560eaeca42 data/blockmod/loot_table/blocks/hardwood_wall.json
 9500b1eeb27732067cc47a410368d8a4e3f8b580 data/blockmod/loot_table/blocks/hazard_block.json
 5a05d20e06be7eba2f4395fe07f9e5b4e7acab13 data/blockmod/loot_table/blocks/transformer_block.json

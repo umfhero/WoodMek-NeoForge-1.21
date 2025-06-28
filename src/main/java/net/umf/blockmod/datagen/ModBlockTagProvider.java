@@ -33,5 +33,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.HARDWOOD_BLOCK.get());
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.TRANSFORMER_BLOCK.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.HARDWOOD_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.HARDWOOD_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.HARDWOOD_WALL.get());
     }
 }

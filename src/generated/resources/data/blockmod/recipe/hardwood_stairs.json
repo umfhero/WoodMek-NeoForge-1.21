@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "hardwood",
+  "key": {
+    "#": {
+      "item": "blockmod:hardwood"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "blockmod:hardwood_stairs"
+  }
+}

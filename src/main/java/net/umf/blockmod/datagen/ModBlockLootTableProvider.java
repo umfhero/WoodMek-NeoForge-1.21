@@ -22,6 +22,23 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.TRANSFORMER_BLOCK.get());
 
 
+
+        dropSelf(ModBlocks.HARDWOOD_STAIRS.get());
+        add(ModBlocks.HARDWOOD_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.HARDWOOD_SLAB.get()));
+
+        dropSelf(ModBlocks.HARDWOOD_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.HARDWOOD_BUTTON.get());
+
+        dropSelf(ModBlocks.HARDWOOD_FENCE.get());
+        dropSelf(ModBlocks.HARDWOOD_FENCE_GATE.get());
+        dropSelf(ModBlocks.HARDWOOD_WALL.get());
+        dropSelf(ModBlocks.HARDWOOD_TRAPDOOR.get());
+
+        add(ModBlocks.HARDWOOD_DOOR.get(),
+                block -> createDoorTable(ModBlocks.HARDWOOD_DOOR.get()));
+
+
     }
 
     @Override

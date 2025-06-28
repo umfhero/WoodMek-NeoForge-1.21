@@ -43,6 +43,17 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.HAZARD_BLOCK.get());
                 output.accept(ModBlocks.TRANSFORMER_BLOCK);
 
+                output.accept(ModBlocks.HARDWOOD_STAIRS);
+                output.accept(ModBlocks.HARDWOOD_BUTTON);
+                output.accept(ModBlocks.HARDWOOD_DOOR);
+                output.accept(ModBlocks.HARDWOOD_FENCE);
+                output.accept(ModBlocks.HARDWOOD_SLAB);
+                output.accept(ModBlocks.HARDWOOD_FENCE_GATE);
+                output.accept(ModBlocks.HARDWOOD_WALL);
+                output.accept(ModBlocks.HARDWOOD_PRESSURE_PLATE);
+                output.accept(ModBlocks.HARDWOOD_TRAPDOOR);
+
+
 
             }).build());
 

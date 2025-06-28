@@ -19,6 +19,19 @@
   "tooltip.blockmod.transformer_block.tooltip": "The §d§lTransformer Block§r  is a entity §oreality shifter§r,\nreplacing all contents dropped on top of it with its §c§lsuperior counterpart§r.",
   "tooltip.blockmod.chisel.tooltip": "Hold §eShift§r for more info",
   "tooltip.blockmod.shiftchisel.tooltip": "The §dChisel§r is a automatic building tool, turning blocks clicked into its building block counterpart.\nThe §dChisel§r can cycle through building blocks.",
-  "tooltip.blockmod.hardwood_alloy.tooltip": "The pinnacle of wood, §dHardwood Alloys§r,\nA late game item used for advanced crafting recipes and processes"
+  "tooltip.blockmod.hardwood_alloy.tooltip": "The pinnacle of wood, §dHardwood Alloys§r,\nA late game item used for advanced crafting recipes and processes",
+
+
+  "block.blockmod.hardwood_stairs": "Hard Wood Stairs",
+  "block.blockmod.hardwood_button": "Hard Wood Button",
+  "block.blockmod.hardwood_door": "Hard Wood Door",
+  "block.blockmod.hardwood_fence": "Hard Wood Fence",
+  "block.blockmod.hardwood_slab": "Hard Wood Slab",
+  "block.blockmod.hardwood_fence_gate": "Hard Wood Fence Gate",
+  "block.blockmod.hardwood_wall": "Hard Wood Wall",
+  "block.blockmod.hardwood_pressure_plate": "Hard Wood Pressure Plate",
+  "block.blockmod.hardwood_trapdoor": "Hard Wood Trapdoor"
+
+
 }
 
