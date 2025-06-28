@@ -7,7 +7,7 @@
 
 <br>
 
-<img src="src/main/resources/assets/blockmod/textures/item/hardwood_alloy.png" alt="Hardwood Alloy Logo" width="200">
+<img src="src/main/resources/assets/blockmod/textures/item/WoodMekBB.png" alt="Hardwood Alloy Logo" width="200">
 
 <br>
 
