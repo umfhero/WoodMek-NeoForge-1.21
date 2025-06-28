@@ -22,6 +22,7 @@
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 <br><br>
 WookMek is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
+### Latest Release 5.0.0
 </div>
 
 
@@ -147,9 +148,12 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 ---
 
 ## Changelog
-### Latest Release = 4.0.5
 
-#### [4.0.5] - Tool Tips
+#### [5.0.0] - DataGen
+- Converted all loot tables, block states, block/item tags, data maps, item models, and recipes to data generators for easier maintenance and future updates.
+
+
+#### [4.6.0] - Tool Tips
 - Added a `Tool tips` to complex items such as the Chisel and the Transformer block
   
   <img src="src/main/resources/assets/blockmod/pics (github)/tooltip.png" width="250">
@@ -158,7 +162,7 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
   
   <img src="src/main/resources/assets/blockmod/pics (github)/tooltip2.png" width="550">  
 
-#### [4.0.2] - Burn Rates
+#### [4.2.0] - Burn Rates
 - Added a `burn time` to all wooden items with all  values based on the level on compactness and difficulty
   <img src="src/main/resources/assets/blockmod/pics (github)/burntime.png" width="300">  
 
@@ -172,7 +176,7 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 - Added a building `Chisel` that can turn basic blocks into there building block counterparts 
 
 
-#### [3.0.0] - Cross-Mod Compatibility & Recipes
+#### [3.4.0] - Cross-Mod Compatibility & Recipes
 - Full `Mekanism` recipe integration via datapacks
 - Custom `processing GUIs` (see Processing Workflows)
 - Compact machine workflows
