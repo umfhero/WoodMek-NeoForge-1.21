@@ -5,7 +5,7 @@
 
 <br>
 
-<img src="src/main/resources/assets/blockmod/pics (github)/WoodMekBB.png" alt="Hardwood Alloy Logo" width="300">
+<img src="src/main/resources/assets/blockmod/pics (github)/WoodMekLogo.png" alt="Hardwood Alloy Logo" width="300">
 
 <br><br>
 
