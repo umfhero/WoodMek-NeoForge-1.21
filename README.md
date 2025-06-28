@@ -22,6 +22,7 @@
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 <br><br>
 WookMek is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
+### Latest Release 5.0.0
 </div>
 
 
@@ -147,7 +148,11 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 ---
 
 ## Changelog
-### Latest Release = 4.0.5
+### Latest Release = 5.0.0
+- Converted all loot tables, block states, block/item tags, data maps, item models, and recipes to data generators for easier maintenance and future updates.
+
+#### [4.0.5] - Tool Tips
+- Added a `Tool tips` to complex items such as the Chisel and the Transformer block
 
 #### [4.0.5] - Tool Tips
 - Added a `Tool tips` to complex items such as the Chisel and the Transformer block
