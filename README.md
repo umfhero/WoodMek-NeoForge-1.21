@@ -1,11 +1,38 @@
-# WoodMek! - A 1.21-1.21.1 NeoForge Minecraft Mod 
+<div align="center">
 
-<img src="src/main/resources/assets/blockmod/textures/item/hardwood_alloy.png" alt="Hardwood Alloy Logo" width="126">
+<h1><strong>WoodMek</strong></h1>
+<a href="https://www.curseforge.com/minecraft/mc-mods/woodmek">
+  CurseForge Mod Page
+</a>
 
-Adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
+<br>
+
+<img src="src/main/resources/assets/blockmod/textures/item/hardwood_alloy.png" alt="Hardwood Alloy Logo" width="200">
+
+<br>
+
+![Static Badge](https://img.shields.io/badge/Requires%20Mekanism-%2010.4%2B-red)
+![Commits](https://img.shields.io/github/commit-activity/w/umfhero/WoodMek-NeoForge-1.21)
+![Last commit](https://img.shields.io/github/last-commit/umfhero/WoodMek-NeoForge-1.21)
+
+
+![Minecraft](https://img.shields.io/badge/Minecraft-1.21-green)
+![Mod Loader](https://img.shields.io/badge/ModLoader-NeoForge-blueviolet)
+![Issues](https://img.shields.io/github/issues/umfhero/WoodMek-NeoForge-1.21)
+![Status](https://img.shields.io/badge/status-WIP-yellow)
+<br><br>
+WookMek is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
+</div>
+
+
+
+<br><br><br>
 
 ## Showcase
+> [!IMPORTANT]
+> This mod is a WIP, these ingame screenshots may or may not be the latest reflection of the WoodMek mod (Including blocks, items, features or functions).
 ### Mod Items
+
 <img src="src/main/resources/assets/blockmod/pics (github)/showcase.png" alt="BlockMod Items" width="500">
 
 ### WoodMek Creative Tabs (Wood Items & Blocks)
@@ -29,6 +56,9 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 *Smelt Wood Dust in any furnace to create Hard Wood, note that mekanism has a furnance like machine (any furnace will work)*
 
 **4. Infuse Hard Wood to Hardwood Alloy**  
+
+
+
 <img src="src/main/resources/assets/blockmod/pics (github)/Hardwood_alloy1.png" alt="Infusing Factory" width="400">  
 *Infuse Hard Wood with Carbon in a Metallurgic Infuser to create Hardwood Alloy*
 
@@ -37,6 +67,22 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 *Process Hard Wood Blocks (each made from 9 Hard Wood in a 3x3 craft) to get 9x Hardwood Alloy - more efficient than processing individual Hard Wood items!*
 
 ---
+
+# Future Plans
+
+WoodMek isn’t just about early-game mod you use once or twice, there’s much more on the horizon im planning to add. 
+
+## Planned features include:
+• **Axe progression overhaul:** introducing stronger, more efficient axes with a meaningful upgrade path  
+• **Treecapitator-style mechanics:**  cut entire trees with one swing  
+• **No-block tree farming (generators):**  automatic tree growth and harvesting  
+• **Auto item pickup:**  seamless integration with existing farms  
+• **Late-game wood usage:**  features that give purpose to large stockpiles of wood
+
+These additions aim to make WoodMek a long-term companion in your modpack, especially in mid to late game stages where bulk wood production and usage become key.
+
+---
+
 ## FTB Quests
 
 **Overview**  
@@ -97,16 +143,6 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
   - Wood dust into hardwood alloys
   - Hardwood into hardwood block
   - Works for single items and stacks of items
-
----
-
-## 🏗️ Building Blocks
-1. **Hard Wood Block**:
-   - Crafted from 4 Hard Wood (2x2)
-   - Seamless edge design
-2. **Hazard Block**:
-   - Decorative warning block
-   - Seamless texture integration
 
 ---
 
@@ -172,7 +208,9 @@ Adds wood-based materials with deep Mekanism integration and cross-mod compatibi
 ---
 
 ## Installation
-CuresForge Mod coming soon!
-**Requires Mekanism 10.4+**
+CuresForge Mod: https://www.curseforge.com/minecraft/mc-mods/woodmek
+
+
+
 
 
