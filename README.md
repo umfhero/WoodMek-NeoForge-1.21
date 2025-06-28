@@ -5,15 +5,10 @@
 
 <br>
 
-<img src="src/main/resources/assets/blockmod/pics (github)/WoodMekLogo.png" alt="Hardwood Alloy Logo" width="300">
+<img src="src/main/resources/assets/blockmod/pics (github)/WoodMekLogo.png" alt="Hardwood Alloy Logo" width="600">
 
-<br><br>
 
-<a href="https://www.curseforge.com/minecraft/mc-mods/woodmek">
-  CurseForge Mod Page
-</a>
-
-<br><br>
+<br>
 
 ![Static Badge](https://img.shields.io/badge/Requires%20Mekanism-%2010.4%2B-red)
 ![Commits](https://img.shields.io/github/commit-activity/w/umfhero/WoodMek-NeoForge-1.21)
@@ -25,6 +20,12 @@
 ![Issues](https://img.shields.io/github/issues/umfhero/WoodMek-NeoForge-1.21)
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 <br><br>
+
+
+<a href="https://www.curseforge.com/minecraft/mc-mods/woodmek">
+  CurseForge Mod Page
+</a>
+
 <h1><strong>WoodMek</strong></h1>
 WookMek is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
 ### Latest Release 5.0.0
