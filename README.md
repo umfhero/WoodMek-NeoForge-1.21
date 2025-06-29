@@ -35,7 +35,8 @@ Wood Mekanism or WookMek for short is a 1.21 NeoForge Minecraft Mod which adds w
 > This mod is a WIP, these ingame screenshots may or may not be the latest reflection of the WoodMek mod (Including blocks, items, features or functions).
 
 ### Mod Items
-<img src="src/main/resources/assets/woodmek/pics (github)/showcase.png" alt="BlockMod Items" width="500">
+<img src="src/main/resources/assets/woodmek/pics (github)/showcase2.png" alt="BlockMod Items" width="500">
+
 
 ### WoodMek Creative Tabs (Wood Items & Blocks)
 <img src="src/main/resources/assets/woodmek/pics (github)/creativetabs.png" alt="Creative Tabs" width="400">
