@@ -1,12 +1,8 @@
 <div align="center">
 
-
-
-
 <br>
 
-<img src="src/main/resources/assets/blockmod/pics (github)/WoodMekLogo.png" alt="Hardwood Alloy Logo" width="600">
-
+<img src="src/main/resources/assets/woodmek/pics (github)/WoodMekLogo.png" alt="Hardwood Alloy Logo" width="600">
 
 <br>
 
@@ -14,14 +10,12 @@
 ![Commits](https://img.shields.io/github/commit-activity/w/umfhero/WoodMek-NeoForge-1.21)
 ![Last commit](https://img.shields.io/github/last-commit/umfhero/WoodMek-NeoForge-1.21)
 
-
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21-green)
 ![Mod Loader](https://img.shields.io/badge/ModLoader-NeoForge-blueviolet)
 ![Issues](https://img.shields.io/github/issues/umfhero/WoodMek-NeoForge-1.21)
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 <br>
 ### Latest Release 5.5.0
-
 
 <a href="https://www.curseforge.com/minecraft/mc-mods/woodmek">
   CurseForge Mod Page
@@ -33,47 +27,41 @@ Wood Mekanism or WookMek for short is a 1.21 NeoForge Minecraft Mod which adds w
 
 </div>
 
-
-
 <br><br><br>
 
 <h1><strong>WoodMek Showcase</strong></h1> 
 
 > [!IMPORTANT]
 > This mod is a WIP, these ingame screenshots may or may not be the latest reflection of the WoodMek mod (Including blocks, items, features or functions).
-### Mod Items
 
-<img src="src/main/resources/assets/blockmod/pics (github)/showcase.png" alt="BlockMod Items" width="500">
+### Mod Items
+<img src="src/main/resources/assets/woodmek/pics (github)/showcase.png" alt="BlockMod Items" width="500">
 
 ### WoodMek Creative Tabs (Wood Items & Blocks)
-<img src="src/main/resources/assets/blockmod/pics (github)/creativetabs.png" alt="Creative Tabs" width="400">
-
+<img src="src/main/resources/assets/woodmek/pics (github)/creativetabs.png" alt="Creative Tabs" width="400">
 
 ---
 
 ### Processing Workflows (New in v3.0.0)
 **1. Harvest Logs**  
 *Gathered from vanilla loot tables when chopping trees*  
-<img src="src/main/resources/assets/blockmod/pics (github)/log.jpg" alt="log" width="400">  
+<img src="src/main/resources/assets/woodmek/pics (github)/log.jpg" alt="log" width="400">  
 *(standard Minecraft wood collection)*
 
 **2. Crush Logs to Wood Dust**  
-<img src="src/main/resources/assets/blockmod/pics (github)/wooddust.png" alt="Crusher" width="400">  
+<img src="src/main/resources/assets/woodmek/pics (github)/wooddust.png" alt="Crusher" width="400">  
 *Process logs through Mekanism's Crusher to create Wood Dust*
 
 **3. Smelt Wood Dust to Hard Wood**  
-<img src="src/main/resources/assets/blockmod/pics (github)/hardwood1.png" alt="Smelting Factory" width="400">  
+<img src="src/main/resources/assets/woodmek/pics (github)/hardwood1.png" alt="Smelting Factory" width="400">  
 *Smelt Wood Dust in any furnace to create Hard Wood, note that mekanism has a furnance like machine (any furnace will work)*
 
 **4. Infuse Hard Wood to Hardwood Alloy**  
-
-
-
-<img src="src/main/resources/assets/blockmod/pics (github)/Hardwood_alloy1.png" alt="Infusing Factory" width="400">  
+<img src="src/main/resources/assets/woodmek/pics (github)/Hardwood_alloy1.png" alt="Infusing Factory" width="400">  
 *Infuse Hard Wood with Carbon in a Metallurgic Infuser to create Hardwood Alloy*
 
 **5. Compact Alloy Production (Efficiency Boost)**  
-<img src="src/main/resources/assets/blockmod/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">  
+<img src="src/main/resources/assets/woodmek/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">  
 *Process Hard Wood Blocks (each made from 9 Hard Wood in a 3x3 craft) to get 9x Hardwood Alloy - more efficient than processing individual Hard Wood items!*
 
 ---
@@ -96,19 +84,19 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 ## FTB Quests
 
 **Overview**  
-<img src="src/main/resources/assets/blockmod/pics (github)/quest.png" alt="quests" width="400">  
+<img src="src/main/resources/assets/woodmek/pics (github)/quest.png" alt="quests" width="400">  
 *With any new mod/modpack, a quest is needed and so using FTB quests. Iv created just that.*
 
 **Quest Item**  
-<img src="src/main/resources/assets/blockmod/pics (github)/quest1.png" alt="quest item" width="400">  
+<img src="src/main/resources/assets/woodmek/pics (github)/quest1.png" alt="quest item" width="400">  
 *With each item, comes a description and a linear progression to help players know what steps to take to get to each milestone with custom rewards!*
 
-
 ---
+
 ## Items
 
 ### Wood Sheets
-<img src="src/main/resources/assets/blockmod/textures/item/woodsheet.png" width="64">  
+<img src="src/main/resources/assets/woodmek/textures/item/woodsheet.png" width="64">  
 
 - **v2.0 Update**: Detailed wood grain texture
 - **Obtained by**:
@@ -117,7 +105,7 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 - **Processing**: Smelt into Hard Wood or crush into Wood Dust
 
 ### Hard Wood
-<img src="src/main/resources/assets/blockmod/textures/item/hardwood.png" width="64">  
+<img src="src/main/resources/assets/woodmek/textures/item/hardwood.png" width="64">  
 
 - **v2.0 Update**: Carbonized texture
 - **Uses**:
@@ -125,27 +113,27 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
   - Processed into Hardwood Alloy via Infusion
 
 ### Wood Dust
-<img src="src/main/resources/assets/blockmod/textures/item/wood_dust.png" width="64"> 
+<img src="src/main/resources/assets/woodmek/textures/item/wood_dust.png" width="64"> 
 
 - **New in v2.0**: Fine wood powder
 - **Creation**: Crush Wood Sheets in Crusher
 - **Purpose**: Intermediate for advanced alloys
 
 ### Hardwood Alloy
-<img src="src/main/resources/assets/blockmod/textures/item/hardwood_alloy.png" width="64">  
+<img src="src/main/resources/assets/woodmek/textures/item/hardwood_alloy.png" width="64">  
 
 - **Crafting**: Metallurgic Infuser (Hard Wood + Carbon)
 - **v3.0 Feature**: Cross-mod recipe support via datapacks
 
 ### Chisel
-<img src="src/main/resources/assets/blockmod/textures/item/chisel.png" width="64">  
+<img src="src/main/resources/assets/woodmek/textures/item/chisel.png" width="64">  
 
 - **v3.5.0 Update**: Chisel
 - **Uses**:
   - Turn set blocks into its counterpart
 
 ### Transformer Block
-<img src="src/main/resources/assets/blockmod/pics (github)/transformer.png" width="400">  
+<img src="src/main/resources/assets/woodmek/pics (github)/transformer.png" width="400">  
 
 - **v4.0.0 Update**: Transformer
 - **Uses**:
@@ -164,36 +152,33 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 #### [5.0.0] - DataGen
 - Converted all loot tables, block states, block/item tags, data maps, item models, and recipes to data generators for easier maintenance and future updates.
 
-
 #### [4.6.0] - Tool Tips
 - Added a `Tool tips` to complex items such as the Chisel and the Transformer block
-  
-  <img src="src/main/resources/assets/blockmod/pics (github)/tooltip.png" width="250">
-  
-  <img src="src/main/resources/assets/blockmod/pics (github)/tooltip1.png" width="550">
-  
-  <img src="src/main/resources/assets/blockmod/pics (github)/tooltip2.png" width="550">  
+
+  <img src="src/main/resources/assets/woodmek/pics (github)/tooltip.png" width="250">
+
+  <img src="src/main/resources/assets/woodmek/pics (github)/tooltip1.png" width="550">
+
+  <img src="src/main/resources/assets/woodmek/pics (github)/tooltip2.png" width="550">  
 
 #### [4.2.0] - Burn Rates
-- Added a `burn time` to all wooden items with all  values based on the level on compactness and difficulty
-  <img src="src/main/resources/assets/blockmod/pics (github)/burntime.png" width="300">  
-
+- Added a `burn time` to all wooden items with all  values based on the level on compactness and difficulty  
+  <img src="src/main/resources/assets/woodmek/pics (github)/burntime.png" width="300">  
 
 #### [4.0.0] - Custom Block (Transformer)
-- Added a `Transformer` block that can turn items (non modded and modded) into there `upgraded` counterparts
+- Added a `Transformer` block that can turn items (non modded and modded) into their `upgraded` counterparts
 - Example of transformations include wood dust into hardwood alloy. hardwood into hardwood_block
 - Added recipe for the transformer
 
 #### [3.8.0] - Custom Items (Chisel)
-- Added a building `Chisel` that can turn basic blocks into there building block counterparts 
-
+- Added a building `Chisel` that can turn basic blocks into their building block counterparts 
 
 #### [3.4.0] - Cross-Mod Compatibility & Recipes
 - Full `Mekanism` recipe integration via datapacks
 - Custom `processing GUIs` (see Processing Workflows)
 - Compact machine workflows
 - Added `pics` folder for this repo documentation and assets
-- `FTB Quest` intergration (shown in quests)
+- `FTB Quest` integration (shown in quests)
 - Backend support for modpack recipe overrides
 
 #### [2.0.0] - Loot tables, Recipes & New Content
@@ -224,9 +209,4 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 ---
 
 ## Installation
-CuresForge Mod: https://www.curseforge.com/minecraft/mc-mods/woodmek
-
-
-
-
-
+CurseForge Mod: https://www.curseforge.com/minecraft/mc-mods/woodmek
