@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "woodmek:block/hardwood_lamp_off"
+    },
+    "clicked=true": {
+      "model": "woodmek:block/hardwood_lamp_on"
+    }
+  }
+}

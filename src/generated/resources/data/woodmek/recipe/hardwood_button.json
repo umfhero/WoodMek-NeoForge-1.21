@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "bismuth",
+  "ingredients": [
+    {
+      "item": "woodmek:hardwood"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "woodmek:hardwood_button"
+  }
+}

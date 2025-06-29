@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "woodmek:hardwood"
+    },
+    "B": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "   ",
+    " B ",
+    "A  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "woodmek:chisel"
+  }
+}

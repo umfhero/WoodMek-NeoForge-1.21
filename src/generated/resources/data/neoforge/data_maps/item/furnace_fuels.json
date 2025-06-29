@@ -1,18 +1,45 @@
 {
   "values": {
-    "blockmod:hardwood": {
+    "woodmek:hardwood": {
       "burn_time": 15000
     },
-    "blockmod:hardwood_alloy": {
+    "woodmek:hardwood_alloy": {
       "burn_time": 18000
     },
-    "blockmod:hardwood_block": {
+    "woodmek:hardwood_block": {
       "burn_time": 25000
     },
-    "blockmod:wood_dust": {
+    "woodmek:hardwood_button": {
+      "burn_time": 2500
+    },
+    "woodmek:hardwood_door": {
+      "burn_time": 20000
+    },
+    "woodmek:hardwood_fence": {
+      "burn_time": 10000
+    },
+    "woodmek:hardwood_fence_gate": {
+      "burn_time": 15000
+    },
+    "woodmek:hardwood_pressure_plate": {
+      "burn_time": 5000
+    },
+    "woodmek:hardwood_slab": {
+      "burn_time": 12500
+    },
+    "woodmek:hardwood_stairs": {
+      "burn_time": 18750
+    },
+    "woodmek:hardwood_trapdoor": {
+      "burn_time": 15000
+    },
+    "woodmek:hardwood_wall": {
+      "burn_time": 15000
+    },
+    "woodmek:wood_dust": {
       "burn_time": 250
     },
-    "blockmod:woodsheet": {
+    "woodmek:woodsheet": {
       "burn_time": 500
     }
   }

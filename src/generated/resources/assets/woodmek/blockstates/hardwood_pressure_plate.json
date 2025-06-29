@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "woodmek:block/hardwood_pressure_plate"
+    },
+    "powered=true": {
+      "model": "woodmek:block/hardwood_pressure_plate_down"
+    }
+  }
+}

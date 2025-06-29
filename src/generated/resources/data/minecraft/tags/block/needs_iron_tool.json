@@ -1,6 +1,7 @@
 {
   "values": [
-    "blockmod:hazard_block",
-    "blockmod:hardwood_block"
+    "woodmek:hazard_block",
+    "woodmek:half_hazard_block",
+    "woodmek:hardwood_block"
   ]
 }
