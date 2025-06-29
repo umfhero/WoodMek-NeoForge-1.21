@@ -146,6 +146,29 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 
 ## Changelog
 
+#### [6.0.0] - Now a standalone mod! - Recipes, Hazard Blocks and ModID Changes
+- Added a second hazard block: **Half Hazard Block**
+  - Both hazard blocks now have recipes:  
+    4x Stone + 1x Yellow Dye
+    <img src="src/main/resources/assets/woodmek/pics (github)/hazardrecipe.png" width="400">
+    <img src="src/main/resources/assets/woodmek/pics (github)/hazardrecipe2.png" width="400">
+  - Both blocks support **directional movement** with the chisel  
+    (rotate 90° back and forth)
+- Added a new **Blockstate Lamp**
+  - Reacts to click inputs and uses blockstates for toggling on/off
+  - <img src="src/main/resources/assets/woodmek/pics (github)/lamp.png" width="400">  
+  - <img src="src/main/resources/assets/woodmek/pics (github)/fulllamp.png" width="400">  
+- **Rewrote and restructured the entire project**  
+  - Renamed mod from `blockmod` to `woodmek`  
+  - New Mod ID: `woodmek` / `WoodMek`
+- **Mekanism recipes now built-in**  
+  - No datapack required  
+  - Recipes are loaded automatically through mod data  
+  - Fully functional integration with **Mekanism**
+
+
+
+
 #### [5.5.0] - DataGen
 - Added stairs, buttons, doors, fences and fence gates, slabs, walls, pressure plates and trapdoors
 
