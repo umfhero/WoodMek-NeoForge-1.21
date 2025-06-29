@@ -20,7 +20,7 @@
 ![Issues](https://img.shields.io/github/issues/umfhero/WoodMek-NeoForge-1.21)
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 <br>
-### Latest Release 5.0.0
+### Latest Release 5.5.0
 
 
 <a href="https://www.curseforge.com/minecraft/mc-mods/woodmek">
@@ -157,6 +157,9 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 ---
 
 ## Changelog
+
+#### [5.5.0] - DataGen
+- Added stairs, buttons, doors, fences and fence gates, slabs, walls, pressure plates and trapdoors
 
 #### [5.0.0] - DataGen
 - Converted all loot tables, block states, block/item tags, data maps, item models, and recipes to data generators for easier maintenance and future updates.
