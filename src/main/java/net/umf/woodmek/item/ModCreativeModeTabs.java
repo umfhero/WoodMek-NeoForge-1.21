@@ -40,6 +40,7 @@ public class ModCreativeModeTabs {
             .withTabsBefore(ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "wood_items_tab"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModBlocks.HARDWOOD_BLOCK.get());
+                output.accept(ModBlocks.HARDWOOD_BRICK.get());
                 output.accept(ModBlocks.HAZARD_BLOCK.get());
                 output.accept(ModBlocks.HALF_HAZARD_BLOCK.get());
                 output.accept(ModBlocks.TRANSFORMER_BLOCK);

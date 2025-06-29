@@ -34,6 +34,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModItems.HARDWOOD.get())
                 .unlockedBy("has_hardwood", has(ModItems.HARDWOOD)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HARDWOOD_BRICK.get())
+                .pattern("HH")
+                .pattern("HH")
+                .define('H', ModItems.HARDWOOD.get())
+                .unlockedBy("has_hardwood", has(ModItems.HARDWOOD.get()))
+                .save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TRANSFORMER_BLOCK.get())
                 .pattern("DND")
                 .pattern("AEA")
