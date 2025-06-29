@@ -150,8 +150,9 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 - Added a second hazard block: **Half Hazard Block**
   - Both hazard blocks now have recipes:  
     4x Stone + 1x Yellow Dye
-    <img src="src/main/resources/assets/woodmek/pics (github)/hazardrecipe.png" width="400">
-    <img src="src/main/resources/assets/woodmek/pics (github)/hazardrecipe2.png" width="400">
+    
+    <img src="src/main/resources/assets/woodmek/pics (github)/hazardrecipe.png" width="200">
+    <img src="src/main/resources/assets/woodmek/pics (github)/hazardrecipe2.png" width="200">
   - Both blocks support **directional movement** with the chisel  
     (rotate 90° back and forth)
 - Added a new **Blockstate Lamp**
