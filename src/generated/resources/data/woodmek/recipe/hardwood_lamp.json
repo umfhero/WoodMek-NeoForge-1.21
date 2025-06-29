@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "H": {
+      "item": "woodmek:hardwood"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    " H ",
+    "HRH",
+    " H "
+  ],
+  "result": {
+    "count": 1,
+    "id": "woodmek:hardwood_lamp"
+  }
+}

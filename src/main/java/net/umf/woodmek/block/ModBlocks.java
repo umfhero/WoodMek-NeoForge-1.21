@@ -29,10 +29,16 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.BAMBOO).strength(3f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> HAZARD_BLOCK = registerBlock("hazard_block",
-            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(3f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(2f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> HALF_HAZARD_BLOCK = registerBlock("half_hazard_block",
-            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(3f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(2f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> HAZARD_BLOCK2 = registerBlock("hazard_block2",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(2f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> HALF_HAZARD_BLOCK2 = registerBlock("half_hazard_block2",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(2f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> TRANSFORMER_BLOCK = registerBlock("transformer_block",
             () -> new transformer(BlockBehaviour.Properties.of().sound(SoundType.TRIAL_SPAWNER).strength(3f).requiresCorrectToolForDrops()));

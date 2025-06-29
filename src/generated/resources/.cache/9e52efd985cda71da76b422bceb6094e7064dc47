@@ -1,8 +1,8 @@
-// 1.21	2025-06-29T15:52:03.2604078	Tags for minecraft:block mod id woodmek
+// 1.21	2025-06-29T17:39:27.2907187	Tags for minecraft:block mod id woodmek
 4477ece48ff7101ad8009053a8de85939962e3f6 data/minecraft/tags/block/fences.json
 4fd5c9083c0010977339b1198ef5b83efd3fde10 data/minecraft/tags/block/fence_gates.json
-02d0279869afd064fbc9207fc422703b57bfe14f data/minecraft/tags/block/mineable/axe.json
-e0835c407b6397bf9c5242e0168b29bfa4265c4b data/minecraft/tags/block/mineable/pickaxe.json
+d19be98fbf11a72c8535bdcfbbdcc5778509dd22 data/minecraft/tags/block/mineable/axe.json
+c7b8e5586b550e5c6c925c4579f9ebefc4819323 data/minecraft/tags/block/mineable/pickaxe.json
 e772a79eca4a6d456dcce7284b683155e353caaa data/minecraft/tags/block/needs_diamond_tool.json
-f83f465626484085cc011de6aef88ec608e64793 data/minecraft/tags/block/needs_iron_tool.json
+a85a66d7b4a0d435d33474d0b4401f24994beac2 data/minecraft/tags/block/needs_iron_tool.json
 8718226ccac31bdfd7395038b620e62b74f092f4 data/minecraft/tags/block/walls.json

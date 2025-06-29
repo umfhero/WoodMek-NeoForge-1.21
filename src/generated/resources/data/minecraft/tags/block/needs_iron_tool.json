@@ -2,6 +2,18 @@
   "values": [
     "woodmek:hazard_block",
     "woodmek:half_hazard_block",
-    "woodmek:hardwood_block"
+    "woodmek:hazard_block2",
+    "woodmek:half_hazard_block2",
+    "woodmek:hardwood_block",
+    "woodmek:hardwood_stairs",
+    "woodmek:hardwood_slab",
+    "woodmek:hardwood_button",
+    "woodmek:hardwood_pressure_plate",
+    "woodmek:hardwood_fence",
+    "woodmek:hardwood_fence_gate",
+    "woodmek:hardwood_wall",
+    "woodmek:hardwood_door",
+    "woodmek:hardwood_trapdoor",
+    "woodmek:hardwood_lamp"
   ]
 }

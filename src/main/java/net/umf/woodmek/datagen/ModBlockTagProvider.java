@@ -24,15 +24,40 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.HAZARD_BLOCK.get())
                 .add(ModBlocks.HALF_HAZARD_BLOCK.get())
+                .add(ModBlocks.HAZARD_BLOCK2.get())
+                .add(ModBlocks.HALF_HAZARD_BLOCK2.get())
                 .add(ModBlocks.TRANSFORMER_BLOCK.get());
         tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(ModBlocks.HARDWOOD_BLOCK.get());
+                .add(ModBlocks.HARDWOOD_BLOCK.get())
+                .add(ModBlocks.HARDWOOD_STAIRS.get())
+                .add(ModBlocks.HARDWOOD_SLAB.get())
+                .add(ModBlocks.HARDWOOD_BUTTON.get())
+                .add(ModBlocks.HARDWOOD_PRESSURE_PLATE.get())
+                .add(ModBlocks.HARDWOOD_FENCE.get())
+                .add(ModBlocks.HARDWOOD_FENCE_GATE.get())
+                .add(ModBlocks.HARDWOOD_WALL.get())
+                .add(ModBlocks.HARDWOOD_DOOR.get())
+                .add(ModBlocks.HARDWOOD_TRAPDOOR.get());
+
 
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.HAZARD_BLOCK.get())
                 .add(ModBlocks.HALF_HAZARD_BLOCK.get())
-                .add(ModBlocks.HARDWOOD_BLOCK.get());
+                .add(ModBlocks.HAZARD_BLOCK2.get())
+                .add(ModBlocks.HALF_HAZARD_BLOCK2.get())
+                .add(ModBlocks.HARDWOOD_BLOCK.get())
+                .add(ModBlocks.HARDWOOD_STAIRS.get())
+                .add(ModBlocks.HARDWOOD_SLAB.get())
+                .add(ModBlocks.HARDWOOD_BUTTON.get())
+                .add(ModBlocks.HARDWOOD_PRESSURE_PLATE.get())
+                .add(ModBlocks.HARDWOOD_FENCE.get())
+                .add(ModBlocks.HARDWOOD_FENCE_GATE.get())
+                .add(ModBlocks.HARDWOOD_WALL.get())
+                .add(ModBlocks.HARDWOOD_DOOR.get())
+                .add(ModBlocks.HARDWOOD_TRAPDOOR.get())
+                .add(ModBlocks.HARDWOOD_LAMP.get());
+
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.TRANSFORMER_BLOCK.get());
 

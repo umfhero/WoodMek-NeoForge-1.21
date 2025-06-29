@@ -1,9 +1,12 @@
 package net.umf.woodmek.datagen;
 
+import com.google.gson.JsonObject;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.umf.woodmek.BlockMod;
@@ -60,6 +63,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_redstone", has(Items.REDSTONE))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HAZARD_BLOCK.get())
+                .pattern("S S")
+                .pattern(" G ")
+                .pattern("S S")
+                .define('S', Items.STONE)
+                .define('G', Items.YELLOW_DYE)
+                .unlockedBy("has_yellowdye", has(Items.YELLOW_DYE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HALF_HAZARD_BLOCK.get())
+                .pattern(" S ")
+                .pattern("SGS")
+                .pattern(" S ")
+                .define('S', Items.STONE)
+                .define('G', Items.YELLOW_DYE)
+                .unlockedBy("has_yellowdye", has(Items.YELLOW_DYE))
+                .save(recipeOutput);
 
 
         //Block to hardwood
@@ -93,6 +113,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
     }
+
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
                                       float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(recipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, pIngredients, pCategory, pResult,

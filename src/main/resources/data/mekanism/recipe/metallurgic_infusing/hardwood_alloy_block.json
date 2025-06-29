@@ -1,0 +1,1 @@
+{"type":"mekanism:metallurgic_infusing","chemical_input":{"amount":100,"tag":"mekanism:carbon"},"item_input":{"count":1,"item":"woodmek:hardwood_block"},"output":{"count":9,"id":"woodmek:hardwood_alloy"},"per_tick_usage":false}

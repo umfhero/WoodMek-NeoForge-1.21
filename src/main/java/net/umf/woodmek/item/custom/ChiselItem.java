@@ -28,7 +28,11 @@ public class ChiselItem extends Item {
                     Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS,
                     Blocks.RAW_GOLD_BLOCK, Blocks.GOLD_BLOCK,
                     Blocks.RAW_IRON_BLOCK, Blocks.IRON_BLOCK,
-                    Blocks.YELLOW_CONCRETE, ModBlocks.HAZARD_BLOCK.get()
+                    Blocks.YELLOW_CONCRETE, ModBlocks.HAZARD_BLOCK.get(),
+                    ModBlocks.HAZARD_BLOCK.get(), ModBlocks.HAZARD_BLOCK2.get(),
+                    ModBlocks.HAZARD_BLOCK2.get(), ModBlocks.HAZARD_BLOCK.get(),
+                    ModBlocks.HALF_HAZARD_BLOCK.get(), ModBlocks.HALF_HAZARD_BLOCK2.get(),
+                    ModBlocks.HALF_HAZARD_BLOCK2.get(), ModBlocks.HALF_HAZARD_BLOCK.get()
             );
 
     public ChiselItem(Properties properties) {
@@ -47,7 +51,7 @@ public class ChiselItem extends Item {
 //                context.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), context.getPlayer(),
 //                        item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
-                level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+                level.playSound(null, context.getClickedPos(), SoundEvents.DYE_USE, SoundSource.BLOCKS);
             }
         }
 

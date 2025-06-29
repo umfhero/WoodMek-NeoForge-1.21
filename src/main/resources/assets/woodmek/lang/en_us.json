@@ -13,6 +13,8 @@
   "block.woodmek.hardwood_block": "Hard Wood Block",
   "block.woodmek.hazard_block": "Hazard Block",
   "block.woodmek.half_hazard_block": "Half Hazard Block",
+  "block.woodmek.hazard_block2": "Hazard Block Twisted",
+  "block.woodmek.half_hazard_block2": "Half Hazard Block Twisted",
   "block.woodmek.transformer_block": "§dTransformer Block",
   "creativetab.woodmek.custom_items": "Building Blocks",
   "item.woodmek.chisel": "Chisel",

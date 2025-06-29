@@ -21,6 +21,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.HARDWOOD_BLOCK.get());
         dropSelf(ModBlocks.HAZARD_BLOCK.get());
         dropSelf(ModBlocks.HALF_HAZARD_BLOCK.get());
+        dropSelf(ModBlocks.HAZARD_BLOCK2.get());
+        dropSelf(ModBlocks.HALF_HAZARD_BLOCK2.get());
         dropSelf(ModBlocks.TRANSFORMER_BLOCK.get());
 
 
