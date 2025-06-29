@@ -15,7 +15,7 @@
 ![Issues](https://img.shields.io/github/issues/umfhero/WoodMek-NeoForge-1.21)
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 <br>
-### Latest Release 5.5.0
+### Latest Release 6.0.0
 
 <a href="https://www.curseforge.com/minecraft/mc-mods/woodmek">
   CurseForge Mod Page
