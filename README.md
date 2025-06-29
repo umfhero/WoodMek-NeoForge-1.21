@@ -35,7 +35,8 @@ Wood Mekanism or WookMek for short is a 1.21 NeoForge Minecraft Mod which adds w
 > This mod is a WIP, these ingame screenshots may or may not be the latest reflection of the WoodMek mod (Including blocks, items, features or functions).
 
 ### Mod Items
-<img src="src/main/resources/assets/woodmek/pics (github)/showcase.png" alt="BlockMod Items" width="500">
+<img src="src/main/resources/assets/woodmek/pics (github)/showcase2.png" alt="BlockMod Items" width="500">
+
 
 ### WoodMek Creative Tabs (Wood Items & Blocks)
 <img src="src/main/resources/assets/woodmek/pics (github)/creativetabs.png" alt="Creative Tabs" width="400">
@@ -150,8 +151,9 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 - Added a second hazard block: **Half Hazard Block**
   - Both hazard blocks now have recipes:  
     4x Stone + 1x Yellow Dye
-    <img src="src/main/resources/assets/woodmek/pics (github)/hazardrecipe.png" width="400">
-    <img src="src/main/resources/assets/woodmek/pics (github)/hazardrecipe2.png" width="400">
+    
+    <img src="src/main/resources/assets/woodmek/pics (github)/hazardrecipe.png" width="200">
+    <img src="src/main/resources/assets/woodmek/pics (github)/hazardrecipe2.png" width="200">
   - Both blocks support **directional movement** with the chisel  
     (rotate 90° back and forth)
 - Added a new **Blockstate Lamp**
