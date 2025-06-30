@@ -15,7 +15,7 @@
 ![Issues](https://img.shields.io/github/issues/umfhero/WoodMek-NeoForge-1.21)
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 <br>
-### Latest Release 6.4.0
+### Latest Release 6.5.0
 
 <a href="https://www.curseforge.com/minecraft/mc-mods/woodmek">
   CurseForge Mod Page
@@ -147,7 +147,7 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 
 ## Changelog
 
-#### [6.5.0] - Polished hardwood Block (2 varients)
+#### [6.5.0] - Mini hazard block
 - Added a new mini hazardblock
 <img src="src/main/resources/assets/woodmek/pics (github)/2.png" width="600">
 
