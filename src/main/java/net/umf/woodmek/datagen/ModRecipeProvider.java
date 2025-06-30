@@ -41,6 +41,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_hardwood", has(ModItems.HARDWOOD.get()))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HARDWOOD_BRICK_HOLE.get())
+                .pattern("H H")
+                .pattern(" H ")
+                .pattern("H H")
+                .define('H', ModItems.HARDWOOD.get())
+                .unlockedBy("has_hardwood", has(ModItems.HARDWOOD.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HARDWOOD_BRICK_NOHOLE.get())
+                .pattern("HHH")
+                .pattern("H H")
+                .pattern("HHH")
+                .define('H', ModItems.HARDWOOD.get())
+                .unlockedBy("has_hardwood", has(ModItems.HARDWOOD.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HARDWOOD_BRICK_NOHOLE.get(), 4)
+                .pattern("HHH")
+                .pattern("H H")
+                .pattern("HHH")
+                .define('H', ModItems.HARDWOOD.get())
+                .unlockedBy("has_hardwood", has(ModItems.HARDWOOD.get()))
+                .save(recipeOutput, "woodmek:hardwood_brick_nohole_alt");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TRANSFORMER_BLOCK.get())
                 .pattern("DND")
                 .pattern("AEA")

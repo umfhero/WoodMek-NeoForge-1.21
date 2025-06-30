@@ -41,6 +41,8 @@ public class ModCreativeModeTabs {
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModBlocks.HARDWOOD_BLOCK.get());
                 output.accept(ModBlocks.HARDWOOD_BRICK.get());
+                output.accept(ModBlocks.HARDWOOD_BRICK_HOLE.get());
+                output.accept(ModBlocks.HARDWOOD_BRICK_NOHOLE.get());
                 output.accept(ModBlocks.HAZARD_BLOCK.get());
                 output.accept(ModBlocks.HALF_HAZARD_BLOCK.get());
                 output.accept(ModBlocks.TRANSFORMER_BLOCK);

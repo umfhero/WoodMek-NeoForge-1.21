@@ -20,6 +20,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.HARDWOOD_BLOCK.get());
         dropSelf(ModBlocks.HARDWOOD_BRICK.get());
+        dropSelf(ModBlocks.HARDWOOD_BRICK_HOLE.get());
+        dropSelf(ModBlocks.HARDWOOD_BRICK_NOHOLE.get());
         dropSelf(ModBlocks.HAZARD_BLOCK.get());
         dropSelf(ModBlocks.HALF_HAZARD_BLOCK.get());
         dropSelf(ModBlocks.HAZARD_BLOCK2.get());

@@ -31,6 +31,12 @@ public class ModBlocks {
     public static final DeferredBlock<Block> HARDWOOD_BRICK = registerBlock("hardwood_brick",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.TUFF_BRICKS).strength(3f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> HARDWOOD_BRICK_HOLE = registerBlock("hardwood_brick_hole",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.TUFF_BRICKS).strength(3f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> HARDWOOD_BRICK_NOHOLE = registerBlock("hardwood_brick_nohole",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.TUFF_BRICKS).strength(3f).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> HAZARD_BLOCK = registerBlock("hazard_block",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(2f).requiresCorrectToolForDrops()));
 

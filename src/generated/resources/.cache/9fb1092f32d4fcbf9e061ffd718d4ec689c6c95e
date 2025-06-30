@@ -1,6 +1,8 @@
-// 1.21	2025-06-29T19:27:35.4897003	Recipes
+// 1.21	2025-06-30T01:28:37.9523447	Recipes
 dd429667e8933d7f43efa6ccadc552d786bddfa6 data/woodmek/advancement/recipes/building_blocks/half_hazard_block.json
 061803c75bcd4165479c8dcb44724e17c37eafcc data/woodmek/advancement/recipes/building_blocks/hardwood_brick.json
+d24637c581636ebcd5921897c0fa36de4d9b4ad0 data/woodmek/advancement/recipes/building_blocks/hardwood_brick_hole.json
+951310122bb5e708c79df5d6edd16bcda6880d77 data/woodmek/advancement/recipes/building_blocks/hardwood_brick_nohole.json
 524e15a182cc5752f95eb14132c7d1aabab038b4 data/woodmek/advancement/recipes/building_blocks/hardwood_slab.json
 97d6e07eaa91ea75a2b150d3326c87900a88d5b3 data/woodmek/advancement/recipes/building_blocks/hardwood_stairs.json
 6f41488f77aab8f686c9df833448392047b8d3d2 data/woodmek/advancement/recipes/building_blocks/hardwood_wall.json
@@ -21,6 +23,8 @@ a5350ead71135fa7fcb82cd0787ad526cd7174ff data/woodmek/recipe/chisel.json
 946110ed23d7385633ec9611154909ac2617394e data/woodmek/recipe/half_hazard_block.json
 2b85b1e33a7e89b26906979d7935a5863e0d353c data/woodmek/recipe/hardwood_block.json
 8e6ea4e2bfbe1647a52c9901192cfe1cb8cf6e69 data/woodmek/recipe/hardwood_brick.json
+3779aa1429845e6dd7bd3039b19df19a06d3ac8e data/woodmek/recipe/hardwood_brick_hole.json
+c88e2eada8b5fb62ca394def7c55b8f81dbd09a4 data/woodmek/recipe/hardwood_brick_nohole.json
 b8f07a43ecb0184bccdc3c92a8e8bee1a41aed0f data/woodmek/recipe/hardwood_button.json
 c78fd388fd0df5bc3779937c69cfe04462dc83ba data/woodmek/recipe/hardwood_door.json
 12f8613532c9daf4cef38c55e0645bb4cebb0434 data/woodmek/recipe/hardwood_fence.json

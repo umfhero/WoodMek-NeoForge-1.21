@@ -22,17 +22,19 @@ import java.util.Map;
 
 public class ChiselItem extends Item {
     private static final Map<Block, Block> CHISEL_MAP =
-            Map.of(
-                    Blocks.STONE, Blocks.STONE_BRICKS,
-                    Blocks.END_STONE, Blocks.END_STONE_BRICKS,
-                    Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS,
-                    Blocks.RAW_GOLD_BLOCK, Blocks.GOLD_BLOCK,
-                    Blocks.RAW_IRON_BLOCK, Blocks.IRON_BLOCK,
-                    Blocks.YELLOW_CONCRETE, ModBlocks.HAZARD_BLOCK.get(),
-                    ModBlocks.HAZARD_BLOCK.get(), ModBlocks.HAZARD_BLOCK2.get(),
-                    ModBlocks.HAZARD_BLOCK2.get(), ModBlocks.HAZARD_BLOCK.get(),
-                    ModBlocks.HALF_HAZARD_BLOCK.get(), ModBlocks.HALF_HAZARD_BLOCK2.get(),
-                    ModBlocks.HALF_HAZARD_BLOCK2.get(), ModBlocks.HALF_HAZARD_BLOCK.get()
+            Map.ofEntries(
+                    Map.entry(Blocks.STONE, Blocks.STONE_BRICKS),
+                    Map.entry(Blocks.END_STONE, Blocks.END_STONE_BRICKS),
+                    Map.entry(Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS),
+                    Map.entry(Blocks.RAW_GOLD_BLOCK, Blocks.GOLD_BLOCK),
+                    Map.entry(Blocks.RAW_IRON_BLOCK, Blocks.IRON_BLOCK),
+                    Map.entry(Blocks.YELLOW_CONCRETE, ModBlocks.HAZARD_BLOCK.get()),
+                    Map.entry(ModBlocks.HAZARD_BLOCK.get(), ModBlocks.HAZARD_BLOCK2.get()),
+                    Map.entry(ModBlocks.HAZARD_BLOCK2.get(), ModBlocks.HAZARD_BLOCK.get()),
+                    Map.entry(ModBlocks.HALF_HAZARD_BLOCK.get(), ModBlocks.HALF_HAZARD_BLOCK2.get()),
+                    Map.entry(ModBlocks.HALF_HAZARD_BLOCK2.get(), ModBlocks.HALF_HAZARD_BLOCK.get()),
+                    Map.entry(ModBlocks.HARDWOOD_BRICK_NOHOLE.get(), ModBlocks.HARDWOOD_BRICK_HOLE.get()),
+                    Map.entry(ModBlocks.HARDWOOD_BRICK_HOLE.get(), ModBlocks.HARDWOOD_BRICK_NOHOLE.get())
             );
 
     public ChiselItem(Properties properties) {

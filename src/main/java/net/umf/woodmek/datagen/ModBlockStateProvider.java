@@ -24,6 +24,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.HARDWOOD_BLOCK);
         blockWithItem(ModBlocks.HARDWOOD_BRICK);
+        blockWithItem(ModBlocks.HARDWOOD_BRICK_HOLE);
+        blockWithItem(ModBlocks.HARDWOOD_BRICK_NOHOLE);
         blockWithItem(ModBlocks.HAZARD_BLOCK);
         blockWithItem(ModBlocks.HALF_HAZARD_BLOCK);
         blockWithItem(ModBlocks.HAZARD_BLOCK2);

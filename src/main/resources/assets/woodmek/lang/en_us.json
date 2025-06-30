@@ -17,6 +17,8 @@
   "block.woodmek.half_hazard_block2": "Half Hazard Block Twisted",
   "block.woodmek.transformer_block": "§dTransformer Block",
   "block.woodmek.hardwood_brick": "Hard Wood Brick",
+  "block.woodmek.hardwood_brick_hole": "Dented Polished Hard Wood Block",
+  "block.woodmek.hardwood_brick_nohole": "Polished Hard Wood Block",
   "creativetab.woodmek.custom_items": "Building Blocks",
   "item.woodmek.chisel": "Chisel",
 

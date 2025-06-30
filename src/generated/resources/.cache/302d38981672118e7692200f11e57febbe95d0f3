@@ -1,8 +1,10 @@
-// 1.21	2025-06-29T19:27:35.4862035	Block States: woodmek
+// 1.21	2025-06-30T01:28:37.9479546	Block States: woodmek
 202d590691d385ba68d2e8611f04cdc43ae3cbcc assets/woodmek/blockstates/half_hazard_block.json
 f6f1a60acf679e076007484e1bcdd97f70686743 assets/woodmek/blockstates/half_hazard_block2.json
 acd6e35975492f10862f3811ad73ca66086b417a assets/woodmek/blockstates/hardwood_block.json
 07d8e9b180761560a4db207a385ad1fe410e80bb assets/woodmek/blockstates/hardwood_brick.json
+5677870ea99f0741cecaaeb490b3aa36fecdf910 assets/woodmek/blockstates/hardwood_brick_hole.json
+2ec3a9273e08d5c82fbb7868c32d1e120054f572 assets/woodmek/blockstates/hardwood_brick_nohole.json
 00a945920e414861e07b3022d0227baf56ef1a21 assets/woodmek/blockstates/hardwood_button.json
 10f58311f8f4223b04c3408ab3d5259acdc5fdf1 assets/woodmek/blockstates/hardwood_door.json
 64c3e30b5b34166ec026ce41454379e2f906f442 assets/woodmek/blockstates/hardwood_fence.json
@@ -20,6 +22,8 @@ ec0d93187537545205e46d396ab6d0a87ef2d0db assets/woodmek/models/block/half_hazard
 2bf292589c40d21c6748a3945c575193ecd5df5d assets/woodmek/models/block/half_hazard_block2.json
 15a319ffc2620f8901ed6024a7f124e169afec9b assets/woodmek/models/block/hardwood_block.json
 183556c787e9a7c250fec66e747c8e0febb8dcfb assets/woodmek/models/block/hardwood_brick.json
+9d0f0e6072635b358e832a109ff8ac43353dca38 assets/woodmek/models/block/hardwood_brick_hole.json
+948ca7d482fce54b955fbdcd84169d4d96174a47 assets/woodmek/models/block/hardwood_brick_nohole.json
 944cc61dcea99430114fb67714430101fcc0b8f0 assets/woodmek/models/block/hardwood_button.json
 845dae816d1da6bfc57eaa1c54b12ba448f5687e assets/woodmek/models/block/hardwood_button_pressed.json
 60d4ed9a305538157c510593af9918ec888a07aa assets/woodmek/models/block/hardwood_door_bottom_left.json
@@ -58,6 +62,8 @@ d7ff1b5d6a3b29b1ba777fbec8eab94d886f4bf2 assets/woodmek/models/block/hazard_bloc
 1a95afe00024bb821de0b353f7adc27b2abed26f assets/woodmek/models/item/half_hazard_block2.json
 e292749bf0feb7948e1d46325df109ec646746dd assets/woodmek/models/item/hardwood_block.json
 9679ee63df34774a9aa5bbbad63b19fcef754530 assets/woodmek/models/item/hardwood_brick.json
+966e4b1e98f8b8678dac0abd4c5d83daf64ae745 assets/woodmek/models/item/hardwood_brick_hole.json
+263665f5a0c92a1cfd133e04eb8b4c8158fea918 assets/woodmek/models/item/hardwood_brick_nohole.json
 c837751a2df64165b891b86955ffc69bbb692135 assets/woodmek/models/item/hardwood_fence_gate.json
 055c001ac17a964a4bf5550321cd89042ffbdb8c assets/woodmek/models/item/hardwood_lamp.json
 d11cb46ecf2dbdab74bcbfe4bb8ff98a11f20842 assets/woodmek/models/item/hardwood_pressure_plate.json
