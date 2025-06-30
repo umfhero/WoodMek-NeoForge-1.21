@@ -15,7 +15,7 @@
 ![Issues](https://img.shields.io/github/issues/umfhero/WoodMek-NeoForge-1.21)
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 <br>
-### Latest Release 6.3.0
+### Latest Release 6.4.0
 
 <a href="https://www.curseforge.com/minecraft/mc-mods/woodmek">
   CurseForge Mod Page
@@ -134,7 +134,7 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
   - Turn set blocks into its counterpart
 
 ### Transformer Block
-<img src="src/main/resources/assets/woodmek/pics (github)/transformer.png" width="400">  
+<img src="src/main/resources/assets/woodmek/pics (github)/transformer.png" width="600">  
 
 - **v4.0.0 Update**: Transformer
 - **Uses**:
@@ -147,9 +147,13 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 
 ## Changelog
 
+#### [6.4.0] - Polished hardwood Block (2 varients)
+- Added a new polished hardwood blcok to go with the new lamp with 2 varients, dented and undented
+<img src="src/main/resources/assets/woodmek/pics (github)/1.png" width="600">
+
 #### [6.3.0] - Retexture
 - Rextured the base hardwood items and added  hardwood bricks 
-<img src="src/main/resources/assets/woodmek/pics (github)/textureupdate.png" width="200">
+<img src="src/main/resources/assets/woodmek/pics (github)/textureupdate.png" width="600">
 
 #### [6.0.0] - Now a standalone mod! - Recipes, Hazard Blocks and ModID Changes
 - Added a second hazard block: **Half Hazard Block**
