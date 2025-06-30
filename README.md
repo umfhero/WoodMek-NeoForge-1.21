@@ -149,11 +149,11 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 
 #### [6.4.0] - Polished hardwood Block (2 varients)
 - Added a new polished hardwood blcok to go with the new lamp with 2 varients, dented and undented
-<img src="src/main/resources/assets/woodmek/pics (github)/1.png" width="400">
+<img src="src/main/resources/assets/woodmek/pics (github)/1.png" width="600">
 
 #### [6.3.0] - Retexture
 - Rextured the base hardwood items and added  hardwood bricks 
-<img src="src/main/resources/assets/woodmek/pics (github)/textureupdate.png" width="200">
+<img src="src/main/resources/assets/woodmek/pics (github)/textureupdate.png" width="600">
 
 #### [6.0.0] - Now a standalone mod! - Recipes, Hazard Blocks and ModID Changes
 - Added a second hazard block: **Half Hazard Block**
