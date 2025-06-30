@@ -1,4 +1,5 @@
-// 1.21	2025-06-30T01:28:37.9479546	Block States: woodmek
+// 1.21	2025-06-30T03:41:51.2804967	Block States: woodmek
+790b6852529ff4895bc1c7457f428b79e2eb7bd7 assets/woodmek/blockstates/centre_hazard_block.json
 202d590691d385ba68d2e8611f04cdc43ae3cbcc assets/woodmek/blockstates/half_hazard_block.json
 f6f1a60acf679e076007484e1bcdd97f70686743 assets/woodmek/blockstates/half_hazard_block2.json
 acd6e35975492f10862f3811ad73ca66086b417a assets/woodmek/blockstates/hardwood_block.json
@@ -17,7 +18,9 @@ b3b5780359b013fc0820693a3495b17afaaeeae3 assets/woodmek/blockstates/hardwood_tra
 072ce1f6cc0216ab9b33bf7211c75c2525345746 assets/woodmek/blockstates/hardwood_wall.json
 e5db971306668fbfc605806e3d4a78903c7cf3c5 assets/woodmek/blockstates/hazard_block.json
 ec814ea9c6ab97fb01a2d386fe0d68dd9fb7604d assets/woodmek/blockstates/hazard_block2.json
+096fe6b3ed7515ac0f6deebbfcaf03192aa09389 assets/woodmek/blockstates/mini_hazard_block.json
 cacaaf558ec5be565653dd838d6728a28dc04b86 assets/woodmek/blockstates/transformer_block.json
+35fd8a8e522cb794e6b307c4d9083f2413e731c1 assets/woodmek/models/block/centre_hazard_block.json
 ec0d93187537545205e46d396ab6d0a87ef2d0db assets/woodmek/models/block/half_hazard_block.json
 2bf292589c40d21c6748a3945c575193ecd5df5d assets/woodmek/models/block/half_hazard_block2.json
 15a319ffc2620f8901ed6024a7f124e169afec9b assets/woodmek/models/block/hardwood_block.json
@@ -57,7 +60,9 @@ a3b35d1807b85c9087fed306ddd91cd05d2c4853 assets/woodmek/models/block/hardwood_wa
 6d5a903276fb71002e60a14e75b738d31ddc1bb8 assets/woodmek/models/block/hardwood_wall_side_tall.json
 d7ff1b5d6a3b29b1ba777fbec8eab94d886f4bf2 assets/woodmek/models/block/hazard_block.json
 68f8775cf929b95ceecf53a5831e6fb9e5b36e66 assets/woodmek/models/block/hazard_block2.json
+a1384710cd583889fd0cb2d71d0a73dc317177e4 assets/woodmek/models/block/mini_hazard_block.json
 05bf2d69fe00a9f1a93579ff5990134766b215e5 assets/woodmek/models/block/transformer_block.json
+41c80ec5c5f1e89f0355eb6d364db79bbdae2945 assets/woodmek/models/item/centre_hazard_block.json
 9ffe859f30cdfa00f1c361003a6cc12b7b9a5e37 assets/woodmek/models/item/half_hazard_block.json
 1a95afe00024bb821de0b353f7adc27b2abed26f assets/woodmek/models/item/half_hazard_block2.json
 e292749bf0feb7948e1d46325df109ec646746dd assets/woodmek/models/item/hardwood_block.json
@@ -72,4 +77,5 @@ e19162336f3c889fec99efddeeb62208bde801bd assets/woodmek/models/item/hardwood_sta
 ebd3e1da7279599de67c4dae95f0309d519ec4f7 assets/woodmek/models/item/hardwood_trapdoor.json
 0ef4f8a1e9d9967ede36f7d18f29e4a581893c85 assets/woodmek/models/item/hazard_block.json
 c7008ee1ec2763fda367a0762a61ec2493dcc6b5 assets/woodmek/models/item/hazard_block2.json
+ba6fd74df802f0b0c60294015f8590b0928ff182 assets/woodmek/models/item/mini_hazard_block.json
 0126c5d89de440223fbde12af4d7fef7c3fc54cd assets/woodmek/models/item/transformer_block.json

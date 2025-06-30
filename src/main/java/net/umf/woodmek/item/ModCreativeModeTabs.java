@@ -45,6 +45,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.HARDWOOD_BRICK_NOHOLE.get());
                 output.accept(ModBlocks.HAZARD_BLOCK.get());
                 output.accept(ModBlocks.HALF_HAZARD_BLOCK.get());
+                output.accept(ModBlocks.CENTRE_HAZARD_BLOCK.get());
+                output.accept(ModBlocks.MINI_HAZARD_BLOCK.get());
                 output.accept(ModBlocks.TRANSFORMER_BLOCK);
 
                 output.accept(ModBlocks.HARDWOOD_STAIRS);

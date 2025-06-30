@@ -49,6 +49,12 @@ public class ModBlocks {
     public static final DeferredBlock<Block> HALF_HAZARD_BLOCK2 = registerBlock("half_hazard_block2",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(2f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> CENTRE_HAZARD_BLOCK = registerBlock("centre_hazard_block",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(2f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> MINI_HAZARD_BLOCK = registerBlock("mini_hazard_block",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(2f).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> TRANSFORMER_BLOCK = registerBlock("transformer_block",
             () -> new transformer(BlockBehaviour.Properties.of().sound(SoundType.TRIAL_SPAWNER).strength(3f).requiresCorrectToolForDrops()));
 

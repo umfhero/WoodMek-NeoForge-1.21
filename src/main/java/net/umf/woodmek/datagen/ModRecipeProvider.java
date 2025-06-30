@@ -107,6 +107,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .pattern("SGS")
                 .pattern(" S ")
+                .define('S', Items.SMOOTH_STONE)
+                .define('G', Items.YELLOW_DYE)
+                .unlockedBy("has_yellowdye", has(Items.YELLOW_DYE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CENTRE_HAZARD_BLOCK.get())
+                .pattern("S S")
+                .pattern(" G ")
+                .pattern("S S")
+                .define('S', Items.SMOOTH_STONE)
+                .define('G', Items.YELLOW_DYE)
+                .unlockedBy("has_yellowdye", has(Items.YELLOW_DYE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MINI_HAZARD_BLOCK.get())
+                .pattern(" S ")
+                .pattern("SGS")
+                .pattern(" S ")
                 .define('S', Items.STONE)
                 .define('G', Items.YELLOW_DYE)
                 .unlockedBy("has_yellowdye", has(Items.YELLOW_DYE))

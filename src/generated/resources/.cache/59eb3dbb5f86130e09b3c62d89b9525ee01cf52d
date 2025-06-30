@@ -1,4 +1,5 @@
-// 1.21	2025-06-30T01:28:37.9513447	Loot Tables
+// 1.21	2025-06-30T03:41:51.2837268	Loot Tables
+6de42c459c30cd150efdb4265747c764e1b926f2 data/woodmek/loot_table/blocks/centre_hazard_block.json
 443808ed268e045ae20c545a9ebce83224d182bd data/woodmek/loot_table/blocks/half_hazard_block.json
 895b03a6b806ea85000759f821b4c5f8a52d3475 data/woodmek/loot_table/blocks/half_hazard_block2.json
 e106ef34196c0e74aba5ab6d2a63525b2574539c data/woodmek/loot_table/blocks/hardwood_block.json
@@ -17,4 +18,5 @@ a9f0621e8fa693107fb935866a632974b16ccb70 data/woodmek/loot_table/blocks/hardwood
 df6cc84a737fce398ad93de844de013819e00219 data/woodmek/loot_table/blocks/hardwood_wall.json
 3c4712c1afbf682048a288efadfa28e711f05cf8 data/woodmek/loot_table/blocks/hazard_block.json
 ee4d3d1cffa1f64668f421f35f00cda504a6a9ab data/woodmek/loot_table/blocks/hazard_block2.json
+cbf539c43f65d642542b3ddd84e2f2b3980fa7fe data/woodmek/loot_table/blocks/mini_hazard_block.json
 d9f77f7e65d5b300ffaa761665d6fac5b105eb32 data/woodmek/loot_table/blocks/transformer_block.json
