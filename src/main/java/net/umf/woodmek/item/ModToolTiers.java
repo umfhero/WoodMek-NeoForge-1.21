@@ -8,8 +8,8 @@ import net.umf.woodmek.util.ModTags;
 
 public class ModToolTiers {
     public static final Tier HARDWOOD = new SimpleTier(ModTags.Blocks.INCORRECT_FOR_HARDWOOD_TOOL,
-            500, 7.5f, 2.5f, 12, () -> Ingredient.of(ModItems.HARDWOOD));
+            450, 6.5f, 2.5f, 12, () -> Ingredient.of(ModItems.HARDWOOD));
 
     public static final Tier AZALEA = new SimpleTier(ModTags.Blocks.INCORRECT_FOR_AZALEA_TOOL,
-            2031, 9.0f, 4.0f, 15, () -> Ingredient.of(ModItems.HARDWOOD_ALLOY));
+            3000, 10.0f, 5.0f, 15, () -> Ingredient.of(ModItems.HARDWOOD_ALLOY));
 }
