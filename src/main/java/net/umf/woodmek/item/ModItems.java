@@ -7,6 +7,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.umf.woodmek.BlockMod;
 import net.umf.woodmek.item.custom.ChiselItem;
+import net.umf.woodmek.item.custom.HammerItem;
 
 import java.util.List;
 
@@ -80,6 +81,11 @@ public class ModItems {
     public static final DeferredItem<HoeItem> AZALEA_HOE = ITEMS.register("azalea_hoe",
             () -> new HoeItem(ModToolTiers.AZALEA, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.AZALEA, 3, 3))));
+
+
+    public static final DeferredItem<HammerItem> HARDWOOD_HAMMER = ITEMS.register("hardwood_hammer",
+            () -> new HammerItem(ModToolTiers.HARDWOOD, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.HARDWOOD, 3, 3))));
 
 
     public static void register(IEventBus eventBus) {

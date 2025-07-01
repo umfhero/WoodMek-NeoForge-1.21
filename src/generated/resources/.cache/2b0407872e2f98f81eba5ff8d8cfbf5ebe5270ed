@@ -1,4 +1,4 @@
-// 1.21	2025-07-01T14:56:19.2116517	Item Models: woodmek
+// 1.21	2025-07-01T15:56:37.0730452	Item Models: woodmek
 958e8298f2d6afc8d65023f45b00f21dd51ccb21 assets/woodmek/models/item/azalea_axe.json
 152dce6dc27ac576f55a14174b069b9d89cb2ff2 assets/woodmek/models/item/azalea_hoe.json
 ea95d75acbc28f4c40081fb762e15750d941df38 assets/woodmek/models/item/azalea_pickaxe.json
@@ -11,6 +11,7 @@ be149f476dbf865a21e09bfbf24b60ee60592ac8 assets/woodmek/models/item/hardwood.jso
 759840b6bab567c709751535df315aedbf264f01 assets/woodmek/models/item/hardwood_button.json
 76af4ca36d1ac63932bff03abec2db03224e7ae4 assets/woodmek/models/item/hardwood_door.json
 ebd2b76eb06b57c5e710ad34088cd57a5b36282a assets/woodmek/models/item/hardwood_fence.json
+eed1d1e4a9442a6c94a154c02fb0b1a61ab2c7ac assets/woodmek/models/item/hardwood_hammer.json
 91d4d1cde866bc79326470ec240049255f0b7f2e assets/woodmek/models/item/hardwood_hoe.json
 48b87c7963e313737b0ce842f46d939742478df0 assets/woodmek/models/item/hardwood_pickaxe.json
 5e6bebbe72468fbb324202e7e476cbaca583da0d assets/woodmek/models/item/hardwood_shovel.json

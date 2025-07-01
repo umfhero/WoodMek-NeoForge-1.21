@@ -43,6 +43,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.AZALEA_SHOVEL);
         handheldItem(ModItems.AZALEA_HOE);
 
+        handheldItem(ModItems.HARDWOOD_HAMMER);
+
     }
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))

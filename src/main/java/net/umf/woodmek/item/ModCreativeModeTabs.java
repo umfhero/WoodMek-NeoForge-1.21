@@ -41,6 +41,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.AZALEA_SHOVEL);
                 output.accept(ModItems.AZALEA_HOE);
 
+                output.accept(ModItems.HARDWOOD_HAMMER);
+
 
 
 
