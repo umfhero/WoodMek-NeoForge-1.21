@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#woodmek:needs_azalea_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_diamond_tool"
+  ]
+}

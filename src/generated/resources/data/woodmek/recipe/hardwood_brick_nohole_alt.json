@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "H": {
+      "item": "woodmek:hardwood"
+    }
+  },
+  "pattern": [
+    "HHH",
+    "H H",
+    "HHH"
+  ],
+  "result": {
+    "count": 4,
+    "id": "woodmek:hardwood_brick_nohole"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "woodmek:block/centre_hazard_block"
+  }
+}

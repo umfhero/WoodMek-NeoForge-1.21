@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "woodmek:block/hardwood_brick_hole"
+  }
+}

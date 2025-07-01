@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "woodmek:mini_hazard_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yellowdye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:yellow_dye"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_yellowdye"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "woodmek:mini_hazard_block"
+    ]
+  }
+}
