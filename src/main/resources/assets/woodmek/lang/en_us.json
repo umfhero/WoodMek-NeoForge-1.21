@@ -8,6 +8,19 @@
   "item.woodmek.hardwood_alloy": "§dHardwood Alloy§r",
   "item.woodmek.wood_dust": "Wood Dust",
 
+  "item.woodmek.hardwood_sword": "Hard Wood Sword",
+  "item.woodmek.hardwood_pickaxe": "Hard Wood Pickaxe",
+  "item.woodmek.hardwood_axe": "Hard Wood Axe",
+  "item.woodmek.hardwood_shovel": "Hard Wood Shovel",
+  "item.woodmek.hardwood_hoe": "Hard Wood Hoe",
+
+  "item.woodmek.azalea_sword": "Azalea Sword",
+  "item.woodmek.azalea_pickaxe": "Azalea Pickaxe",
+  "item.woodmek.azalea_axe": "Azalea Axe",
+  "item.woodmek.azalea_shovel": "Azalea Shovel",
+  "item.woodmek.azalea_hoe": "Azalea Hoe",
+
+
   "creativetab.woodmek.wood_items": "WookMek",
 
   "block.woodmek.hardwood_block": "Hard Wood Block",

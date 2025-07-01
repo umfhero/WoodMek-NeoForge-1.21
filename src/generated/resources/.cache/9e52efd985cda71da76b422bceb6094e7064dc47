@@ -1,4 +1,4 @@
-// 1.21	2025-06-29T17:39:27.2907187	Tags for minecraft:block mod id woodmek
+// 1.21	2025-07-01T15:04:34.265786	Tags for minecraft:block mod id woodmek
 4477ece48ff7101ad8009053a8de85939962e3f6 data/minecraft/tags/block/fences.json
 4fd5c9083c0010977339b1198ef5b83efd3fde10 data/minecraft/tags/block/fence_gates.json
 d19be98fbf11a72c8535bdcfbbdcc5778509dd22 data/minecraft/tags/block/mineable/axe.json
@@ -6,3 +6,7 @@ c7b8e5586b550e5c6c925c4579f9ebefc4819323 data/minecraft/tags/block/mineable/pick
 e772a79eca4a6d456dcce7284b683155e353caaa data/minecraft/tags/block/needs_diamond_tool.json
 a85a66d7b4a0d435d33474d0b4401f24994beac2 data/minecraft/tags/block/needs_iron_tool.json
 8718226ccac31bdfd7395038b620e62b74f092f4 data/minecraft/tags/block/walls.json
+18892cd135487fcff522b53eea0f2ff7ac6bbacd data/woodmek/tags/block/incorrect_for_azalea_tool.json
+619b7e44c66dd971e3c23008c628d50f0e70dc3b data/woodmek/tags/block/incorrect_for_hardwood_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/woodmek/tags/block/needs_azalea_tool.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data/woodmek/tags/block/needs_hardwood_tool.json

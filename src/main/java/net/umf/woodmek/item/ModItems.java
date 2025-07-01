@@ -37,7 +37,7 @@ public class ModItems {
             () -> new ChiselItem(new Item.Properties()));
 
 
-
+    // Hardwood tool set
     public static final DeferredItem<SwordItem> HARDWOOD_SWORD = ITEMS.register("hardwood_sword",
             () -> new SwordItem(ModToolTiers.HARDWOOD, new Item.Properties()
                     .attributes(SwordItem.createAttributes(ModToolTiers.HARDWOOD, 5, 3))));
@@ -60,6 +60,26 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.HARDWOOD, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.HARDWOOD, 3, 3))));
 
+    // Azalea tool set
+    public static final DeferredItem<SwordItem> AZALEA_SWORD = ITEMS.register("azalea_sword",
+            () -> new SwordItem(ModToolTiers.AZALEA, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.AZALEA, 6, 3))));
+
+    public static final DeferredItem<PickaxeItem> AZALEA_PICKAXE = ITEMS.register("azalea_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.AZALEA, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.AZALEA, 4, 3))));
+
+    public static final DeferredItem<AxeItem> AZALEA_AXE = ITEMS.register("azalea_axe",
+            () -> new AxeItem(ModToolTiers.AZALEA, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.AZALEA, 7, 3))));
+
+    public static final DeferredItem<ShovelItem> AZALEA_SHOVEL = ITEMS.register("azalea_shovel",
+            () -> new ShovelItem(ModToolTiers.AZALEA, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.AZALEA, 4, 3))));
+
+    public static final DeferredItem<HoeItem> AZALEA_HOE = ITEMS.register("azalea_hoe",
+            () -> new HoeItem(ModToolTiers.AZALEA, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.AZALEA, 3, 3))));
 
 
     public static void register(IEventBus eventBus) {

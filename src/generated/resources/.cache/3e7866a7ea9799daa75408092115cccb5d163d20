@@ -1,2 +1,7 @@
-// 1.21	2025-06-29T15:52:03.2614563	Tags for minecraft:item mod id woodmek
+// 1.21	2025-07-01T14:56:19.2102357	Tags for minecraft:item mod id woodmek
+fb49b150eaead59639ed5a5848f03d2803a12aa5 data/minecraft/tags/item/axes.json
+2409920383b46970c0812a936758907ab4b778eb data/minecraft/tags/item/hoes.json
+c717a24c0d5cae4d75c5fdc232d28e92a5697815 data/minecraft/tags/item/pickaxes.json
+080573be57cdcf45a5ba51a9eb56b669943044ce data/minecraft/tags/item/shovels.json
+ae3c5d22b02b72cf650cd35e73d37a1571bcdaac data/minecraft/tags/item/swords.json
 21ac72bd9119cf4e54b4708ab50a9b47936b276d data/woodmek/tags/item/transformable_items.json

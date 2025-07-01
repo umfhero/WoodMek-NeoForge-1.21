@@ -81,14 +81,19 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
 
         tag(ItemTags.SWORDS)
-                .add(ModItems.HARDWOOD_SWORD.get());
+                .add(ModItems.HARDWOOD_SWORD.get())
+                .add(ModItems.AZALEA_SWORD.get());
         tag(ItemTags.AXES)
-                .add(ModItems.HARDWOOD_AXE.get());
+                .add(ModItems.HARDWOOD_AXE.get())
+                .add(ModItems.AZALEA_AXE.get());
         tag(ItemTags.PICKAXES)
-                .add(ModItems.HARDWOOD_PICKAXE.get());
+                .add(ModItems.HARDWOOD_PICKAXE.get())
+                .add(ModItems.AZALEA_PICKAXE.get());
         tag(ItemTags.SHOVELS)
-                .add(ModItems.HARDWOOD_SHOVEL.get());
+                .add(ModItems.HARDWOOD_SHOVEL.get())
+                .add(ModItems.AZALEA_SHOVEL.get());
         tag(ItemTags.HOES)
-                .add(ModItems.HARDWOOD_HOE.get());
+                .add(ModItems.HARDWOOD_HOE.get())
+                .add(ModItems.AZALEA_HOE.get());
     }
 }

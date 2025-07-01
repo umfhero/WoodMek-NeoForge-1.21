@@ -160,8 +160,107 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         trapdoorBuilder(ModBlocks.HARDWOOD_TRAPDOOR.get(), Ingredient.of(ModItems.HARDWOOD.get())).group("bismuth")
                 .unlockedBy("has_bismuth", has(ModItems.HARDWOOD.get())).save(recipeOutput);
 
+        // HW tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HARDWOOD_SWORD.get())
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" S ")
+                .define('A', ModItems.HARDWOOD_ALLOY.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.HARDWOOD_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('A', ModItems.HARDWOOD_ALLOY.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.HARDWOOD_AXE.get())
+                .pattern("AA ")
+                .pattern("AS ")
+                .pattern(" S ")
+                .define('A', ModItems.HARDWOOD_ALLOY.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.HARDWOOD_SHOVEL.get())
+                .pattern(" A ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('A', ModItems.HARDWOOD_ALLOY.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.HARDWOOD_HOE.get())
+                .pattern("AA ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('A', ModItems.HARDWOOD_ALLOY.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
+                .save(recipeOutput);
+
+
+
+        // AZ tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AZALEA_SWORD.get())
+                .pattern("AAA")
+                .pattern("ATA")
+                .pattern("AAA")
+                .define('A', Items.AZALEA)
+                .define('T', ModItems.HARDWOOD_SWORD.get())
+                .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AZALEA_PICKAXE.get())
+                .pattern("AAA")
+                .pattern("ATA")
+                .pattern("AAA")
+                .define('A', Items.AZALEA)
+                .define('T', ModItems.HARDWOOD_PICKAXE.get())
+                .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AZALEA_AXE.get())
+                .pattern("AAA")
+                .pattern("ATA")
+                .pattern("AAA")
+                .define('A', Items.AZALEA)
+                .define('T', ModItems.HARDWOOD_AXE.get())
+                .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AZALEA_SHOVEL.get())
+                .pattern("AAA")
+                .pattern("ATA")
+                .pattern("AAA")
+                .define('A', Items.AZALEA)
+                .define('T', ModItems.HARDWOOD_SHOVEL.get())
+                .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AZALEA_HOE.get())
+                .pattern("AAA")
+                .pattern("ATA")
+                .pattern("AAA")
+                .define('A', Items.AZALEA)
+                .define('T', ModItems.HARDWOOD_HOE.get())
+                .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
+                .save(recipeOutput);
 
     }
+
+
+
+
+
+
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
                                       float pExperience, int pCookingTIme, String pGroup) {

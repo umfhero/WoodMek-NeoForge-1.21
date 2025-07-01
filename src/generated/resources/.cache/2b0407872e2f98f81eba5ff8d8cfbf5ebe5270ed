@@ -1,10 +1,20 @@
-// 1.21	2025-06-29T15:52:03.262497	Item Models: woodmek
+// 1.21	2025-07-01T14:56:19.2116517	Item Models: woodmek
+958e8298f2d6afc8d65023f45b00f21dd51ccb21 assets/woodmek/models/item/azalea_axe.json
+152dce6dc27ac576f55a14174b069b9d89cb2ff2 assets/woodmek/models/item/azalea_hoe.json
+ea95d75acbc28f4c40081fb762e15750d941df38 assets/woodmek/models/item/azalea_pickaxe.json
+fce6ea8b52308d48ce2dd1d0463c544f7058c67d assets/woodmek/models/item/azalea_shovel.json
+a4168449599396981d3ebac62f2d0d6c5cfef718 assets/woodmek/models/item/azalea_sword.json
 f052b1b636834c17740bad330fb5f1fc9ca7556b assets/woodmek/models/item/chisel.json
 be149f476dbf865a21e09bfbf24b60ee60592ac8 assets/woodmek/models/item/hardwood.json
 9b65b6f9e6291a810bfe8f2bd1aab915dba9ce83 assets/woodmek/models/item/hardwood_alloy.json
+0e51f240523c1242c718fa50566565030ee4eb9b assets/woodmek/models/item/hardwood_axe.json
 759840b6bab567c709751535df315aedbf264f01 assets/woodmek/models/item/hardwood_button.json
 76af4ca36d1ac63932bff03abec2db03224e7ae4 assets/woodmek/models/item/hardwood_door.json
 ebd2b76eb06b57c5e710ad34088cd57a5b36282a assets/woodmek/models/item/hardwood_fence.json
+91d4d1cde866bc79326470ec240049255f0b7f2e assets/woodmek/models/item/hardwood_hoe.json
+48b87c7963e313737b0ce842f46d939742478df0 assets/woodmek/models/item/hardwood_pickaxe.json
+5e6bebbe72468fbb324202e7e476cbaca583da0d assets/woodmek/models/item/hardwood_shovel.json
+cfdfec044c54baf1cd8a97ffe4ddb3f9ebee3c0b assets/woodmek/models/item/hardwood_sword.json
 4069a4bc9ab3a8e6a9b6d1ae80bbf5e7eae603c9 assets/woodmek/models/item/hardwood_wall.json
 930eec883dfd0c8f5ecc5fb9c882c475050d7c0a assets/woodmek/models/item/woodsheet.json
 1bf4fad07a434415f964db4a22fcd160f5db5372 assets/woodmek/models/item/wood_dust.json
