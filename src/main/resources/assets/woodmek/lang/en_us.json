@@ -43,8 +43,8 @@
   "tooltip.woodmek.chisel.tooltip": "Hold §eShift§r for more info",
   "tooltip.woodmek.shiftchisel.tooltip": "The §dChisel§r is a automatic building tool, turning blocks clicked into its building block counterpart.\nThe §dChisel§r can cycle through building blocks.",
   "tooltip.woodmek.hardwood_alloy.tooltip": "The pinnacle of wood, §dHardwood Alloys§r,\nA late game item used for advanced crafting recipes and processes",
-  "tooltip.woodmek.hardwood_hammer.tooltip": "The hammer only mines blocks of the §d§lsame type§r as the initially broken block.",
-  "tooltip.woodmek.hardwood_hammer.tooltip2": "Mines in a §d3x3§r area.",
+  "tooltip.woodmek.hardwood_hammer.tooltip": "The hammer only mines blocks of the §dsame type§r as the initially broken block.",
+  "tooltip.woodmek.hardwood_hammer.tooltip2": "Mines in a §d§l3x3§r area.",
 
 
   "block.woodmek.hardwood_stairs": "Hard Wood Stairs",
