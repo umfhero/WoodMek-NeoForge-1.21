@@ -11,7 +11,8 @@ import net.minecraft.world.item.Item;
 
 public class ModTags {
     public static class Blocks {
-
+        public static final TagKey<Block> NEEDS_HARDWOOD_TOOL = createTag("needs_hardwood_tool");
+        public static final TagKey<Block> INCORRECT_FOR_HARDWOOD_TOOL = createTag("incorrect_for_hardwood_tool");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, name));

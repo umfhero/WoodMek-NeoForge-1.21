@@ -3,6 +3,7 @@ package net.umf.woodmek.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -19,7 +20,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
                               CompletableFuture<TagLookup<Block>> blockTags, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, blockTags, BlockMod.MOD_ID, existingFileHelper);
     }
-
 
 
     @Override
@@ -79,5 +79,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.WOOD_DUST.asItem())
                 .add(ModBlocks.HARDWOOD_BLOCK.asItem());
 
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.HARDWOOD_SWORD.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.HARDWOOD_AXE.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.HARDWOOD_PICKAXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.HARDWOOD_SHOVEL.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.HARDWOOD_HOE.get());
     }
 }

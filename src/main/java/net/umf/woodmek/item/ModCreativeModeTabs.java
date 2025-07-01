@@ -29,6 +29,14 @@ public class ModCreativeModeTabs {
 
                 output.accept(ModBlocks.HARDWOOD_BLOCK);
 
+                output.accept(ModItems.HARDWOOD_SWORD);
+                handheldItem(ModItems.HARDWOOD_SWORD);
+                output.accept(ModItems.HARDWOOD_AXE);
+                output.accept(ModItems.HARDWOOD_PICKAXE);
+                output.accept(ModItems.HARDWOOD_SHOVEL);
+                output.accept(ModItems.HARDWOOD_HOE);
+
+
 
 
 

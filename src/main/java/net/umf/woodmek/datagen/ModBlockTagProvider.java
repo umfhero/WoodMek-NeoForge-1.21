@@ -3,10 +3,12 @@ package net.umf.woodmek.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.umf.woodmek.BlockMod;
 import net.umf.woodmek.block.ModBlocks;
+import net.umf.woodmek.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -64,5 +66,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FENCES).add(ModBlocks.HARDWOOD_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.HARDWOOD_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.HARDWOOD_WALL.get());
+
+        tag(ModTags.Blocks.NEEDS_HARDWOOD_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+        
+        tag(ModTags.Blocks.INCORRECT_FOR_HARDWOOD_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_HARDWOOD_TOOL);
     }
 }

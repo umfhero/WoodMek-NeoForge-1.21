@@ -1,9 +1,7 @@
 package net.umf.woodmek.item;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -40,11 +38,27 @@ public class ModItems {
 
 
 
+    public static final DeferredItem<SwordItem> HARDWOOD_SWORD = ITEMS.register("hardwood_sword",
+            () -> new SwordItem(ModToolTiers.HARDWOOD, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.HARDWOOD, 5, 3))));
+
+    public static final DeferredItem<PickaxeItem> HARDWOOD_PICKAXE = ITEMS.register("hardwood_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.HARDWOOD, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.HARDWOOD, 3, 3))));
+
+    public static final DeferredItem<AxeItem> HARDWOOD_AXE = ITEMS.register("hardwood_axe",
+            () -> new AxeItem(ModToolTiers.HARDWOOD, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.HARDWOOD, 6, 3))));
 
 
+    public static final DeferredItem<ShovelItem> HARDWOOD_SHOVEL = ITEMS.register("hardwood_shovel",
+            () -> new ShovelItem(ModToolTiers.HARDWOOD, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.HARDWOOD, 3, 3))));
 
 
-
+    public static final DeferredItem<HoeItem> HARDWOOD_HOE = ITEMS.register("hardwood_hoe",
+            () -> new HoeItem(ModToolTiers.HARDWOOD, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.HARDWOOD, 3, 3))));
 
 
 
