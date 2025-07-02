@@ -7,6 +7,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.umf.woodmek.BlockMod;
 import net.umf.woodmek.item.custom.ChiselItem;
+import net.umf.woodmek.item.custom.FlareGunItem;
 import net.umf.woodmek.item.custom.HammerItem;
 
 import java.util.List;
@@ -36,6 +37,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(500)));
+
+    public static final DeferredItem<Item> FLAREGUN = ITEMS.register("flaregun",
+            () -> new FlareGunItem(new Item.Properties().durability(100)));
 
 
     // Hardwood tool set

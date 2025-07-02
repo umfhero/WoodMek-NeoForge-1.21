@@ -39,10 +39,21 @@
   "creativetab.woodmek.custom_items": "Building Blocks",
   "item.woodmek.chisel": "Chisel",
 
+
   "tooltip.woodmek.transformer_block.tooltip": "The §d§lTransformer Block§r  is a entity §oreality shifter§r,\nreplacing all contents dropped on top of it with its §c§lsuperior counterpart§r.",
+
+
   "tooltip.woodmek.chisel.tooltip": "Hold §eShift§r for more info",
   "tooltip.woodmek.shiftchisel.tooltip": "The §dChisel§r is a automatic building tool, turning blocks clicked into its building block counterpart.\nThe §dChisel§r can cycle through building blocks.",
+
+
+  "item.woodmek.flaregun": "Flare Gun",
+  "tooltip.woodmek.flaregun.tooltip": "Hold §eShift§r for more info",
+  "tooltip.woodmek.shiftflaregun.tooltip": "The §cFlare Gun§r fires signal flares for testing purposes.\nHas a §c5 second cooldown§r and is §4unusable§r while cooling down.",
+
   "tooltip.woodmek.hardwood_alloy.tooltip": "The pinnacle of wood, §dHardwood Alloys§r,\nA late game item used for advanced crafting recipes and processes",
+
+
   "tooltip.woodmek.hardwood_hammer.tooltip": "The hammer only mines blocks of the §dsame type§r as the initially broken block.",
   "tooltip.woodmek.hardwood_hammer.tooltip2": "Mines in a §d§l3x3§r area.",
 
