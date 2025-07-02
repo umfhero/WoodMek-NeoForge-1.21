@@ -5,6 +5,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -77,6 +78,7 @@ public class ChiselItem extends Item {
     public InteractionResult useOn(UseOnContext context) {
         Level level = context.getLevel();
         Block clickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
+        Player player = context.getPlayer();
 
         if(CHISEL_MAP.containsKey(clickedBlock)) {
             if(!level.isClientSide()) {
@@ -88,6 +90,11 @@ public class ChiselItem extends Item {
                 ItemStack itemStack = context.getItemInHand();
                 itemStack.set(ModDataComponents.USED, true);
                 itemStack.set(ModDataComponents.USED_TIMESTAMP, System.currentTimeMillis());
+
+                // Add cooldown to player (5 seconds = 100 ticks)
+                if (player != null) {
+                    player.getCooldowns().addCooldown(this, 100);
+                }
             }
         }
 
@@ -96,68 +103,11 @@ public class ChiselItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        // Add countdown indicator if chisel is used
-        Long timestamp = stack.get(ModDataComponents.USED_TIMESTAMP);
-        Boolean isUsed = stack.get(ModDataComponents.USED);
-
-        if (isUsed != null && isUsed && timestamp != null) {
-            long currentTime = System.currentTimeMillis();
-            long elapsed = currentTime - timestamp;
-            long remaining = Math.max(0, 5000 - elapsed);
-            double remainingSeconds = remaining / 1000.0;
-
-            tooltipComponents.add(Component.literal("§6Cooldown: " + String.format("%.1f", remainingSeconds) + "s"));
-        }
-
         if(Screen.hasShiftDown()) {
             tooltipComponents.add(Component.translatable("tooltip.woodmek.shiftchisel.tooltip"));
         } else {
             tooltipComponents.add(Component.translatable("tooltip.woodmek.chisel.tooltip"));
         }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-    }
-
-    @Override
-    public boolean isBarVisible(ItemStack stack) {
-        // Show durability bar when chisel is used (has timestamp)
-        Long timestamp = stack.get(ModDataComponents.USED_TIMESTAMP);
-        return timestamp != null;
-    }
-
-    @Override
-    public int getBarWidth(ItemStack stack) {
-        Long timestamp = stack.get(ModDataComponents.USED_TIMESTAMP);
-        if (timestamp == null) {
-            return 0;
-        }
-
-        long currentTime = System.currentTimeMillis();
-        long elapsed = currentTime - timestamp;
-        long remaining = Math.max(0, 5000 - elapsed);
-
-        // Convert remaining time to bar width (0-13 pixels)
-        return (int) ((remaining / 5000.0) * 13);
-    }
-
-    @Override
-    public int getBarColor(ItemStack stack) {
-        Long timestamp = stack.get(ModDataComponents.USED_TIMESTAMP);
-        if (timestamp == null) {
-            return 0xFFFFFF; // White fallback
-        }
-
-        long currentTime = System.currentTimeMillis();
-        long elapsed = currentTime - timestamp;
-        long remaining = Math.max(0, 5000 - elapsed);
-
-        // Color gradient from red to green based on remaining time
-        double progress = remaining / 5000.0;
-        if (progress > 0.6) {
-            return 0x00FF00; // Green when plenty of time left
-        } else if (progress > 0.3) {
-            return 0xFFFF00; // Yellow when halfway
-        } else {
-            return 0xFF0000; // Red when almost done
-        }
     }
 }
