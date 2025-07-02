@@ -15,7 +15,7 @@
 ![Issues](https://img.shields.io/github/issues/umfhero/WoodMek-NeoForge-1.21)
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 <br>
-### Latest Release 6.5.0
+### Latest Release 7.0.0
 
 <a href="https://www.curseforge.com/minecraft/mc-mods/woodmek">
   CurseForge Mod Page
@@ -150,13 +150,34 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 
 ## Changelog
 
+#### [7.0.0] - Flaregun, Hardwood tools and hammer
+- Added Hardwood set of tools (Slightly better than Iron), added Azalea tool set which is slightly better than netherite tools.
+- Added a Hardwood Hammer which mines a 3x3 area (only of the same type of block
+  <img src="src/main/resources/assets/woodmek/pics (github)/11.png" width="500">
+  <img src="src/main/resources/assets/woodmek/pics (github)/8.png" width="500">
+- Added a temporary cooldown to the chisel and change to the texture (which changes back after the cooldown)
+  <img src="src/main/resources/assets/woodmek/pics (github)/12.png" width="500">
+  <img src="src/main/resources/assets/woodmek/pics (github)/13.png" width="500">
+- Added a Flare gun for testing which branches of the chisel cool down. Custom cooldown bar (coloured), with partical trail when shot.
+- At the moment it has no recipe.
+  
+  <img src="src/main/resources/assets/woodmek/pics (github)/6.png" width="500">
+  <img src="src/main/resources/assets/woodmek/pics (github)/7.png" width="250">
+  <img src="src/main/resources/assets/woodmek/pics (github)/10.png" width="500">
+
+
+
+
+
+<br><br>
+
 #### [6.5.0] - Mini hazard block
 - Added a new mini hazardblock
-<img src="src/main/resources/assets/woodmek/pics (github)/2.png" width="600">
+<img src="src/main/resources/assets/woodmek/pics (github)/2.png" width="400">
 
 #### [6.4.0] - Polished hardwood Block (2 varients)
 - Added a new polished hardwood blcok to go with the new lamp with 2 varients, dented and undented
-<img src="src/main/resources/assets/woodmek/pics (github)/1.png" width="600">
+<img src="src/main/resources/assets/woodmek/pics (github)/1.png" width="350">
 
 #### [6.3.0] - Retexture
 - Rextured the base hardwood items and added  hardwood bricks 
