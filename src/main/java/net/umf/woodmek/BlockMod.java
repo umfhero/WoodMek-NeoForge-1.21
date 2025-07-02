@@ -2,8 +2,10 @@ package net.umf.woodmek;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.umf.woodmek.block.ModBlocks;
+import net.umf.woodmek.block.component.ModDataComponents;
 import net.umf.woodmek.item.ModCreativeModeTabs;
 import net.umf.woodmek.item.ModItems;
+import net.umf.woodmek.util.ModItemProperties;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -43,10 +45,7 @@ public class BlockMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
-
-
-
+        ModDataComponents.register(modEventBus);
 
 
 
@@ -78,9 +77,7 @@ public class BlockMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }

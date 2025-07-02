@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "woodmek:item/chisel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "woodmek:used": 1
+      },
+      "model": "woodmek:item/chisel_used"
+    }
+  ]
+}

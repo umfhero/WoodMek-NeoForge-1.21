@@ -16,6 +16,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.umf.woodmek.block.ModBlocks;
+import net.umf.woodmek.block.component.ModDataComponents;
 
 import java.util.List;
 import java.util.Map;
@@ -54,6 +55,7 @@ public class ChiselItem extends Item {
 //                        item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.DYE_USE, SoundSource.BLOCKS);
+                context.getItemInHand().set(ModDataComponents.USED, true);
             }
         }
 

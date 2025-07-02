@@ -19,7 +19,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        basicItem(ModItems.CHISEL.get());
+//        basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.WOODSHEET.get());
         basicItem(ModItems.WOOD_DUST.get());
         basicItem(ModItems.HARDWOOD.get());
