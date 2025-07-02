@@ -35,7 +35,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
-            () -> new ChiselItem(new Item.Properties()));
+            () -> new ChiselItem(new Item.Properties().durability(500)));
 
 
     // Hardwood tool set

@@ -78,7 +78,6 @@ public class ChiselItem extends Item {
     public InteractionResult useOn(UseOnContext context) {
         Level level = context.getLevel();
         Block clickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
-        Player player = context.getPlayer();
 
         if(CHISEL_MAP.containsKey(clickedBlock)) {
             if(!level.isClientSide()) {
@@ -91,14 +90,39 @@ public class ChiselItem extends Item {
                 itemStack.set(ModDataComponents.USED, true);
                 itemStack.set(ModDataComponents.USED_TIMESTAMP, System.currentTimeMillis());
 
-                // Add cooldown to player (5 seconds = 100 ticks)
-                if (player != null) {
-                    player.getCooldowns().addCooldown(this, 100);
-                }
+                // Removed player cooldown - we'll use custom visual feedback instead
             }
         }
 
         return InteractionResult.SUCCESS;
+    }
+
+    @Override
+    public boolean isBarVisible(ItemStack stack) {
+        // Show bar when chisel is in cooldown (has timestamp)
+        Long timestamp = stack.get(ModDataComponents.USED_TIMESTAMP);
+        return timestamp != null;
+    }
+
+    @Override
+    public int getBarWidth(ItemStack stack) {
+        Long timestamp = stack.get(ModDataComponents.USED_TIMESTAMP);
+        if (timestamp == null) {
+            return 0;
+        }
+
+        long currentTime = System.currentTimeMillis();
+        long elapsed = currentTime - timestamp;
+        long remaining = Math.max(0, 5000 - elapsed);
+
+        // Convert remaining time to bar width (0-13 pixels) - but inverted for cooldown effect
+        return 13 - (int) ((remaining / 5000.0) * 13);
+    }
+
+    @Override
+    public int getBarColor(ItemStack stack) {
+        // Use white color to mimic the cooldown overlay
+        return 0xFFFFFF;
     }
 
     @Override
