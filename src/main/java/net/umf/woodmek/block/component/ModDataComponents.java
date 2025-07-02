@@ -17,6 +17,9 @@ public class ModDataComponents {
     public static final DeferredHolder<DataComponentType<?>, DataComponentType<Boolean>> USED = register("used",
             builder -> builder.persistent(Codec.BOOL));
 
+    public static final DeferredHolder<DataComponentType<?>, DataComponentType<Long>> USED_TIMESTAMP = register("used_timestamp",
+            builder -> builder.persistent(Codec.LONG));
+
 
     private static <T>DeferredHolder<DataComponentType<?>, DataComponentType<T>> register(String name,
                                                                                           UnaryOperator<DataComponentType.Builder<T>> builderOperator) {
