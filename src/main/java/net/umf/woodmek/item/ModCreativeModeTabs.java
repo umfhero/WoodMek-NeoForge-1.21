@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
             .icon(() -> new ItemStack(ModItems.HARDWOOD_ALLOY.get())).title(Component.translatable("creativetab.woodmek.wood_items"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModItems.CHISEL);
+                output.accept(ModItems.FLAREGUN);
                 output.accept(ModItems.WOOD_DUST);
                 output.accept(ModItems.WOODSHEET);
                 output.accept(ModItems.HARDWOOD);
