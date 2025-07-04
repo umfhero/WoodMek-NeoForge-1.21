@@ -1,0 +1,38 @@
+{
+  "flare_gun_shot": {
+    "subtitle": "sounds.woodmek.flare_gun_shot",
+    "sounds": [
+      "woodmek:flare_gun_shot"
+    ]
+  },
+  "transformer_break": {
+    "subtitle": "sounds.woodmek.transformer_break",
+    "sounds": [
+      "woodmek:transformer_break"
+    ]
+  },
+  "transformer_step": {
+    "subtitle": "sounds.woodmek.transformer_step",
+    "sounds": [
+      "woodmek:transformer_step"
+    ]
+  },
+  "transformer_place": {
+    "subtitle": "sounds.woodmek.transformer_place",
+    "sounds": [
+      "woodmek:transformer_place"
+    ]
+  },
+  "transformer_hit": {
+    "subtitle": "sounds.woodmek.transformer_hit",
+    "sounds": [
+      "woodmek:transformer_hit"
+    ]
+  },
+  "transformer_fall": {
+    "subtitle": "sounds.woodmek.transformer_fall",
+    "sounds": [
+      "woodmek:transformer_fall"
+    ]
+  }
+}

@@ -2,10 +2,8 @@ package net.umf.woodmek.item.custom;
 
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -15,6 +13,7 @@ import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.umf.woodmek.block.component.ModDataComponents;
+import net.umf.woodmek.sound.ModSounds;
 
 import java.util.List;
 
@@ -82,7 +81,7 @@ public class FlareGunItem extends Item {
 
             // Play shooting sound
             level.playSound(null, player.getX(), player.getY(), player.getZ(),
-                SoundEvents.FIREWORK_ROCKET_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F);
+                    ModSounds.FLARE_GUN_SHOT.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
 
             // Set the flare gun as used and record timestamp (no chat message)
             itemStack.set(ModDataComponents.USED, true);

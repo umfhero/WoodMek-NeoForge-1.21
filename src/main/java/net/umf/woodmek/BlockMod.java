@@ -5,6 +5,7 @@ import net.umf.woodmek.block.ModBlocks;
 import net.umf.woodmek.block.component.ModDataComponents;
 import net.umf.woodmek.item.ModCreativeModeTabs;
 import net.umf.woodmek.item.ModItems;
+import net.umf.woodmek.sound.ModSounds;
 import net.umf.woodmek.util.ModItemProperties;
 import org.slf4j.Logger;
 
@@ -48,6 +49,7 @@ public class BlockMod {
         ModBlocks.register(modEventBus);
         ModDataComponents.register(modEventBus);
         net.umf.woodmek.entity.ModEntities.register(modEventBus);
+        ModSounds.register(modEventBus);
 
 
 

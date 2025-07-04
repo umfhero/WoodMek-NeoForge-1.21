@@ -14,6 +14,7 @@ import net.umf.woodmek.BlockMod;
 import net.umf.woodmek.block.custom.HardwoodLampBlock;
 import net.umf.woodmek.block.custom.transformer;
 import net.umf.woodmek.item.ModItems;
+import net.umf.woodmek.sound.ModSounds;
 
 import java.util.function.Supplier;
 
@@ -55,8 +56,11 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MINI_HAZARD_BLOCK = registerBlock("mini_hazard_block",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(2f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> IRON_GRATE = registerBlock("iron_grate",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
     public static final DeferredBlock<Block> TRANSFORMER_BLOCK = registerBlock("transformer_block",
-            () -> new transformer(BlockBehaviour.Properties.of().sound(SoundType.TRIAL_SPAWNER).strength(3f).requiresCorrectToolForDrops()));
+            () -> new transformer(BlockBehaviour.Properties.of().sound(SoundType.TRIAL_SPAWNER).strength(3f).requiresCorrectToolForDrops().sound(ModSounds.TRANSFORMER_SOUNDS)));
 
 
     public static final DeferredBlock<StairBlock> HARDWOOD_STAIRS = registerBlock("hardwood_stairs",

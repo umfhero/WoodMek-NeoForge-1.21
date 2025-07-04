@@ -27,6 +27,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.HALF_HAZARD_BLOCK.get())
                 .add(ModBlocks.HAZARD_BLOCK2.get())
                 .add(ModBlocks.HALF_HAZARD_BLOCK2.get())
+                .add(ModBlocks.IRON_GRATE.get())
                 .add(ModBlocks.TRANSFORMER_BLOCK.get());
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.HARDWOOD_BLOCK.get())
@@ -47,6 +48,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.HALF_HAZARD_BLOCK.get())
                 .add(ModBlocks.HAZARD_BLOCK2.get())
                 .add(ModBlocks.HALF_HAZARD_BLOCK2.get())
+                .add(ModBlocks.IRON_GRATE.get())
                 .add(ModBlocks.HARDWOOD_BLOCK.get())
                 .add(ModBlocks.HARDWOOD_STAIRS.get())
                 .add(ModBlocks.HARDWOOD_SLAB.get())

@@ -34,6 +34,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.MINI_HAZARD_BLOCK);
         blockWithItem(ModBlocks.TRANSFORMER_BLOCK);
 
+        // Iron grate with cutout rendering for transparency
+        simpleBlockWithItem(ModBlocks.IRON_GRATE.get(), 
+            models().cubeAll("iron_grate", blockTexture(ModBlocks.IRON_GRATE.get())).renderType("cutout"));
+
 
         stairsBlock(ModBlocks.HARDWOOD_STAIRS.get(), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()));
 
