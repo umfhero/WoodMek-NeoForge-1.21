@@ -155,6 +155,12 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 
 ## Changelog
 
+#### [7.5.0] - Sound Events
+- Added sounds to the flare (both for shooting and locking)
+- Added a full DefferedSoundType for Transformer block, including Break, Step, Place, Hit and Falling onto the block
+
+
+
 #### [7.0.0] - Flaregun, Hardwood tools and hammer
 - Added Hardwood set of tools (Slightly better than Iron), added Azalea tool set which is slightly better than netherite tools.
 - Added a Hardwood Hammer which mines a 3x3 area (only of the same type of block
