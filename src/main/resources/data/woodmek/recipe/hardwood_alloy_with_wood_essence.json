@@ -2,7 +2,7 @@
   "type": "mekanism:metallurgic_infusing",
   "chemical_input": {
     "amount": 50,
-    "tag": "woodmek:wood_essence"
+    "infuse_type": "woodmek:wood_essence"
   },
   "item_input": {
     "count": 1,

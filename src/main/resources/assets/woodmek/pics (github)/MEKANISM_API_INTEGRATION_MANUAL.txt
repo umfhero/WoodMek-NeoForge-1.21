@@ -1,0 +1,251 @@
+# WoodMek Mekanism API Integration - Complete Manual
+## Successfully implemented after extensive debugging session
+
+### Overview
+This document outlines the complete step-by-step process to integrate the Mekanism API into a NeoForge 1.21 mod and create custom InfuseTypes for use in Mekanism recipes.
+
+## Part 1: Mekanism API Dependencies Setup
+
+### 1.1 Updated build.gradle
+**File**: `build.gradle`
+**Changes Made**:
+- Added Mekanism Maven repository in the `repositories` block:
+```gradle
+repositories {
+    maven { url 'https://modmaven.dev/' }
+}
+```
+
+- Added Mekanism dependencies in the `dependencies` block:
+```gradle
+dependencies {
+    // Mekanism API dependency
+    compileOnly "mekanism:Mekanism:${mekanism_version}:api"
+
+    // If you want to test/use Mekanism & its modules during `runClient` invocation, use the following
+    runtimeOnly "mekanism:Mekanism:${mekanism_version}" // Mekanism
+    runtimeOnly "mekanism:Mekanism:${mekanism_version}:additions" // Mekanism: Additions
+    runtimeOnly "mekanism:Mekanism:${mekanism_version}:generators" // Mekanism: Generators
+    runtimeOnly "mekanism:Mekanism:${mekanism_version}:tools" // Mekanism: Tools
+}
+```
+
+**Important Notes**:
+- For NeoForge, do NOT use `fg.deobf()` - that's old Forge syntax
+- Use simple strings for dependency declarations in NeoForge
+
+### 1.2 Updated gradle.properties
+**File**: `gradle.properties`
+**Changes Made**:
+- Added the Mekanism version property:
+```properties
+# Mekanism version
+mekanism_version=1.21-10.6.7.54
+```
+
+**Important**: The version must match your existing Mekanism mod file in `run/mods/`. We used `1.21-10.6.7.54` to match the `Mekanism-1.21-10.6.7.54.jar` file already present.
+
+## Part 2: Custom InfuseType Registration
+
+### 2.1 Created ModChemicals.java
+**File**: `src/main/java/net/umf/woodmek/chemical/ModChemicals.java`
+**Content**:
+```java
+package net.umf.woodmek.chemical;
+
+import mekanism.api.chemical.infuse.InfuseType;
+import mekanism.api.chemical.infuse.InfuseTypeBuilder;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.umf.woodmek.BlockMod;
+
+public class ModChemicals {
+    // Try a different approach - register manually during RegisterEvent
+    public static InfuseType WOOD_ESSENCE_TYPE = null;
+
+    public static void register(IEventBus eventBus) {
+        System.out.println("=== ModChemicals.register() CALLED ===");
+        eventBus.register(ModChemicals.class);
+        System.out.println("=== Registered for RegisterEvent ===");
+    }
+
+    @SuppressWarnings("unchecked")
+    @SubscribeEvent
+    public static void onRegisterEvent(RegisterEvent event) {
+        System.out.println("=== RegisterEvent triggered for: " + event.getRegistryKey().location() + " ===");
+
+        // Look for the Mekanism infuse type registry
+        if (event.getRegistryKey().location().toString().equals("mekanism:infuse_type")) {
+            System.out.println("=== Found Mekanism InfuseType registry! ===");
+
+            // Cast the registry key to the correct type to fix compilation
+            ResourceKey<Registry<InfuseType>> registryKey = (ResourceKey<Registry<InfuseType>>) event.getRegistryKey();
+            ResourceLocation woodEssenceId = ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "wood_essence");
+
+            event.register(registryKey, woodEssenceId, () -> {
+                System.out.println("=== Creating wood_essence InfuseType ===");
+                InfuseType woodEssence = new InfuseType(InfuseTypeBuilder.builder().tint(0x8B4513));
+                WOOD_ESSENCE_TYPE = woodEssence;
+                System.out.println("=== InfuseType created: " + woodEssence + " ===");
+                return woodEssence;
+            });
+
+            System.out.println("=== Registered wood_essence with ID: " + woodEssenceId + " ===");
+        }
+    }
+
+    // Helper method to get the wood essence chemical ID for use in recipes
+    public static ResourceLocation getWoodEssenceId() {
+        return ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "wood_essence");
+    }
+}
+```
+
+**Key Points**:
+- Uses `RegisterEvent` instead of `DeferredRegister` because Mekanism's registry system requires special handling
+- Registers directly into Mekanism's `infuse_type` registry
+- Creates InfuseType with brown tint color (0x8B4513)
+- Uses proper NeoForge ResourceLocation syntax
+
+### 2.2 Updated Main Mod Class
+**File**: `src/main/java/net/umf/woodmek/BlockMod.java`
+**Changes Made**:
+- Added import: `import net.umf.woodmek.chemical.ModChemicals;`
+- Added registration call in constructor: `ModChemicals.register(modEventBus);`
+
+**Verification**: This call should already exist in your BlockMod.java file. If not, add it alongside other module registrations like ModItems.register(modEventBus), etc.
+
+## Part 3: Texture and Translation Setup
+
+### 3.1 Wood Essence Texture
+**File**: `src/main/resources/assets/woodmek/textures/chemical/wood_essence.png`
+**Status**: Already existed in your project
+**Purpose**: Provides the visual texture for the Wood Essence InfuseType in JEI and Mekanism machines
+
+### 3.2 Translation Entry
+**File**: `src/main/resources/assets/woodmek/lang/en_us.json`
+**Changes Made**:
+- Added translation entry: `"infuse_type.woodmek.wood_essence": "Wood Essence"`
+
+**Important**: Use `infuse_type.` prefix, not `chemical.` because we're registering an InfuseType specifically.
+
+## Part 4: Recipe Creation
+
+### 4.1 Custom Metallurgic Infusing Recipe
+**File**: `src/main/resources/data/woodmek/recipe/hardwood_alloy_with_wood_essence.json`
+**Content**:
+```json
+{
+  "type": "mekanism:metallurgic_infusing",
+  "chemical_input": {
+    "amount": 50,
+    "infuse_type": "woodmek:wood_essence"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "woodmek:hardwood"
+  },
+  "output": {
+    "count": 1,
+    "id": "woodmek:hardwood_alloy"
+  },
+  "per_tick_usage": false
+}
+```
+
+**Critical Detail**: Use `"infuse_type": "woodmek:wood_essence"` NOT `"chemical": "woodmek:wood_essence"` in the recipe JSON. This was the final breakthrough!
+
+## Debugging Issues Encountered and Solutions
+
+### Issue 1: Missing Dependencies
+**Problem**: `Cannot resolve symbol 'mekanism'` errors
+**Solution**: Added proper Mekanism API dependencies to build.gradle and gradle.properties
+
+### Issue 2: Incorrect Mekanism Version
+**Problem**: Version mismatch between API and runtime mod
+**Solution**: Used exact version from existing mod file: `1.21-10.6.7.54`
+
+### Issue 3: Wrong Registration Method
+**Problem**: `DeferredRegister` couldn't access Mekanism's registry
+**Solution**: Used `RegisterEvent` to register directly into Mekanism's `infuse_type` registry
+
+### Issue 4: Protected Constructor
+**Problem**: `ChemicalBuilder` constructor was protected
+**Solution**: Used `InfuseTypeBuilder.builder().tint(color)` pattern
+
+### Issue 5: Recipe Format
+**Problem**: Recipe not showing up in JEI despite successful registration
+**Solution**: Changed from `"chemical": "..."` to `"infuse_type": "..."` in recipe JSON
+
+### Issue 6: Registry Namespace
+**Problem**: InfuseType showing as `mekanism:empty` during creation
+**Solution**: This is normal behavior - registry name gets assigned after registration completes
+
+## Files Created/Modified Summary
+
+### New Files Created:
+1. `src/main/java/net/umf/woodmek/chemical/ModChemicals.java`
+2. `src/main/resources/data/woodmek/recipe/hardwood_alloy_with_wood_essence.json`
+
+### Existing Files Modified:
+1. `build.gradle` - Added Mekanism dependencies
+2. `gradle.properties` - Added mekanism_version property
+3. `src/main/resources/assets/woodmek/lang/en_us.json` - Added InfuseType translation
+4. `src/main/java/net/umf/woodmek/BlockMod.java` - Added ModChemicals registration call
+
+### Existing Files Used (No Changes):
+1. `src/main/resources/assets/woodmek/textures/chemical/wood_essence.png` - Texture file
+
+## Testing and Verification
+
+### Expected Results:
+1. **Build Success**: `./gradlew build` should complete without errors
+2. **InfuseType Registration**: Debug logs should show successful registration with ID `woodmek:wood_essence`
+3. **JEI Integration**: Wood Essence should appear in JEI ingredient list with proper name and texture
+4. **Recipe Functionality**: Metallurgic Infuser should show 3 recipes for Hardwood Alloy:
+   - Hardwood + Refined Obsidian (100mb)
+   - Hardwood Block + Refined Obsidian
+   - **Hardwood + Wood Essence (50mb)** ← Your custom recipe!
+
+### Debug Output to Look For:
+```
+=== Found Mekanism InfuseType registry! ===
+=== Creating wood_essence InfuseType ===
+=== Registered wood_essence with ID: woodmek:wood_essence ===
+```
+
+## Key Lessons Learned
+
+1. **NeoForge vs Forge**: Don't use `fg.deobf()` in NeoForge - it's ForgeGradle syntax only
+2. **Mekanism API Complexity**: Standard `DeferredRegister` doesn't work with Mekanism's custom registries
+3. **RegisterEvent Power**: Direct registry access through RegisterEvent bypasses many API limitations
+4. **Recipe Format Specificity**: Mekanism expects exact field names (`infuse_type` vs `chemical`)
+5. **Version Matching**: API version must exactly match runtime mod version
+6. **Registry Timing**: InfuseType objects show as `mekanism:empty` during creation but get proper names after registration
+
+## Conclusion
+
+This integration required approximately 1+ hours of debugging to resolve various API compatibility issues, version mismatches, and registration method problems. The final solution uses a direct RegisterEvent approach to register custom InfuseTypes with Mekanism's registry system, bypassing the limitations of standard NeoForge registration methods.
+
+The key breakthrough was understanding that:
+1. Mekanism's registry system requires special handling in NeoForge
+2. Recipe JSON must use specific field names for different chemical types
+3. RegisterEvent provides the necessary low-level access to Mekanism's registries
+
+## Final Result
+✅ Successfully created custom Wood Essence InfuseType
+✅ Integrated with Mekanism's Metallurgic Infuser
+✅ Proper JEI integration with translations and textures
+✅ Working custom recipe: 50mb Wood Essence + 1 Hardwood → 1 Hardwood Alloy
+
+---
+Generated: January 7, 2025
+Project: WoodMek (NeoForge 1.21)
+Mekanism Version: 1.21-10.6.7.54
+Result: SUCCESS! 🎉
