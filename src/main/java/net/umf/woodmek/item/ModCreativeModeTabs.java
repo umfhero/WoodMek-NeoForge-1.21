@@ -4,13 +4,12 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.umf.woodmek.BlockMod;
 import net.umf.woodmek.block.ModBlocks;
+import net.umf.woodmek.chemical.ModChemicals;
 
 import java.util.function.Supplier;
 
@@ -43,12 +42,7 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.AZALEA_HOE);
 
                 output.accept(ModItems.HARDWOOD_HAMMER);
-
-
-
-
-
-
+                output.accept(ModItems.LIQUID_SAP_BUCKET);
             }).build());
 
     public static final Supplier<CreativeModeTab> CUSTOM_ITEMS_TAB = CREATIVE_MODE_TAB.register("custom_items_tab", () -> CreativeModeTab.builder()

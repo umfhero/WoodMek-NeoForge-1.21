@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:oxidizing",
+  "input": {
+    "count": 1,
+    "item": "woodmek:hardwood_alloy"
+  },
+  "output": {
+    "amount": 1000,
+    "id": "woodmek:wood_essence"
+  }
+}

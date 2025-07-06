@@ -2,6 +2,8 @@ package net.umf.woodmek.chemical;
 
 import mekanism.api.chemical.infuse.InfuseType;
 import mekanism.api.chemical.infuse.InfuseTypeBuilder;
+import mekanism.api.chemical.gas.Gas;
+import mekanism.api.chemical.gas.GasBuilder;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -11,8 +13,8 @@ import net.neoforged.neoforge.registries.RegisterEvent;
 import net.umf.woodmek.BlockMod;
 
 public class ModChemicals {
-    // InfuseType instances - will be assigned during registration
-    public static InfuseType WOOD_ESSENCE_TYPE = null;
+    // Gas instances - changed wood_essence to Gas type
+    public static Gas WOOD_ESSENCE_GAS = null;
     public static InfuseType ENRICHED_WOOD_ESSENCE_TYPE = null;
 
     public static void register(IEventBus eventBus) {
@@ -26,23 +28,29 @@ public class ModChemicals {
     public static void onRegisterEvent(RegisterEvent event) {
         System.out.println("=== RegisterEvent triggered for: " + event.getRegistryKey().location() + " ===");
 
+        // Register Gas types
+        if (event.getRegistryKey().location().toString().equals("mekanism:gas")) {
+            System.out.println("=== Found Mekanism Gas registry! ===");
+
+            ResourceKey<Registry<Gas>> gasRegistryKey = (ResourceKey<Registry<Gas>>) event.getRegistryKey();
+
+            // Register Wood Essence as Gas (for PRC output)
+            ResourceLocation woodEssenceId = ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "wood_essence");
+            event.register(gasRegistryKey, woodEssenceId, () -> {
+                System.out.println("=== Creating wood_essence Gas ===");
+                Gas woodEssenceGas = new Gas(GasBuilder.builder().tint(0x8B4513));
+                WOOD_ESSENCE_GAS = woodEssenceGas;
+                System.out.println("=== Gas created: " + woodEssenceGas + " ===");
+                return woodEssenceGas;
+            });
+            System.out.println("=== Registered wood_essence with ID: " + woodEssenceId + " ===");
+        }
+
         // Look for the Mekanism infuse type registry
         if (event.getRegistryKey().location().toString().equals("mekanism:infuse_type")) {
             System.out.println("=== Found Mekanism InfuseType registry! ===");
 
-            // Cast the registry key to the correct type
             ResourceKey<Registry<InfuseType>> registryKey = (ResourceKey<Registry<InfuseType>>) event.getRegistryKey();
-
-            // Register Wood Essence (brown tint)
-            ResourceLocation woodEssenceId = ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "wood_essence");
-            event.register(registryKey, woodEssenceId, () -> {
-                System.out.println("=== Creating wood_essence InfuseType ===");
-                InfuseType woodEssence = new InfuseType(InfuseTypeBuilder.builder().tint(0x8B4513));
-                WOOD_ESSENCE_TYPE = woodEssence;
-                System.out.println("=== InfuseType created: " + woodEssence + " ===");
-                return woodEssence;
-            });
-            System.out.println("=== Registered wood_essence with ID: " + woodEssenceId + " ===");
 
             // Register Enriched Wood Essence (purple tint)
             ResourceLocation enrichedWoodEssenceId = ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "enriched_wood_essence");
