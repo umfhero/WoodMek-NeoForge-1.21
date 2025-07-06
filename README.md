@@ -2,7 +2,7 @@
 
 <br>
 
-<img src="src/main/resources/assets/woodmek/pics (github)/WoodMekLogo.png" alt="Hardwood Alloy Logo" width="600">
+<img src="src/main/resources/assets/woodmek/pics/WoodMekLogo.png" alt="Hardwood Alloy Logo" width="600">
 
 <br>
 
@@ -34,7 +34,7 @@ This manual contains notes and instructions on how the mod integrates with Mekan
 <details>
   <summary>📄 Mekanism API Integration Manual (Click to expand)</summary>
 
-[Full text here](https://github.com/umfhero/WoodMek-NeoForge-1.21/blob/main/src/main/resources/assets/woodmek/pics (github)/MEKANISM_API_INTEGRATION_MANUAL.txt)
+[Full text here](https://github.com/umfhero/WoodMek-NeoForge-1.21/blob/main/src/main/resources/assets/woodmek/pics/MEKANISM_API_INTEGRATION_MANUAL.txt)
 
 
 
@@ -50,37 +50,37 @@ This manual contains notes and instructions on how the mod integrates with Mekan
 
 <h1><strong>WoodMek Showcase</strong></h1> 
 ### Mod Items
-<img src="src/main/resources/assets/woodmek/pics (github)/textureupdate.png" alt="BlockMod Items" width="700">
+<img src="src/main/resources/assets/woodmek/pics/textureupdate.png" alt="BlockMod Items" width="700">
 
 
 ### WoodMek Creative Tabs / Mod items (JEI - Wood Items & Blocks)
-<img src="src/main/resources/assets/woodmek/pics (github)/9.png" alt="Creative Tabs" width="400">
+<img src="src/main/resources/assets/woodmek/pics/9.png" alt="Creative Tabs" width="400">
 
-<img src="src/main/resources/assets/woodmek/pics (github)/4.png" alt="Creative Tabs" width="450">
-<img src="src/main/resources/assets/woodmek/pics (github)/5.png" alt="Creative Tabs" width="450">
+<img src="src/main/resources/assets/woodmek/pics/4.png" alt="Creative Tabs" width="450">
+<img src="src/main/resources/assets/woodmek/pics/5.png" alt="Creative Tabs" width="450">
 
 ---
 
 ### Processing Workflows (New in v3.0.0)
 **1. Harvest Logs**  
 *Gathered from vanilla loot tables when chopping trees*  
-<img src="src/main/resources/assets/woodmek/pics (github)/log.jpg" alt="log" width="400">  
+<img src="src/main/resources/assets/woodmek/pics/log.jpg" alt="log" width="400">  
 *(standard Minecraft wood collection)*
 
 **2. Crush Logs to Wood Dust**  
-<img src="src/main/resources/assets/woodmek/pics (github)/wooddust.png" alt="Crusher" width="400">  
+<img src="src/main/resources/assets/woodmek/pics/wooddust.png" alt="Crusher" width="400">  
 *Process logs through Mekanism's Crusher to create Wood Dust*
 
 **3. Smelt Wood Dust to Hard Wood**  
-<img src="src/main/resources/assets/woodmek/pics (github)/hardwood1.png" alt="Smelting Factory" width="400">  
+<img src="src/main/resources/assets/woodmek/pics/hardwood1.png" alt="Smelting Factory" width="400">  
 *Smelt Wood Dust in any furnace to create Hard Wood, note that mekanism has a furnance like machine (any furnace will work)*
 
 **4. Infuse Hard Wood to Hardwood Alloy**  
-<img src="src/main/resources/assets/woodmek/pics (github)/Hardwood_alloy1.png" alt="Infusing Factory" width="400">  
+<img src="src/main/resources/assets/woodmek/pics/Hardwood_alloy1.png" alt="Infusing Factory" width="400">  
 *Infuse Hard Wood with Carbon in a Metallurgic Infuser to create Hardwood Alloy*
 
 **5. Compact Alloy Production (Efficiency Boost)**  
-<img src="src/main/resources/assets/woodmek/pics (github)/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">  
+<img src="src/main/resources/assets/woodmek/pics/CompactHardwoodAlloy.png" alt="Compact Infuser" width="400">  
 *Process Hard Wood Blocks (each made from 9 Hard Wood in a 3x3 craft) to get 9x Hardwood Alloy - more efficient than processing individual Hard Wood items!*
 
 ---
@@ -103,11 +103,11 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 ## FTB Quests
 
 **Overview**  
-<img src="src/main/resources/assets/woodmek/pics (github)/quest.png" alt="quests" width="400">  
+<img src="src/main/resources/assets/woodmek/pics/quest.png" alt="quests" width="400">  
 *With any new mod/modpack, a quest is needed and so using FTB quests. Iv created just that.*
 
 **Quest Item**  
-<img src="src/main/resources/assets/woodmek/pics (github)/quest1.png" alt="quest item" width="400">  
+<img src="src/main/resources/assets/woodmek/pics/quest1.png" alt="quest item" width="400">  
 *With each item, comes a description and a linear progression to help players know what steps to take to get to each milestone with custom rewards!*
 
 ---
@@ -152,7 +152,7 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
   - Turn set blocks into its counterpart
 
 ### Transformer Block
-<img src="src/main/resources/assets/woodmek/pics (github)/transformer.png" width="600">  
+<img src="src/main/resources/assets/woodmek/pics/transformer.png" width="600">  
 
 - **v4.0.0 Update**: Transformer
 - **Uses**:
@@ -174,17 +174,17 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 #### [7.0.0] - Flaregun, Hardwood tools and hammer
 - Added Hardwood set of tools (Slightly better than Iron), added Azalea tool set which is slightly better than netherite tools.
 - Added a Hardwood Hammer which mines a 3x3 area (only of the same type of block
-  <img src="src/main/resources/assets/woodmek/pics (github)/11.png" width="500">
-  <img src="src/main/resources/assets/woodmek/pics (github)/8.png" width="500">
+  <img src="src/main/resources/assets/woodmek/pics/11.png" width="500">
+  <img src="src/main/resources/assets/woodmek/pics/8.png" width="500">
 - Added a temporary cooldown to the chisel and change to the texture (which changes back after the cooldown)
-  <img src="src/main/resources/assets/woodmek/pics (github)/12.png" width="500">
-  <img src="src/main/resources/assets/woodmek/pics (github)/13.png" width="500">
+  <img src="src/main/resources/assets/woodmek/pics/12.png" width="500">
+  <img src="src/main/resources/assets/woodmek/pics/13.png" width="500">
 - Added a Flare gun for testing which branches of the chisel cool down. Custom cooldown bar (coloured), with partical trail when shot.
 - At the moment it has no recipe.
   
-  <img src="src/main/resources/assets/woodmek/pics (github)/6.png" width="500">
-  <img src="src/main/resources/assets/woodmek/pics (github)/7.png" width="250">
-  <img src="src/main/resources/assets/woodmek/pics (github)/10.png" width="500">
+  <img src="src/main/resources/assets/woodmek/pics/6.png" width="500">
+  <img src="src/main/resources/assets/woodmek/pics/7.png" width="250">
+  <img src="src/main/resources/assets/woodmek/pics/10.png" width="500">
 
 
 
@@ -194,29 +194,29 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 
 #### [6.5.0] - Mini hazard block
 - Added a new mini hazardblock
-<img src="src/main/resources/assets/woodmek/pics (github)/2.png" width="400">
+<img src="src/main/resources/assets/woodmek/pics/2.png" width="400">
 
 #### [6.4.0] - Polished hardwood Block (2 varients)
 - Added a new polished hardwood blcok to go with the new lamp with 2 varients, dented and undented
-<img src="src/main/resources/assets/woodmek/pics (github)/1.png" width="350">
+<img src="src/main/resources/assets/woodmek/pics/1.png" width="350">
 
 #### [6.3.0] - Retexture
 - Rextured the base hardwood items and added  hardwood bricks 
-<img src="src/main/resources/assets/woodmek/pics (github)/textureupdate.png" width="600">
+<img src="src/main/resources/assets/woodmek/pics/textureupdate.png" width="600">
 
 #### [6.0.0] - Now a standalone mod! - Recipes, Hazard Blocks and ModID Changes
 - Added a second hazard block: **Half Hazard Block**
   - Both hazard blocks now have recipes:  
     4x Stone + 1x Yellow Dye
     
-    <img src="src/main/resources/assets/woodmek/pics (github)/hazardrecipe.png" width="200">
-    <img src="src/main/resources/assets/woodmek/pics (github)/hazardrecipe2.png" width="200">
+    <img src="src/main/resources/assets/woodmek/pics/hazardrecipe.png" width="200">
+    <img src="src/main/resources/assets/woodmek/pics/hazardrecipe2.png" width="200">
   - Both blocks support **directional movement** with the chisel  
     (rotate 90° back and forth)
 - Added a new **Blockstate Lamp**
   - Reacts to click inputs and uses blockstates for toggling on/off
-  - <img src="src/main/resources/assets/woodmek/pics (github)/lamp.png" width="400">  
-  - <img src="src/main/resources/assets/woodmek/pics (github)/fulllamp.png" width="400">  
+  - <img src="src/main/resources/assets/woodmek/pics/lamp.png" width="400">  
+  - <img src="src/main/resources/assets/woodmek/pics/fulllamp.png" width="400">  
 - **Rewrote and restructured the entire project**  
   - Renamed mod from `blockmod` to `woodmek`  
   - New Mod ID: `woodmek` / `WoodMek`
@@ -237,15 +237,15 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 #### [4.6.0] - Tool Tips
 - Added a `Tool tips` to complex items such as the Chisel and the Transformer block
 
-  <img src="src/main/resources/assets/woodmek/pics (github)/tooltip.png" width="250">
+  <img src="src/main/resources/assets/woodmek/pics/tooltip.png" width="250">
 
-  <img src="src/main/resources/assets/woodmek/pics (github)/tooltip1.png" width="550">
+  <img src="src/main/resources/assets/woodmek/pics/tooltip1.png" width="550">
 
-  <img src="src/main/resources/assets/woodmek/pics (github)/tooltip2.png" width="550">  
+  <img src="src/main/resources/assets/woodmek/pics/tooltip2.png" width="550">  
 
 #### [4.2.0] - Burn Rates
 - Added a `burn time` to all wooden items with all  values based on the level on compactness and difficulty  
-  <img src="src/main/resources/assets/woodmek/pics (github)/burntime.png" width="300">  
+  <img src="src/main/resources/assets/woodmek/pics/burntime.png" width="300">  
 
 #### [4.0.0] - Custom Block (Transformer)
 - Added a `Transformer` block that can turn items (non modded and modded) into their `upgraded` counterparts
