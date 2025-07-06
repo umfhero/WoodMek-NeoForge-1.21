@@ -20,6 +20,14 @@ group = mod_group_id
 repositories {
     // Add here additional repositories if required by some of the dependencies below.
     maven { url 'https://modmaven.dev/' }
+    maven {
+        name = 'CurseMaven'
+        url = 'https://cursemaven.com'
+    }
+    maven {
+        name = 'Mekanism'
+        url = 'https://maven.blamejared.com/'
+    }
 }
 
 base {
@@ -33,10 +41,8 @@ neoForge {
     // Specify the version of NeoForge to use.
     version = project.neo_version
 
-    parchment {
-        mappingsVersion = project.parchment_mappings_version
-        minecraftVersion = project.parchment_minecraft_version
-    }
+    // Parchment mappings are now handled automatically by neogradle.subsystems.parchment properties
+    // No need for explicit parchment block with new format
 
     // This line is optional. Access Transformers are automatically detected
     // accessTransformers = project.files('src/main/resources/META-INF/accesstransformer.cfg')
@@ -113,7 +119,7 @@ configurations {
 }
 
 dependencies {
-    // Mekanism API dependency
+    // Mekanism API dependency - Updated for NeoForge 1.21.1
     compileOnly "mekanism:Mekanism:${mekanism_version}:api"
 
     // If you want to test/use Mekanism & its modules during `runClient` invocation, use the following
