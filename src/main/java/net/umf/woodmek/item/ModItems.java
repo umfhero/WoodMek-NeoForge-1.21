@@ -6,6 +6,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.umf.woodmek.BlockMod;
+import net.umf.woodmek.fluid.ModFluids;
 import net.umf.woodmek.item.custom.ChiselItem;
 import net.umf.woodmek.item.custom.FlareGunItem;
 import net.umf.woodmek.item.custom.HammerItem;
@@ -90,6 +91,15 @@ public class ModItems {
     public static final DeferredItem<HammerItem> HARDWOOD_HAMMER = ITEMS.register("hardwood_hammer",
             () -> new HammerItem(ModToolTiers.HARDWOOD, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.HARDWOOD, 3, 3))));
+
+    // Fluid Buckets
+    public static final DeferredItem<BucketItem> WOOD_ESSENCE_BUCKET = ITEMS.register("wood_essence_bucket",
+            () -> new BucketItem(ModFluids.WOOD_ESSENCE_FLUID.get(),
+                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public static final DeferredItem<BucketItem> ENRICHED_WOOD_ESSENCE_BUCKET = ITEMS.register("enriched_wood_essence_bucket",
+            () -> new BucketItem(ModFluids.ENRICHED_WOOD_ESSENCE_FLUID.get(),
+                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

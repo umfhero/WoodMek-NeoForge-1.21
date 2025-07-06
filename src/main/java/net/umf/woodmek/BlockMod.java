@@ -50,6 +50,7 @@ public class BlockMod {
         ModBlocks.register(modEventBus);
         ModDataComponents.register(modEventBus);
         ModChemicals.register(modEventBus);
+        net.umf.woodmek.fluid.ModFluids.register(modEventBus);
         net.umf.woodmek.entity.ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
 

@@ -1,0 +1,5 @@
+{
+  "loader": "forge:fluid_state",
+  "fluid": "woodmek:wood_essence_fluid"
+}
+

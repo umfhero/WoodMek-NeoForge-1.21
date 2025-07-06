@@ -71,5 +71,12 @@
   "block.woodmek.hardwood_lamp": "Hard Wood Lamp",
   "block.woodmek.iron_grate": "Iron Grate",
 
-  "infuse_type.woodmek.wood_essence": "Wood Essence"
+  "item.woodmek.wood_essence_bucket": "Wood Essence Bucket",
+  "item.woodmek.enriched_wood_essence_bucket": "Enriched Wood Essence Bucket",
+
+  "fluid_type.woodmek.wood_essence_fluid_type": "Wood Essence",
+  "fluid_type.woodmek.enriched_wood_essence_fluid_type": "Enriched Wood Essence",
+
+  "infuse_type.woodmek.wood_essence": "Wood Essence",
+  "infuse_type.woodmek.enriched_wood_essence": "Enriched Wood Essence"
 }

@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:combining",
+  "left_input": {
+    "count": 1,
+    "item": "minecraft:water_bucket"
+  },
+  "right_input": {
+    "count": 1,
+    "item": "woodmek:wood_dust"
+  },
+  "output": {
+    "count": 1,
+    "id": "woodmek:wood_essence_bucket"
+  }
+}
+
