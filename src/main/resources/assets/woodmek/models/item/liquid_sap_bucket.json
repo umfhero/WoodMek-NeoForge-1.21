@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "woodmek:item/liquid_sap_bucket"
+    "layer0": "woodmek:item/enriched_wood_essence_bucket"
   }
 }
 
