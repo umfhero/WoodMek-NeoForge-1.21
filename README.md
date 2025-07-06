@@ -27,9 +27,19 @@ Wood Mekanism or WookMek for short is a 1.21 NeoForge Minecraft Mod which adds w
 
 </div>
 
-<br><br><br>
+<br>
+
+## 🛠 Mekanism API Integration Help
+This manual contains notes and instructions on how the mod integrates with Mekanism's API.
+<details>
+  <summary>📄 Mekanism API Integration Manual (Click to expand)</summary>
+
+[Full text here](https://github.com/umfhero/WoodMek-NeoForge-1.21/blob/main/src/main/resources/assets/woodmek/pics (github)/MEKANISM_API_INTEGRATION_MANUAL.txt)
 
 
+
+</details>
+<br><br>
 
 > [!IMPORTANT] 
 > # This is not a conventional, playable mod.
