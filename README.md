@@ -49,7 +49,9 @@ This manual contains notes and instructions on how the mod integrates with Mekan
 > Also note that these ingame screenshots may or may not be the latest reflection of the WoodMek mod (Including blocks, items, features or functions).
 
 <h1><strong>WoodMek Showcase</strong></h1> 
+
 ### Mod Items
+
 <img src="src/main/resources/assets/woodmek/pics/textureupdate.png" alt="BlockMod Items" width="700">
 
 
