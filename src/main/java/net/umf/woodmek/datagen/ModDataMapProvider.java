@@ -16,7 +16,7 @@ public class ModDataMapProvider extends DataMapProvider {
     }
 
     @Override
-    protected void gather() {
+    protected void gather(HolderLookup.Provider registries) {
         this.builder(NeoForgeDataMaps.FURNACE_FUELS)
                 .add(ModItems.WOOD_DUST.getId(), new FurnaceFuel(250), false)
                 .add(ModItems.HARDWOOD.getId(), new FurnaceFuel(15000), false)

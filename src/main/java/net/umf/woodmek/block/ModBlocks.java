@@ -1,18 +1,20 @@
 package net.umf.woodmek.block;
 
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.umf.woodmek.BlockMod;
 import net.umf.woodmek.block.custom.HardwoodLampBlock;
 import net.umf.woodmek.block.custom.transformer;
+import net.umf.woodmek.fluid.ModFluids;
 import net.umf.woodmek.item.ModItems;
 import net.umf.woodmek.sound.ModSounds;
 
@@ -95,6 +97,13 @@ public class ModBlocks {
     public static final DeferredBlock<HardwoodLampBlock> HARDWOOD_LAMP = registerBlock("hardwood_lamp",
             () -> new HardwoodLampBlock(BlockBehaviour.Properties.of().strength(2f)
                     .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(HardwoodLampBlock.CLICKED) ? 15 : 0)));
+
+
+    // Liquid Sap Block
+    public static final DeferredBlock<LiquidBlock> LIQUID_SAP_BLOCK = BLOCKS.register("liquid_sap_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_LIQUID_SAP_FLUID.get(), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BROWN).replaceable().noCollission().strength(100.0F).pushReaction(PushReaction.DESTROY)
+                    .noLootTable().liquid().sound(SoundType.EMPTY)));
 
 
     public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

@@ -49,27 +49,12 @@
 
   "item.woodmek.flaregun": "Flare Gun",
   "tooltip.woodmek.flaregun.tooltip": "Hold §eShift§r for more info",
-  "tooltip.woodmek.shiftflaregun.tooltip": "The §cFlare Gun§r fires signal flares for testing purposes.\nHas a §c5 second cooldown§r and is §4unusable§r while cooling down.",
 
-  "tooltip.woodmek.hardwood_alloy.tooltip": "The pinnacle of wood, §dHardwood Alloys§r,\nA late game item used for advanced crafting recipes and processes",
+  "item.woodmek.liquid_sap_bucket": "Liquid Sap Bucket",
+  "block.woodmek.liquid_sap_block": "Liquid Sap",
+  "fluid.woodmek.liquid_sap_fluid": "Liquid Sap",
+  "fluid_type.woodmek.liquid_sap_fluid_type": "Liquid Sap",
 
-
-  "tooltip.woodmek.hardwood_hammer.tooltip": "The hammer only mines blocks of the §dsame type§r as the initially broken block.",
-  "tooltip.woodmek.hardwood_hammer.tooltip2": "Mines in a §d§l3x3§r area.",
-
-
-  "block.woodmek.hardwood_stairs": "Hard Wood Stairs",
-  "block.woodmek.hardwood_button": "Hard Wood Button",
-  "block.woodmek.hardwood_door": "Hard Wood Door",
-  "block.woodmek.hardwood_fence": "Hard Wood Fence",
-  "block.woodmek.hardwood_slab": "Hard Wood Slab",
-  "block.woodmek.hardwood_fence_gate": "Hard Wood Fence Gate",
-  "block.woodmek.hardwood_wall": "Hard Wood Wall",
-  "block.woodmek.hardwood_pressure_plate": "Hard Wood Pressure Plate",
-  "block.woodmek.hardwood_trapdoor": "Hard Wood Trapdoor",
-
-  "block.woodmek.hardwood_lamp": "Hard Wood Lamp",
-  "block.woodmek.iron_grate": "Iron Grate",
 
   "item.woodmek.wood_essence_bucket": "Wood Essence Bucket",
   "item.woodmek.enriched_wood_essence_bucket": "Enriched Wood Essence Bucket",

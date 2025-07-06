@@ -6,9 +6,11 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.umf.woodmek.BlockMod;
+import net.umf.woodmek.fluid.ModFluids;
 import net.umf.woodmek.item.custom.ChiselItem;
 import net.umf.woodmek.item.custom.FlareGunItem;
 import net.umf.woodmek.item.custom.HammerItem;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -25,7 +27,7 @@ public class ModItems {
     public static final DeferredItem<Item> HARDWOOD_ALLOY = ITEMS.register("hardwood_alloy",
             () -> new Item(new Item.Properties()){
                 @Override
-                public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                public void appendHoverText(@NotNull ItemStack stack, @NotNull Item.TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
                     tooltipComponents.add(Component.translatable("tooltip.woodmek.hardwood_alloy.tooltip"));
 
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
@@ -90,6 +92,10 @@ public class ModItems {
     public static final DeferredItem<HammerItem> HARDWOOD_HAMMER = ITEMS.register("hardwood_hammer",
             () -> new HammerItem(ModToolTiers.HARDWOOD, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.HARDWOOD, 3, 3))));
+
+    // Liquid Sap Bucket
+    public static final DeferredItem<BucketItem> LIQUID_SAP_BUCKET = ITEMS.register("liquid_sap_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_LIQUID_SAP_FLUID.get(), new Item.Properties().stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {
