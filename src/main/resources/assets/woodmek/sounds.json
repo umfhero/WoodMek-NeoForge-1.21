@@ -5,6 +5,12 @@
       "woodmek:flare_gun_shot"
     ]
   },
+  "flare_gun_lock": {
+    "subtitle": "sounds.woodmek.flare_gun_lock",
+    "sounds": [
+      "woodmek:flare_gun_lock"
+    ]
+  },
   "transformer_break": {
     "subtitle": "sounds.woodmek.transformer_break",
     "sounds": [

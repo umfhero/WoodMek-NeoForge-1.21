@@ -18,6 +18,7 @@ public class ModSounds {
 
 
     public static final Supplier<SoundEvent> FLARE_GUN_SHOT = registerSoundEvent("flare_gun_shot");
+    public static final Supplier<SoundEvent> FLARE_GUN_LOCK = registerSoundEvent("flare_gun_lock");
     public static final Supplier<SoundEvent> HARDWOOD_SWORD = registerSoundEvent("hardwood_sword");
 
     public static final Supplier<SoundEvent> TRANSFORMER_BREAK = registerSoundEvent("transformer_break");

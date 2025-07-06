@@ -1,8 +1,8 @@
 {
   "type": "mekanism:metallurgic_infusing",
   "chemical_input": {
-    "amount": 100,
-    "tag": "mekanism:refined_obsidian"
+    "amount": 50,
+    "chemical": "woodmek:wood_essence"
   },
   "item_input": {
     "count": 1,

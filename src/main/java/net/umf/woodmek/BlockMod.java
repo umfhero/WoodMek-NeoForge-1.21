@@ -3,6 +3,7 @@ package net.umf.woodmek;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.umf.woodmek.block.ModBlocks;
 import net.umf.woodmek.block.component.ModDataComponents;
+import net.umf.woodmek.chemical.ModChemicals;
 import net.umf.woodmek.item.ModCreativeModeTabs;
 import net.umf.woodmek.item.ModItems;
 import net.umf.woodmek.sound.ModSounds;
@@ -48,6 +49,7 @@ public class BlockMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModDataComponents.register(modEventBus);
+        ModChemicals.register(modEventBus);
         net.umf.woodmek.entity.ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
 

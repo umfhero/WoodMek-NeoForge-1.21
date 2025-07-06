@@ -63,7 +63,9 @@ public class FlareGunItem extends Item {
         Boolean isUsed = itemStack.get(ModDataComponents.USED);
 
         if (isUsed != null && isUsed && timestamp != null) {
-            // Flare gun is on cooldown - prevent use (no chat message)
+            // Flare gun is on cooldown - play lock sound and prevent use
+            level.playSound(null, player.getX(), player.getY(), player.getZ(),
+                    ModSounds.FLARE_GUN_LOCK.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
             return InteractionResultHolder.fail(itemStack);
         }
 

@@ -69,5 +69,7 @@
   "block.woodmek.hardwood_trapdoor": "Hard Wood Trapdoor",
 
   "block.woodmek.hardwood_lamp": "Hard Wood Lamp",
-  "block.woodmek.iron_grate": "Iron Grate"
+  "block.woodmek.iron_grate": "Iron Grate",
+
+  "chemical.woodmek.wood_essence": "Wood Essence"
 }

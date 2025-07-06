@@ -1,0 +1,9 @@
+{
+  "type": "mekanism:chemical",
+  "chemical": {
+    "name": "wood_essence",
+    "texture": "woodmek:chemical/wood_essence",
+    "tint": 9127187,
+    "colorRepresentation": 9127187
+  }
+}

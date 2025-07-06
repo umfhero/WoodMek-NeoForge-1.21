@@ -1,0 +1,15 @@
+{
+  "type": "mekanism:dissolution",
+  "item_input": {
+    "item": "minecraft:oak_log"
+  },
+  "gas_input": {
+    "amount": 1,
+    "gas": "mekanism:sulfuric_acid"
+  },
+  "output": {
+    "amount": 1000,
+    "chemical": "woodmek:wood_essence"
+  }
+}
+
