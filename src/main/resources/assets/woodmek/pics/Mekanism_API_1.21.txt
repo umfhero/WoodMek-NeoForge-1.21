@@ -1,8 +1,9 @@
 # WoodMek Mekanism API Integration - Complete Manual
-
+Note: Gonna update to 1.21+ at some point, so might have to redo this entire file anyways. 
+So ill keep this here for that specific version, Look for a 1.21+ version to see if there is an updated one
 
 Created: January 7, 2025
-Project: WoodMek for NeoForge 1.21 (gonna update soon so might have to redo this entire file)
+Project: WoodMek for NeoForge 1.21 
 Mekanism Version: 1.21-10.6.7.54
 
 
