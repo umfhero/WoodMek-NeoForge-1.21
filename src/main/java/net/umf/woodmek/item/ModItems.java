@@ -37,6 +37,26 @@ public class ModItems {
     public static final DeferredItem<Item> WOOD_DUST = ITEMS.register("wood_dust",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> CONGEALED_WOOD_ESSENCE = ITEMS.register("congealed_wood_essence",
+            () -> new Item(new Item.Properties()){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack, @NotNull Item.TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.woodmek.hardwood_alloy.tooltip"));
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+    public static final DeferredItem<Item> CONGEALED_ENRICHED_WOOD_ESSENCE = ITEMS.register("congealed_enriched_wood_essence",
+            () -> new Item(new Item.Properties()){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack, @NotNull Item.TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.woodmek.hardwood_alloy.tooltip"));
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(500)));
 

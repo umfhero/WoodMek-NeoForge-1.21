@@ -25,6 +25,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.WOODSHEET);
                 output.accept(ModItems.HARDWOOD);
                 output.accept(ModItems.HARDWOOD_ALLOY);
+                output.accept(ModItems.CONGEALED_WOOD_ESSENCE);
+                output.accept(ModItems.CONGEALED_ENRICHED_WOOD_ESSENCE);
                 output.accept(ModBlocks.TRANSFORMER_BLOCK);
 
                 output.accept(ModBlocks.HARDWOOD_BLOCK);

@@ -1,9 +1,11 @@
-// 1.21.1	2025-07-06T20:03:33.9479854	Item Models: woodmek
+// 1.21.1	2025-07-06T21:29:40.1706761	Item Models: woodmek
 958e8298f2d6afc8d65023f45b00f21dd51ccb21 assets/woodmek/models/item/azalea_axe.json
 152dce6dc27ac576f55a14174b069b9d89cb2ff2 assets/woodmek/models/item/azalea_hoe.json
 ea95d75acbc28f4c40081fb762e15750d941df38 assets/woodmek/models/item/azalea_pickaxe.json
 fce6ea8b52308d48ce2dd1d0463c544f7058c67d assets/woodmek/models/item/azalea_shovel.json
 a4168449599396981d3ebac62f2d0d6c5cfef718 assets/woodmek/models/item/azalea_sword.json
+d7ab95dfac40bd66da6996ec683a54f6b53fbbab assets/woodmek/models/item/congealed_enriched_wood_essence.json
+b3b0af9fd1e6a90432ed5cc5a60a505f8fe91e3c assets/woodmek/models/item/congealed_wood_essence.json
 be149f476dbf865a21e09bfbf24b60ee60592ac8 assets/woodmek/models/item/hardwood.json
 9b65b6f9e6291a810bfe8f2bd1aab915dba9ce83 assets/woodmek/models/item/hardwood_alloy.json
 0e51f240523c1242c718fa50566565030ee4eb9b assets/woodmek/models/item/hardwood_axe.json
