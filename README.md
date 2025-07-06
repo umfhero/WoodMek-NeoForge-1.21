@@ -51,6 +51,9 @@ This manual contains notes and instructions on how the mod integrates with Mekan
 <h1><strong>WoodMek Showcase</strong></h1> 
 
 ### Mod Items
+<img src="src/main/resources/assets/woodmek/pics/17.png" width="300">
+
+<img src="src/main/resources/assets/woodmek/pics/19.png" width="300">
 
 <img src="src/main/resources/assets/woodmek/pics/textureupdate.png" alt="BlockMod Items" width="700">
 
