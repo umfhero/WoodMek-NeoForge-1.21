@@ -1,4 +1,97 @@
 # WoodMek Mekanism API Integration - Complete Manual
+
+
+Created: January 7, 2025
+Project: WoodMek for NeoForge 1.21 (gonna update soon so might have to redo this entire file)
+Mekanism Version: 1.21-10.6.7.54
+
+
+
+
+
+---
+# Bare bones approch:
+
+### Prerequisites
+- NeoForge 1.21 mod project
+- Existing Mekanism mod file in run/mods/ folder
+- Java development environment
+
+### Step-by-Step Instructions
+
+**STEP 1: Add Mekanism Dependencies**
+1. Add to `build.gradle` repositories block:
+   ```gradle
+   maven { url 'https://modmaven.dev/' }
+   ```
+
+2. Add to `build.gradle` dependencies block:
+   ```gradle
+   compileOnly "mekanism:Mekanism:${mekanism_version}:api"
+   runtimeOnly "mekanism:Mekanism:${mekanism_version}"
+   runtimeOnly "mekanism:Mekanism:${mekanism_version}:additions"
+   runtimeOnly "mekanism:Mekanism:${mekanism_version}:generators"
+   runtimeOnly "mekanism:Mekanism:${mekanism_version}:tools"
+   ```
+
+3. Add to `gradle.properties`:
+   ```properties
+   mekanism_version=1.21-10.6.7.54
+   ```
+
+**STEP 2: Create Chemical Registration Class**
+1. Create file: `src/main/java/[your_package]/chemical/ModChemicals.java`
+2. Use RegisterEvent approach (NOT DeferredRegister)
+3. Register into "mekanism:infuse_type" registry
+4. Use InfuseTypeBuilder.builder().tint(color) pattern
+
+**STEP 3: Register in Main Mod Class**
+1. Add import: `import [your_package].chemical.ModChemicals;`
+2. Add call in constructor: `ModChemicals.register(modEventBus);`
+
+**STEP 4: Add Translation**
+1. Add to `src/main/resources/assets/[modid]/lang/en_us.json`:
+   ```json
+   "infuse_type.[modid].[chemical_name]": "Display Name"
+   ```
+
+**STEP 5: Create Recipe**
+1. Create file: `src/main/resources/data/[modid]/recipe/[recipe_name].json`
+2. Use format:
+   ```json
+   {
+     "type": "mekanism:metallurgic_infusing",
+     "chemical_input": {
+       "amount": 50,
+       "infuse_type": "[modid]:[chemical_name]"
+     },
+     "item_input": {"count": 1, "item": "[modid]:[input_item]"},
+     "output": {"count": 1, "id": "[modid]:[output_item]"}
+   }
+   ```
+
+**CRITICAL POINTS:**
+- Never use `fg.deobf()` in NeoForge
+- Use exact Mekanism version from your run/mods/ folder
+- Use "infuse_type" NOT "chemical" in recipe JSON
+- RegisterEvent is required for Mekanism registry access
+- InfuseType texture goes in: `assets/[modid]/textures/chemical/[name].png`
+
+**EXPECTED RESULT:**
+- Chemical appears in JEI with proper name and texture
+- Recipe shows up in Metallurgic Infuser
+- Debug logs show successful registration with correct namespace
+
+**IF PROBLEMS:**
+1. Version mismatch → Check actual Mekanism jar version in run/mods/
+2. Recipe not showing → Verify "infuse_type" field in JSON
+3. Registration fails → Ensure RegisterEvent approach, not DeferredRegister
+4. Wrong namespace → Check debug logs for "Registered with ID: [modid]:[name]"
+
+
+---
+# My personal Approch:
+
 ## Successfully implemented after extensive debugging session
 
 ### Overview
@@ -244,8 +337,5 @@ The key breakthrough was understanding that:
 ✅ Proper JEI integration with translations and textures
 ✅ Working custom recipe: 50mb Wood Essence + 1 Hardwood → 1 Hardwood Alloy
 
----
-Generated: January 7, 2025
-Project: WoodMek (NeoForge 1.21)
-Mekanism Version: 1.21-10.6.7.54
-Result: SUCCESS! 🎉
+
+
