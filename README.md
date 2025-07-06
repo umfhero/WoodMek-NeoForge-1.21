@@ -34,7 +34,7 @@ This manual contains notes and instructions on how the mod integrates with Mekan
 <details>
   <summary>📄 Mekanism API Integration Manual (Click to expand)</summary>
 
-[Full text here](https://github.com/umfhero/WoodMek-NeoForge-1.21/blob/main/src/main/resources/assets/woodmek/pics/MEKANISM_API_INTEGRATION_MANUAL.txt)
+[Full text here](https://github.com/umfhero/WoodMek-NeoForge-1.21/blob/main/src/main/resources/assets/woodmek/pics (github)/MEKANISM_API_INTEGRATION_MANUAL.txt)
 
 
 
