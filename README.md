@@ -23,7 +23,7 @@
 
 <br><br>
 
-Wood Mekanism or WookMek for short is a 1.21 NeoForge Minecraft Mod which adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
+Wood Mekanism or WoodMek for short is a 1.21.1 NeoForge Minecraft Mod which adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
 
 </div>
 
@@ -106,7 +106,7 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 
 **Overview**  
 <img src="src/main/resources/assets/woodmek/pics/quest.png" alt="quests" width="400">  
-*With any new mod/modpack, a quest is needed and so using FTB quests. Iv created just that.*
+*With any new mod/modpack, a quest is needed and so using FTB quests. I've created just that.*
 
 **Quest Item**  
 <img src="src/main/resources/assets/woodmek/pics/quest1.png" alt="quest item" width="400">  
@@ -167,7 +167,36 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 
 ## Changelog
 
-#### [8.2.0] - Mekanism Custom `infuse_type` Functionality  
+
+#### [9.0.0] - WoodMek updated to 1.21.1
+- Added Chemical Oxidizer recipe for hardwood alloy into wood essence gas
+
+<img src="src/main/resources/assets/woodmek/pics/17.png" width="300">
+
+
+#### [8.8.0] - Converted wood essence into a gas
+- Liquid: Liquid Sap  (Gold)
+- Gas: Wood Essence   (Brown)
+- Infuse type (Chemical): Enriched wood essence   (purple)
+
+  <img src="src/main/resources/assets/woodmek/pics/19.png" width="300">
+
+#### [8.7.0] - WoodMek updated to 1.21.1
+- Gradle properties and Mekanism API updated for 1.21.1
+- Bug tested and all functionality working
+
+
+#### [8.5.0] - Mekanism Custom `Fluid` Functionality
+
+- Liquid Sap (Texture update pending)
+- Fluid has lava functionality with no burning effects etc (eg can be placed next to water)
+
+<img src="src/main/resources/assets/woodmek/pics/18.png" width="300">
+<img src="src/main/resources/assets/woodmek/pics/20.png" width="300">
+
+
+
+#### [8.2.0] - Mekanism Custom `infuse_type` Functionality  (Chemicals)
 - A while after adding Wood Essence, the Wood Essence inside the Metallurgic Infuser now works/displays properly. It will be the primary fluid for WoodMek, with more planned in the future.  
 - Added documentation for others trying to figure this out:  
   `\src\main\resources\assets\woodmek\pics\Mekanism_API_1.21.txt`
@@ -213,24 +242,27 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 
 #### [6.5.0] - Mini hazard block
 - Added a new mini hazardblock
+
 <img src="src/main/resources/assets/woodmek/pics/2.png" width="300">
 
 #### [6.4.0] - Polished hardwood Block (2 varients)
 - Added a new polished hardwood blcok to go with the new lamp with 2 varients, dented and undented
+
 <img src="src/main/resources/assets/woodmek/pics/1.png" width="350">
 
 #### [6.3.0] - Retexture
 - Rextured the base hardwood items and added  hardwood bricks 
+
 <img src="src/main/resources/assets/woodmek/pics/textureupdate.png" width="300">
 
 #### [6.0.0] - Now a standalone mod! - Recipes, Hazard Blocks and ModID Changes
 - Added a second hazard block: **Half Hazard Block**
   - Both hazard blocks now have recipes:  
+  
     4x Stone + 1x Yellow Dye
-    
-    <img src="src/main/resources/assets/woodmek/pics/hazardrecipe.png" width="200">
-    
-    <img src="src/main/resources/assets/woodmek/pics/hazardrecipe2.png" width="200">
+  
+  <img src="src/main/resources/assets/woodmek/pics/hazardrecipe.png" width="200">
+  <img src="src/main/resources/assets/woodmek/pics/hazardrecipe2.png" width="200">
     
   - Both blocks support **directional movement** with the chisel  
     (rotate 90° back and forth)
