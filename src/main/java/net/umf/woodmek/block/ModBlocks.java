@@ -13,7 +13,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.umf.woodmek.BlockMod;
 import net.umf.woodmek.block.custom.HardwoodLampBlock;
 import net.umf.woodmek.block.custom.transformer;
-import net.umf.woodmek.fluid.ModFluids;
 import net.umf.woodmek.item.ModItems;
 import net.umf.woodmek.sound.ModSounds;
 
@@ -96,15 +95,6 @@ public class ModBlocks {
     public static final DeferredBlock<HardwoodLampBlock> HARDWOOD_LAMP = registerBlock("hardwood_lamp",
             () -> new HardwoodLampBlock(BlockBehaviour.Properties.of().strength(2f)
                     .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(HardwoodLampBlock.CLICKED) ? 15 : 0)));
-
-
-    // Fluid Blocks
-    public static final DeferredBlock<LiquidBlock> WOOD_ESSENCE_FLUID = BLOCKS.register("wood_essence_fluid",
-            () -> new LiquidBlock(ModFluids.WOOD_ESSENCE_FLUID.get(),
-                    BlockBehaviour.Properties.of().liquid().noCollission().strength(100f).noLootTable()));
-    public static final DeferredBlock<LiquidBlock> ENRICHED_WOOD_ESSENCE_FLUID = BLOCKS.register("enriched_wood_essence_fluid",
-            () -> new LiquidBlock(ModFluids.ENRICHED_WOOD_ESSENCE_FLUID.get(),
-                    BlockBehaviour.Properties.of().liquid().noCollission().strength(100f).noLootTable()));
 
 
     public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
