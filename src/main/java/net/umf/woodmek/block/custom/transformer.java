@@ -25,18 +25,12 @@ import net.umf.woodmek.util.ModTags;
 import java.util.List;
 
 public class transformer extends Block {
-
-
     public transformer(Properties properties) {
         super(properties);
     }
 
-
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-
-
-
         level.playSound(player, pos, SoundEvents.BEACON_ACTIVATE, SoundSource.BLOCKS, 1f, 1f);
         return InteractionResult.SUCCESS;
     }
@@ -64,7 +58,6 @@ public class transformer extends Block {
     private boolean isValidItemConcrete(ItemStack item) {
         return item.is(ModTags.Items.TRANSFORMABLE_CONCRETE);
     }
-
 
     private boolean isValidItem(ItemStack item) {
         return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);

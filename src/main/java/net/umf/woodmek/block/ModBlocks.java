@@ -21,12 +21,8 @@ import net.umf.woodmek.sound.ModSounds;
 import java.util.function.Supplier;
 
 public class ModBlocks {
-
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(BlockMod.MOD_ID);
-
-
-
 
     public static final DeferredBlock<Block> HARDWOOD_BLOCK = registerBlock("hardwood_block",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.BAMBOO).strength(3f).requiresCorrectToolForDrops()));
@@ -64,7 +60,6 @@ public class ModBlocks {
     public static final DeferredBlock<Block> TRANSFORMER_BLOCK = registerBlock("transformer_block",
             () -> new transformer(BlockBehaviour.Properties.of().sound(SoundType.TRIAL_SPAWNER).strength(3f).requiresCorrectToolForDrops().sound(ModSounds.TRANSFORMER_SOUNDS)));
 
-
     public static final DeferredBlock<StairBlock> HARDWOOD_STAIRS = registerBlock("hardwood_stairs",
             () -> new StairBlock(ModBlocks.HARDWOOD_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
@@ -81,10 +76,8 @@ public class ModBlocks {
     public static final DeferredBlock<FenceBlock> HARDWOOD_FENCE = registerBlock("hardwood_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
-
     public static final DeferredBlock<FenceGateBlock> HARDWOOD_FENCE_GATE = registerBlock("hardwood_fence_gate",
             () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
-
 
     public static final DeferredBlock<WallBlock> HARDWOOD_WALL = registerBlock("hardwood_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
@@ -98,13 +91,10 @@ public class ModBlocks {
             () -> new HardwoodLampBlock(BlockBehaviour.Properties.of().strength(2f)
                     .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(HardwoodLampBlock.CLICKED) ? 15 : 0)));
 
-
-    // Liquid Sap Block
     public static final DeferredBlock<LiquidBlock> LIQUID_SAP_BLOCK = BLOCKS.register("liquid_sap_block",
             () -> new LiquidBlock(ModFluids.SOURCE_LIQUID_SAP_FLUID.get(), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_BROWN).replaceable().noCollission().strength(100.0F).pushReaction(PushReaction.DESTROY)
                     .noLootTable().liquid().sound(SoundType.EMPTY)));
-
 
     public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name,block);
@@ -116,9 +106,7 @@ public class ModBlocks {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
-
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);
     }
-
 }

@@ -75,7 +75,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_HARDWOOD_TOOL);
 
-        // Add Azalea tool tags for netherite-level mining (can mine everything including obsidian, supposed to be that level)
         tag(ModTags.Blocks.NEEDS_AZALEA_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 

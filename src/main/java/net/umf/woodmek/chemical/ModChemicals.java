@@ -13,7 +13,6 @@ import net.neoforged.neoforge.registries.RegisterEvent;
 import net.umf.woodmek.BlockMod;
 
 public class ModChemicals {
-    // Gas instances - changed wood_essence to Gas type
     public static Gas WOOD_ESSENCE_GAS = null;
     public static InfuseType ENRICHED_WOOD_ESSENCE_TYPE = null;
 
@@ -28,15 +27,15 @@ public class ModChemicals {
     public static void onRegisterEvent(RegisterEvent event) {
         System.out.println("=== RegisterEvent triggered for: " + event.getRegistryKey().location() + " ===");
 
-        // Register Gas types
+
         if (event.getRegistryKey().location().toString().equals("mekanism:gas")) {
             System.out.println("=== Found Mekanism Gas registry! ===");
 
             ResourceKey<Registry<Gas>> gasRegistryKey = (ResourceKey<Registry<Gas>>) event.getRegistryKey();
 
-            // Register Wood Essence as Gas (for PRC output)
             ResourceLocation woodEssenceId = ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "wood_essence");
             event.register(gasRegistryKey, woodEssenceId, () -> {
+                //  gas types (wood essence rn only)
                 System.out.println("=== Creating wood_essence Gas ===");
                 Gas woodEssenceGas = new Gas(GasBuilder.builder().tint(0x8B4513));
                 WOOD_ESSENCE_GAS = woodEssenceGas;
@@ -46,13 +45,13 @@ public class ModChemicals {
             System.out.println("=== Registered wood_essence with ID: " + woodEssenceId + " ===");
         }
 
-        // Look for the Mekanism infuse type registry
+
         if (event.getRegistryKey().location().toString().equals("mekanism:infuse_type")) {
             System.out.println("=== Found Mekanism InfuseType registry! ===");
 
             ResourceKey<Registry<InfuseType>> registryKey = (ResourceKey<Registry<InfuseType>>) event.getRegistryKey();
 
-            // Register Enriched Wood Essence (purple tint)
+
             ResourceLocation enrichedWoodEssenceId = ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "enriched_wood_essence");
             event.register(registryKey, enrichedWoodEssenceId, () -> {
                 System.out.println("=== Creating enriched_wood_essence InfuseType ===");
@@ -65,7 +64,6 @@ public class ModChemicals {
         }
     }
 
-    // Helper methods to get the chemical IDs for use in recipes
     public static ResourceLocation getWoodEssenceId() {
         return ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "wood_essence");
     }

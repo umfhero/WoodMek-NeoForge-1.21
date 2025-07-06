@@ -21,11 +21,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
         super(output, lookupProvider, blockTags, BlockMod.MOD_ID, existingFileHelper);
     }
 
-
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
-                //Transformer logs
                 .add(Items.OAK_LOG)
                 .add(Items.SPRUCE_LOG)
                 .add(Items.BIRCH_LOG)
@@ -37,8 +35,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.BAMBOO_BLOCK)
                 .add(Items.CRIMSON_STEM)
                 .add(Items.WARPED_STEM)
-
-                //Transformer concrete
                 .add(Items.WHITE_CONCRETE)
                 .add(Items.ORANGE_CONCRETE)
                 .add(Items.MAGENTA_CONCRETE)
@@ -55,8 +51,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.GREEN_CONCRETE)
                 .add(Items.RED_CONCRETE)
                 .add(Items.BLACK_CONCRETE)
-
-                //powders
                 .add(Items.WHITE_CONCRETE_POWDER)
                 .add(Items.ORANGE_CONCRETE_POWDER)
                 .add(Items.MAGENTA_CONCRETE_POWDER)
@@ -73,12 +67,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.GREEN_CONCRETE_POWDER)
                 .add(Items.RED_CONCRETE_POWDER)
                 .add(Items.BLACK_CONCRETE_POWDER)
-
-                //my woodmek items for the transformer
                 .add(ModItems.HARDWOOD.asItem())
                 .add(ModItems.WOOD_DUST.asItem())
                 .add(ModBlocks.HARDWOOD_BLOCK.asItem());
-
 
         tag(ItemTags.SWORDS)
                 .add(ModItems.HARDWOOD_SWORD.get())

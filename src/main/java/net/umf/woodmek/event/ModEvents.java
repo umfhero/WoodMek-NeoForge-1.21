@@ -27,9 +27,6 @@ public class ModEvents {
 
     private static final Set<BlockPos> HARVESTED_BLOCKS = new HashSet<>();
 
-    // Done with the help of https://github.com/Tutorials-By-Kaupenjoe/NeoForge-Tutorial-1.21.X/blob/16-hammerTool/src/main/java/net/kaupenjoe/tutorialmod/event/ModEvents.java
-    // Don't be a jerk License
-
     @SubscribeEvent
     public static void onHammerUsage(BlockEvent.BreakEvent event) {
         Player player = event.getPlayer();

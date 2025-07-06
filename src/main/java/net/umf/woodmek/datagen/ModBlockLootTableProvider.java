@@ -31,8 +31,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.IRON_GRATE.get());
         dropSelf(ModBlocks.TRANSFORMER_BLOCK.get());
 
-
-
         dropSelf(ModBlocks.HARDWOOD_STAIRS.get());
         add(ModBlocks.HARDWOOD_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.HARDWOOD_SLAB.get()));
@@ -49,8 +47,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createDoorTable(ModBlocks.HARDWOOD_DOOR.get()));
 
         dropSelf(ModBlocks.HARDWOOD_LAMP.get());
-
-
     }
 
     @Override

@@ -26,7 +26,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(RecipeOutput recipeOutput) {
         List<ItemLike> HARDWOOD_SMELTABLES = List.of(ModItems.WOOD_DUST.get());
 
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.HARDWOOD_BLOCK.get())
                 .pattern("BBB")
                 .pattern("BBB")
@@ -256,12 +255,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     }
 
-
-
-
-
-
-
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
                                       float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(recipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, pIngredients, pCategory, pResult,
@@ -280,5 +273,5 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer, factory).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
                     .save(recipeOutput, BlockMod.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }
-        }
+    }
 }

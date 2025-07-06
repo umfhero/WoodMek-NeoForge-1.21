@@ -15,7 +15,6 @@ public class ModFluids {
     public static final DeferredRegister<Fluid> FLUIDS =
             DeferredRegister.create(Registries.FLUID, BlockMod.MOD_ID);
 
-    // Liquid Sap Fluid
     public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_LIQUID_SAP_FLUID = FLUIDS.register("liquid_sap_fluid",
             () -> new BaseFlowingFluid.Source(ModFluids.LIQUID_SAP_FLUID_PROPERTIES));
     public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_LIQUID_SAP_FLUID = FLUIDS.register("flowing_liquid_sap",
