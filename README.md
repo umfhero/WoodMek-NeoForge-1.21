@@ -7,10 +7,10 @@
 <br>
 
 ![Static Badge](https://img.shields.io/badge/Requires%20Mekanism-%2010.4%2B-red)
-![Commits](https://img.shields.io/github/commit-activity/w/umfhero/WoodMek-NeoForge-1.21)
-![Last commit](https://img.shields.io/github/last-commit/umfhero/WoodMek-NeoForge-1.21)
+![Commits](https://img.shields.io/github/commit-activity/w/umfhero/WoodMek-NeoForge-1.21.1)
+![Last commit](https://img.shields.io/github/last-commit/umfhero/WoodMek-NeoForge-1.21.1)
 
-![Minecraft](https://img.shields.io/badge/Minecraft-1.21-green)
+![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green)
 ![Mod Loader](https://img.shields.io/badge/ModLoader-NeoForge-blueviolet)
 ![Issues](https://img.shields.io/github/issues/umfhero/WoodMek-NeoForge-1.21)
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
