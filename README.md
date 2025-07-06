@@ -15,7 +15,7 @@
 ![Issues](https://img.shields.io/github/issues/umfhero/WoodMek-NeoForge-1.21)
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 <br>
-### Latest Release 7.0.0
+### Latest Release 8.2.0
 
 <a href="https://www.curseforge.com/minecraft/mc-mods/woodmek">
   CurseForge Mod Page
@@ -167,36 +167,53 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 
 ## Changelog
 
-#### [7.5.0] - Sound Events
-- Added sounds to the flare (both for shooting and locking)
-- Added a full DefferedSoundType for Transformer block, including Break, Step, Place, Hit and Falling onto the block
+#### [8.2.0] - Mekanism Custom `infuse_type` Functionality  
+- A while after adding Wood Essence, the Wood Essence inside the Metallurgic Infuser now works/displays properly. It will be the primary fluid for WoodMek, with more planned in the future.  
+- Added documentation for others trying to figure this out:  
+  `\src\main\resources\assets\woodmek\pics\Mekanism_API_1.21.txt`
+  
+  <img src="src/main/resources/assets/woodmek/pics/14.png" width="300">
+  
+  <img src="src/main/resources/assets/woodmek/pics/15.png" width="300"> 
 
+#### [8.0.0] - Mekanism Wood Essence Infusion Type  
+- Returning to WoodMek's roots! Thought it would be a good time to take another shot at integrating with Mekanism, this time with something bigger, a custom infuse-type fluid.  
+- Wood Essence and its tank counterpart are now in the game/JEI (added after an hour of debugging).  
+- Added Mekanism API and dependencies to Gradle.
+  
+<img src="src/main/resources/assets/woodmek/pics/16.png" width="300">  
+
+#### [7.5.0] - Sound Events  
+- Added sounds to the Flare (for both shooting and locking).  
+- Added a full `DeferredSoundType` for the Transformer block, including break, step, place, hit, and fall sounds.  
 
 
 #### [7.0.0] - Flaregun, Hardwood tools and hammer
 - Added Hardwood set of tools (Slightly better than Iron), added Azalea tool set which is slightly better than netherite tools.
 - Added a Hardwood Hammer which mines a 3x3 area (only of the same type of block
-  <img src="src/main/resources/assets/woodmek/pics/11.png" width="500">
-  <img src="src/main/resources/assets/woodmek/pics/8.png" width="500">
+  
+  <img src="src/main/resources/assets/woodmek/pics/11.png" width="300">
+  
+  <img src="src/main/resources/assets/woodmek/pics/8.png" width="450">
+  
 - Added a temporary cooldown to the chisel and change to the texture (which changes back after the cooldown)
-  <img src="src/main/resources/assets/woodmek/pics/12.png" width="500">
-  <img src="src/main/resources/assets/woodmek/pics/13.png" width="500">
+  
+  <img src="src/main/resources/assets/woodmek/pics/12.png" width="300">
+  
+  <img src="src/main/resources/assets/woodmek/pics/13.png" width="300">
+
 - Added a Flare gun for testing which branches of the chisel cool down. Custom cooldown bar (coloured), with partical trail when shot.
 - At the moment it has no recipe.
   
-  <img src="src/main/resources/assets/woodmek/pics/6.png" width="500">
+  <img src="src/main/resources/assets/woodmek/pics/6.png" width="450">
   <img src="src/main/resources/assets/woodmek/pics/7.png" width="250">
   <img src="src/main/resources/assets/woodmek/pics/10.png" width="500">
 
-
-
-
-
-<br><br>
+<br>
 
 #### [6.5.0] - Mini hazard block
 - Added a new mini hazardblock
-<img src="src/main/resources/assets/woodmek/pics/2.png" width="400">
+<img src="src/main/resources/assets/woodmek/pics/2.png" width="300">
 
 #### [6.4.0] - Polished hardwood Block (2 varients)
 - Added a new polished hardwood blcok to go with the new lamp with 2 varients, dented and undented
@@ -204,7 +221,7 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
 
 #### [6.3.0] - Retexture
 - Rextured the base hardwood items and added  hardwood bricks 
-<img src="src/main/resources/assets/woodmek/pics/textureupdate.png" width="600">
+<img src="src/main/resources/assets/woodmek/pics/textureupdate.png" width="300">
 
 #### [6.0.0] - Now a standalone mod! - Recipes, Hazard Blocks and ModID Changes
 - Added a second hazard block: **Half Hazard Block**
@@ -212,13 +229,17 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
     4x Stone + 1x Yellow Dye
     
     <img src="src/main/resources/assets/woodmek/pics/hazardrecipe.png" width="200">
+    
     <img src="src/main/resources/assets/woodmek/pics/hazardrecipe2.png" width="200">
+    
   - Both blocks support **directional movement** with the chisel  
     (rotate 90° back and forth)
 - Added a new **Blockstate Lamp**
   - Reacts to click inputs and uses blockstates for toggling on/off
-  - <img src="src/main/resources/assets/woodmek/pics/lamp.png" width="400">  
-  - <img src="src/main/resources/assets/woodmek/pics/fulllamp.png" width="400">  
+    
+    <img src="src/main/resources/assets/woodmek/pics/lamp.png" width="400">  
+    <img src="src/main/resources/assets/woodmek/pics/fulllamp.png" width="400">  
+    
 - **Rewrote and restructured the entire project**  
   - Renamed mod from `blockmod` to `woodmek`  
   - New Mod ID: `woodmek` / `WoodMek`
@@ -246,7 +267,8 @@ These additions aim to make WoodMek a long-term companion in your modpack, espec
   <img src="src/main/resources/assets/woodmek/pics/tooltip2.png" width="550">  
 
 #### [4.2.0] - Burn Rates
-- Added a `burn time` to all wooden items with all  values based on the level on compactness and difficulty  
+- Added a `burn time` to all wooden items with all  values based on the level on compactness and difficulty
+  
   <img src="src/main/resources/assets/woodmek/pics/burntime.png" width="300">  
 
 #### [4.0.0] - Custom Block (Transformer)
