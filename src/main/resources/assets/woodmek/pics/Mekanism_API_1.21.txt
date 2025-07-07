@@ -1,4 +1,4 @@
-# WoodMek Mekanism API Integration - Complete Manual
+# WoodMek Mekanism API Integration + Chemicals
 Note: Gonna update to 1.21+ at some point, so might have to redo this entire file anyways. 
 So ill keep this here for that specific version, Look for a 1.21+ version to see if there is an updated one
 
