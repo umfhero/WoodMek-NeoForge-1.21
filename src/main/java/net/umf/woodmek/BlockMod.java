@@ -4,6 +4,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.umf.woodmek.block.ModBlocks;
 import net.umf.woodmek.block.component.ModDataComponents;
 import net.umf.woodmek.chemical.ModChemicals;
+import net.umf.woodmek.effect.ModEffects;
 import net.umf.woodmek.fluid.ModFluidTypes;
 import net.umf.woodmek.fluid.ModFluids;
 import net.umf.woodmek.item.ModCreativeModeTabs;
@@ -49,6 +50,7 @@ public class BlockMod {
         ModFluids.register(modEventBus);
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        ModEffects.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

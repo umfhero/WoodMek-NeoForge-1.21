@@ -80,5 +80,8 @@
   "infuse_type.woodmek.wood_essence": "Wood Essence",
   "infuse_type.woodmek.enriched_wood_essence": "Enriched Wood Essence",
 
-  "gas.woodmek.wood_essence": "Wood Essence"
+  "gas.woodmek.wood_essence": "Wood Essence",
+
+  "effect.woodmek.spider": "Spider",
+  "effect.woodmek.shield": "Shield"
 }
