@@ -20,30 +20,30 @@ import java.util.List;
 
 public class HammerItem extends DiggerItem {
     public HammerItem(Tier tier, Properties properties) {
-        // Use an empty tag so the hammer can work on any block type
+
         super(tier, TagKey.create(net.minecraft.core.registries.Registries.BLOCK,
             net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("woodmek", "empty")), properties);
     }
 
-    // Override to allow the hammer to work on any block
+
     @Override
     public boolean isCorrectToolForDrops(net.minecraft.world.item.ItemStack stack, BlockState state) {
         return true; // Allow hammer to work on any block
     }
 
-    // Override mining speed to use the tier's speed properly
+
     @Override
     public float getDestroySpeed(ItemStack stack, BlockState state) {
-        return this.getTier().getSpeed(); // Use the tier's mining speed directly
+        return this.getTier().getSpeed();
     }
 
-    // Override durability to be 576 instead of tier's default
+
     @Override
     public int getMaxDamage(ItemStack stack) {
         return 576;
     }
 
-    // Override durability damage to only take 9 points per block instead of 10
+
     @Override
     public boolean hurtEnemy(ItemStack stack, net.minecraft.world.entity.LivingEntity target, net.minecraft.world.entity.LivingEntity attacker) {
         stack.hurtAndBreak(9, attacker, net.minecraft.world.entity.EquipmentSlot.MAINHAND);
@@ -75,7 +75,7 @@ public class HammerItem extends DiggerItem {
             return positions;
         }
 
-        // Get the block type that was initially broken
+
         BlockState targetBlockState = player.level().getBlockState(initialBlockPos);
         Block targetBlock = targetBlockState.getBlock();
 
@@ -84,7 +84,7 @@ public class HammerItem extends DiggerItem {
                 for(int z = -range; z <= range; z++) {
                     BlockPos pos = new BlockPos(initialBlockPos.getX() + x, initialBlockPos.getY(), initialBlockPos.getZ() + z);
                     BlockState blockState = player.level().getBlockState(pos);
-                    // Only add if it's the same block type
+
                     if(blockState.getBlock() == targetBlock) {
                         positions.add(pos);
                     }
@@ -97,7 +97,7 @@ public class HammerItem extends DiggerItem {
                 for(int y = -range; y <= range; y++) {
                     BlockPos pos = new BlockPos(initialBlockPos.getX() + x, initialBlockPos.getY() + y, initialBlockPos.getZ());
                     BlockState blockState = player.level().getBlockState(pos);
-                    // Only add if it's the same block type
+
                     if(blockState.getBlock() == targetBlock) {
                         positions.add(pos);
                     }
@@ -110,7 +110,7 @@ public class HammerItem extends DiggerItem {
                 for(int y = -range; y <= range; y++) {
                     BlockPos pos = new BlockPos(initialBlockPos.getX(), initialBlockPos.getY() + y, initialBlockPos.getZ() + x);
                     BlockState blockState = player.level().getBlockState(pos);
-                    // Only add if it's the same block type
+
                     if(blockState.getBlock() == targetBlock) {
                         positions.add(pos);
                     }

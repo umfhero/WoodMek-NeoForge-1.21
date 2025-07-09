@@ -42,16 +42,15 @@ public class ChiselItem extends Item {
 
     public ChiselItem(Properties properties) {
         super(properties);
-        // Register the event handler if not already registered
+
         if (!eventRegistered) {
             NeoForge.EVENT_BUS.addListener(ChiselItem::onPlayerTick);
             eventRegistered = true;
         }
     }
 
-    // Static method to handle player tick events
     public static void onPlayerTick(PlayerTickEvent.Post event) {
-        // Check all items in player's inventory
+
         for (int i = 0; i < event.getEntity().getInventory().getContainerSize(); i++) {
             ItemStack stack = event.getEntity().getInventory().getItem(i);
 
@@ -63,9 +62,8 @@ public class ChiselItem extends Item {
                     long currentTime = System.currentTimeMillis();
                     long elapsed = currentTime - timestamp;
 
-                    // Check if 5 seconds (5000ms) have passed
                     if (elapsed >= 5000) {
-                        // Reset the chisel to unused state
+
                         stack.set(ModDataComponents.USED, false);
                         stack.remove(ModDataComponents.USED_TIMESTAMP);
                     }
@@ -85,12 +83,11 @@ public class ChiselItem extends Item {
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.DYE_USE, SoundSource.BLOCKS);
 
-                // Set the chisel as used and record timestamp
+
                 ItemStack itemStack = context.getItemInHand();
                 itemStack.set(ModDataComponents.USED, true);
                 itemStack.set(ModDataComponents.USED_TIMESTAMP, System.currentTimeMillis());
 
-                // Removed player cooldown - we'll use custom visual feedback instead
             }
         }
 
@@ -99,7 +96,7 @@ public class ChiselItem extends Item {
 
     @Override
     public boolean isBarVisible(ItemStack stack) {
-        // Show bar when chisel is in cooldown (has timestamp)
+
         Long timestamp = stack.get(ModDataComponents.USED_TIMESTAMP);
         return timestamp != null;
     }
@@ -115,13 +112,12 @@ public class ChiselItem extends Item {
         long elapsed = currentTime - timestamp;
         long remaining = Math.max(0, 5000 - elapsed);
 
-        // Convert remaining time to bar width (0-13 pixels) - but inverted for cooldown effect
         return 13 - (int) ((remaining / 5000.0) * 13);
     }
 
     @Override
     public int getBarColor(ItemStack stack) {
-        // Use white color to mimic the cooldown overlay
+
         return 0xFFFFFF;
     }
 
