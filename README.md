@@ -29,10 +29,10 @@ Wood Mekanism or WoodMek for short is a 1.21.1 NeoForge Minecraft Mod which adds
 
 <br>
 
-## 🛠 Mekanism API Integration Help
+## Mekanism API Integration Help
 This manual contains notes and instructions on how the mod integrates with Mekanism's API.
 <details>
-  <summary>📄 Mekanism API Integration Manual (Click to expand)</summary>
+  <summary> Mekanism API Integration Manual (Click to expand)</summary>
 
 [Full text here](https://github.com/umfhero/WoodMek-NeoForge-1.21/blob/main/src/main/resources/assets/woodmek/pics/Mekanism_API_1.21.txt)
 
