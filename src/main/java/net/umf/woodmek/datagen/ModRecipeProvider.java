@@ -178,6 +178,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.HARDWOOD_HAMMER.get())
+                .pattern("AAA")
+                .pattern("XSX")
+                .pattern("XSX")
+                .define('A', ModItems.HARDWOOD_ALLOY.get())
+                .define('S', Items.STICK)
+                .define('X', Items.NETHER_STAR)
+                .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
+                .save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.HARDWOOD_AXE.get())
                 .pattern("AA ")
                 .pattern("AS ")

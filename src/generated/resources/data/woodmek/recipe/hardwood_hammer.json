@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "woodmek:hardwood_alloy"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "XSX",
+    "XSX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "woodmek:hardwood_hammer"
+  }
+}

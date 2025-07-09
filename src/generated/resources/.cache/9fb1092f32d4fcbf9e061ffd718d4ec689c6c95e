@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-06T20:03:33.9468772	Recipes
+// 1.21.1	2025-07-09T03:51:25.1003761	Recipes
 f802c15abdfac184576bdac4ddcf73bc29cb8f0b data/woodmek/advancement/recipes/building_blocks/centre_hazard_block.json
 dd429667e8933d7f43efa6ccadc552d786bddfa6 data/woodmek/advancement/recipes/building_blocks/half_hazard_block.json
 061803c75bcd4165479c8dcb44724e17c37eafcc data/woodmek/advancement/recipes/building_blocks/hardwood_brick.json
@@ -29,6 +29,7 @@ b9c0fd6cb0ef330be66b711c3836dd1418181c31 data/woodmek/advancement/recipes/redsto
 a3ea78cbee2cc6e8ec117273d7114cd0dc3f1402 data/woodmek/advancement/recipes/tools/azalea_pickaxe.json
 32bac9d160b050cc7262870986b4f820bb489832 data/woodmek/advancement/recipes/tools/azalea_shovel.json
 a92c5a591cc6b911e94baf9865ecf5dba11b51c2 data/woodmek/advancement/recipes/tools/hardwood_axe.json
+fcd3dc2c1e37fd4fd5dad76226622e1468d3aa9d data/woodmek/advancement/recipes/tools/hardwood_hammer.json
 05d43ee5d1ac3cfbddb0611f8344cb272d9b1671 data/woodmek/advancement/recipes/tools/hardwood_hoe.json
 3e485a06b7383b66347a7689e6897a88105dc9b6 data/woodmek/advancement/recipes/tools/hardwood_pickaxe.json
 53c70e4a3b1f5971361f5bf0b57ad9e1781db381 data/woodmek/advancement/recipes/tools/hardwood_shovel.json
@@ -52,6 +53,7 @@ c78fd388fd0df5bc3779937c69cfe04462dc83ba data/woodmek/recipe/hardwood_door.json
 dadb59ee08063f0da7b7763ce3a831c41a9dd5ae data/woodmek/recipe/hardwood_fence_gate.json
 a549e23e89fc5561de3fc41ee7d57a1f5c0c422a data/woodmek/recipe/hardwood_from_block.json
 98c5abe5d4137afa732481d2c006af855b627df1 data/woodmek/recipe/hardwood_from_smelting_wood_dust.json
+5d26dca255a47160a52871eec7e1f92e46fad2ec data/woodmek/recipe/hardwood_hammer.json
 20d279e10f31a4ee3eee6469478fe69a993deabb data/woodmek/recipe/hardwood_hoe.json
 5868350ddff5925297983a620ca55e7b14965586 data/woodmek/recipe/hardwood_lamp.json
 b0c2cebf483d73b193f020656def79f65d6a544d data/woodmek/recipe/hardwood_pickaxe.json
