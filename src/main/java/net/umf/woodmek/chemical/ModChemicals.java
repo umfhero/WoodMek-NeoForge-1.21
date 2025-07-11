@@ -27,40 +27,43 @@ public class ModChemicals {
     public static void onRegisterEvent(RegisterEvent event) {
         System.out.println("=== RegisterEvent triggered for: " + event.getRegistryKey().location() + " ===");
 
+        try {
+            // Register Gas types
+            if (event.getRegistryKey().location().toString().equals("mekanism:gas")) {
+                System.out.println("=== Found Mekanism Gas registry! ===");
 
-        if (event.getRegistryKey().location().toString().equals("mekanism:gas")) {
-            System.out.println("=== Found Mekanism Gas registry! ===");
+                ResourceKey<Registry<Gas>> gasRegistryKey = (ResourceKey<Registry<Gas>>) event.getRegistryKey();
 
-            ResourceKey<Registry<Gas>> gasRegistryKey = (ResourceKey<Registry<Gas>>) event.getRegistryKey();
+                ResourceLocation woodEssenceId = ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "wood_essence");
+                event.register(gasRegistryKey, woodEssenceId, () -> {
+                    System.out.println("=== Creating wood_essence Gas ===");
+                    Gas woodEssenceGas = new Gas(GasBuilder.builder().tint(0x8B4513));
+                    WOOD_ESSENCE_GAS = woodEssenceGas;
+                    System.out.println("=== Gas created: " + woodEssenceGas + " ===");
+                    return woodEssenceGas;
+                });
+                System.out.println("=== Registered wood_essence with ID: " + woodEssenceId + " ===");
+            }
 
-            ResourceLocation woodEssenceId = ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "wood_essence");
-            event.register(gasRegistryKey, woodEssenceId, () -> {
-                //  gas types (wood essence rn only)
-                System.out.println("=== Creating wood_essence Gas ===");
-                Gas woodEssenceGas = new Gas(GasBuilder.builder().tint(0x8B4513));
-                WOOD_ESSENCE_GAS = woodEssenceGas;
-                System.out.println("=== Gas created: " + woodEssenceGas + " ===");
-                return woodEssenceGas;
-            });
-            System.out.println("=== Registered wood_essence with ID: " + woodEssenceId + " ===");
-        }
+            // Register InfuseType
+            if (event.getRegistryKey().location().toString().equals("mekanism:infuse_type")) {
+                System.out.println("=== Found Mekanism InfuseType registry! ===");
 
+                ResourceKey<Registry<InfuseType>> registryKey = (ResourceKey<Registry<InfuseType>>) event.getRegistryKey();
 
-        if (event.getRegistryKey().location().toString().equals("mekanism:infuse_type")) {
-            System.out.println("=== Found Mekanism InfuseType registry! ===");
-
-            ResourceKey<Registry<InfuseType>> registryKey = (ResourceKey<Registry<InfuseType>>) event.getRegistryKey();
-
-
-            ResourceLocation enrichedWoodEssenceId = ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "enriched_wood_essence");
-            event.register(registryKey, enrichedWoodEssenceId, () -> {
-                System.out.println("=== Creating enriched_wood_essence InfuseType ===");
-                InfuseType enrichedWoodEssence = new InfuseType(InfuseTypeBuilder.builder().tint(0x8B4FBF));
-                ENRICHED_WOOD_ESSENCE_TYPE = enrichedWoodEssence;
-                System.out.println("=== InfuseType created: " + enrichedWoodEssence + " ===");
-                return enrichedWoodEssence;
-            });
-            System.out.println("=== Registered enriched_wood_essence with ID: " + enrichedWoodEssenceId + " ===");
+                ResourceLocation enrichedWoodEssenceId = ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "enriched_wood_essence");
+                event.register(registryKey, enrichedWoodEssenceId, () -> {
+                    System.out.println("=== Creating enriched_wood_essence InfuseType ===");
+                    InfuseType enrichedWoodEssence = new InfuseType(InfuseTypeBuilder.builder().tint(0x8B4FBF));
+                    ENRICHED_WOOD_ESSENCE_TYPE = enrichedWoodEssence;
+                    System.out.println("=== InfuseType created: " + enrichedWoodEssence + " ===");
+                    return enrichedWoodEssence;
+                });
+                System.out.println("=== Registered enriched_wood_essence with ID: " + enrichedWoodEssenceId + " ===");
+            }
+        } catch (Exception e) {
+            System.err.println("=== ERROR in ModChemicals registration: " + e.getMessage() + " ===");
+            e.printStackTrace();
         }
     }
 

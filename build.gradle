@@ -2,7 +2,7 @@ plugins {
     id 'java-library'
     id 'eclipse'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.95'
+    id 'net.neoforged.moddev' version '2.0.40-beta'
     id 'idea'
 }
 
@@ -32,6 +32,11 @@ repositories {
     maven {
         name = 'ParchmentMC'
         url = 'https://maven.parchmentmc.org'
+    }
+    // Add official NeoForged maven for better dependency resolution
+    maven {
+        name = 'NeoForged'
+        url = 'https://maven.neoforged.net/releases'
     }
 }
 
@@ -129,6 +134,7 @@ configurations {
 dependencies {
     // Mekanism API dependency - Updated for NeoForge 1.21.1
     compileOnly "mekanism:Mekanism:${mekanism_version}:api"
+    compileOnly "mekanism:Mekanism:${mekanism_version}:all"
 
     // If you want to test/use Mekanism & its modules during `runClient` invocation, use the following
     runtimeOnly "mekanism:Mekanism:${mekanism_version}" // Mekanism
