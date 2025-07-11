@@ -5,7 +5,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.neoforged.bus.api.IEventBus;
@@ -24,9 +23,6 @@ public class ModEffects {
 
     public static final Holder<MobEffect> SHIELD_EFFECT = MOB_EFFECTS.register("shield",
             () -> new ShieldEffect(MobEffectCategory.NEUTRAL, 0x1a001f));
-
-
-
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);

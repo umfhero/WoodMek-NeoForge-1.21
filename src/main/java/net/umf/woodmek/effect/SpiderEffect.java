@@ -12,7 +12,7 @@ import net.minecraft.world.phys.Vec3;
 
 public class SpiderEffect extends MobEffect {
 
-    protected SpiderEffect(MobEffectCategory category, int color) {
+    public SpiderEffect(MobEffectCategory category, int color) {
         super(category, color);
     }
 

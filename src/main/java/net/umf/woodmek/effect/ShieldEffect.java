@@ -26,7 +26,7 @@ public class ShieldEffect extends MobEffect {
             10.0,
             AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
 
-    protected ShieldEffect(MobEffectCategory category, int color) {
+    public ShieldEffect(MobEffectCategory category, int color) {
         super(category, color);
     }
 
