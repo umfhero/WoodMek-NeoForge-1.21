@@ -17,6 +17,9 @@ public class ModPotions {
     public static final Holder<Potion> SHIELD_POTION = POTIONS.register("wm_shield_potion",
             () -> new Potion(new MobEffectInstance(ModEffects.SHIELD_EFFECT, 1200, 0)));
 
+    public static final Holder<Potion> SPIDER_POTION = POTIONS.register("wm_spider_potion",
+            () -> new Potion(new MobEffectInstance(ModEffects.SPIDER_EFFECT, 1200, 0)));
+
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);
     }

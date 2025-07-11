@@ -82,7 +82,7 @@ public class BlockMod {
         @SubscribeEvent
         public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
             event.registerEntityRenderer(net.umf.woodmek.entity.ModEntities.FLARE.get(),
-                net.umf.woodmek.entity.client.FlareRenderer::new);
+                    net.umf.woodmek.entity.client.FlareRenderer::new);
         }
     }
 }

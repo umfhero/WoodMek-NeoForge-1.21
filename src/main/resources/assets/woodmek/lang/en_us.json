@@ -23,7 +23,7 @@
 
   "item.woodmek.hardwood_hammer": "Mjölnir the lightning-maker",
 
-  "creativetab.woodmek.wood_items": "WookMek",
+
 
   "block.woodmek.hardwood_block": "Hard Wood Block",
   "block.woodmek.hazard_block": "Hazard Block",
@@ -37,6 +37,7 @@
   "block.woodmek.hardwood_brick_hole": "Dented Polished Hard Wood Block",
   "block.woodmek.hardwood_brick_nohole": "Polished Hard Wood Block",
   "creativetab.woodmek.custom_items": "Building Blocks",
+  "creativetab.woodmek.wood_items": "Ionic WoodMek",
   "item.woodmek.chisel": "Chisel",
 
 
@@ -90,5 +91,9 @@
 
   "item.minecraft.potion.effect.wm_shield_potion": "Shield Potion",
   "item.minecraft.splash_potion.effect.wm_shield_potion": "Shield Splash Potion",
-  "item.minecraft.lingering_potion.effect.wm_shield_potion": "Shield Lingering Potion"
+  "item.minecraft.lingering_potion.effect.wm_shield_potion": "Shield Lingering Potion",
+
+  "item.minecraft.potion.effect.wm_spider_potion": "Spider Potion",
+  "item.minecraft.splash_potion.effect.wm_spider_potion": "Spider Splash Potion",
+  "item.minecraft.lingering_potion.effect.wm_spider_potion": "Spider Lingering Potion"
 }

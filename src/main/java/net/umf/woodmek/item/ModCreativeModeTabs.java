@@ -1,23 +1,29 @@
 package net.umf.woodmek.item;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionContents;
+import net.minecraft.core.component.DataComponents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.umf.woodmek.BlockMod;
 import net.umf.woodmek.block.ModBlocks;
-import net.umf.woodmek.chemical.ModChemicals;
+import net.umf.woodmek.potion.ModPotions;
 
 import java.util.function.Supplier;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BlockMod.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> WOOD_ITEMS_TAB = CREATIVE_MODE_TAB.register("wood_items_tab", () -> CreativeModeTab.builder()
+    public static final Supplier<CreativeModeTab> WOOD_ITEMS_TAB = CREATIVE_MODE_TAB.register("aaa_wood_items_tab", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(ModItems.HARDWOOD_ALLOY.get())).title(Component.translatable("creativetab.woodmek.wood_items"))
+            .withTabsBefore(CreativeModeTabs.INVENTORY) // Try positioning before the inventory tab (usually first)
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModItems.CHISEL);
                 output.accept(ModItems.FLAREGUN);
@@ -45,11 +51,38 @@ public class ModCreativeModeTabs {
 
                 output.accept(ModItems.HARDWOOD_HAMMER);
                 output.accept(ModItems.LIQUID_SAP_BUCKET);
+                output.accept(new ItemStack(Items.MILK_BUCKET));
+
+                // Add Shield Potions (normal, splash, lingering)
+                ItemStack shieldPotion = new ItemStack(Items.POTION);
+                shieldPotion.set(DataComponents.POTION_CONTENTS, new PotionContents(ModPotions.SHIELD_POTION));
+                output.accept(shieldPotion);
+
+                ItemStack shieldSplashPotion = new ItemStack(Items.SPLASH_POTION);
+                shieldSplashPotion.set(DataComponents.POTION_CONTENTS, new PotionContents(ModPotions.SHIELD_POTION));
+                output.accept(shieldSplashPotion);
+
+                ItemStack shieldLingeringPotion = new ItemStack(Items.LINGERING_POTION);
+                shieldLingeringPotion.set(DataComponents.POTION_CONTENTS, new PotionContents(ModPotions.SHIELD_POTION));
+                output.accept(shieldLingeringPotion);
+
+                // Add Spider Potions (normal, splash, lingering)
+                ItemStack spiderPotion = new ItemStack(Items.POTION);
+                spiderPotion.set(DataComponents.POTION_CONTENTS, new PotionContents(ModPotions.SPIDER_POTION));
+                output.accept(spiderPotion);
+
+                ItemStack spiderSplashPotion = new ItemStack(Items.SPLASH_POTION);
+                spiderSplashPotion.set(DataComponents.POTION_CONTENTS, new PotionContents(ModPotions.SPIDER_POTION));
+                output.accept(spiderSplashPotion);
+
+                ItemStack spiderLingeringPotion = new ItemStack(Items.LINGERING_POTION);
+                spiderLingeringPotion.set(DataComponents.POTION_CONTENTS, new PotionContents(ModPotions.SPIDER_POTION));
+                output.accept(spiderLingeringPotion);
             }).build());
 
     public static final Supplier<CreativeModeTab> CUSTOM_ITEMS_TAB = CREATIVE_MODE_TAB.register("custom_items_tab", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(ModBlocks.HAZARD_BLOCK.get())).title(Component.translatable("creativetab.woodmek.custom_items"))
-            .withTabsBefore(ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "wood_items_tab"))
+            .withTabsAfter(ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "aaa_wood_items_tab")) // Position this tab right after the WoodMek tab
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModBlocks.HARDWOOD_BLOCK.get());
                 output.accept(ModBlocks.HARDWOOD_BRICK.get());

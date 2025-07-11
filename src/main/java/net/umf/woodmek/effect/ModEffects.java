@@ -16,7 +16,7 @@ public class ModEffects {
             BlockMod.MOD_ID);
 
     public static final Holder<MobEffect> SPIDER_EFFECT = MOB_EFFECTS.register("spider",
-            () -> new SpiderEffect(MobEffectCategory.NEUTRAL, 0x1a001f)
+            () -> new SpiderEffect(MobEffectCategory.NEUTRAL, 0xFFFFFF)
                     .addAttributeModifier(Attributes.MOVEMENT_SPEED,
                             ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "spider"), -0.25F,
                             AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
