@@ -5,8 +5,11 @@
   "item.woodmek.hardwood": "Hard Wood",
   "item.woodmek.hardwood_alloy": "§dHardwood Alloy§r",
   "item.woodmek.wood_dust": "Wood Dust",
-  "item.woodmek.congealed_wood_essence": "Congealed Wood Essence",
-  "item.woodmek.congealed_enriched_wood_essence": "Congealed Enriched Wood Essence",
+  "item.woodmek.wood_essence_alloy": "Wood Essence Alloy",
+  "item.woodmek.enriched_wood_essence_alloy": "§5Enriched Wood Essence Alloy§r",
+
+  "item.woodmek.chisel": "Chisel",
+  "item.woodmek.flaregun": "Flare Gun",
 
   "item.woodmek.hardwood_sword": "Hard Wood Sword",
   "item.woodmek.hardwood_pickaxe": "Hard Wood Pickaxe",
@@ -20,80 +23,45 @@
   "item.woodmek.azalea_shovel": "Azalea Shovel",
   "item.woodmek.azalea_hoe": "Azalea Hoe",
 
-
   "item.woodmek.hardwood_hammer": "Mjölnir the lightning-maker",
-
-
-
-  "block.woodmek.hardwood_block": "Hard Wood Block",
-  "block.woodmek.hazard_block": "Hazard Block",
-  "block.woodmek.half_hazard_block": "Half Hazard Block",
-  "block.woodmek.hazard_block2": "Hazard Block Twisted",
-  "block.woodmek.half_hazard_block2": "Half Hazard Block Twisted",
-  "block.woodmek.centre_hazard_block": "Centre Hazard Block",
-  "block.woodmek.mini_hazard_block": "Mini Hazard Block",
-  "block.woodmek.transformer_block": "§dTransformer Block",
-  "block.woodmek.hardwood_brick": "Hard Wood Brick",
-  "block.woodmek.hardwood_brick_hole": "Dented Polished Hard Wood Block",
-  "block.woodmek.hardwood_brick_nohole": "Polished Hard Wood Block",
-  "creativetab.woodmek.custom_items": "Building Blocks",
-  "creativetab.woodmek.wood_items": "Ionic WoodMek",
-  "item.woodmek.chisel": "Chisel",
-
-
-  "tooltip.woodmek.transformer_block.tooltip": "The §d§lTransformer Block§r  is a entity §oreality shifter§r,\nreplacing all contents dropped on top of it with its §c§lsuperior counterpart§r.",
-  "tooltip.woodmek.chisel.tooltip": "Hold §eShift§r for more info",
-  "tooltip.woodmek.shiftchisel.tooltip": "The §dChisel§r is a automatic building tool, turning blocks clicked into its building block counterpart.\nThe §dChisel§r can cycle through building blocks.",
-  "tooltip.woodmek.hardwood_alloy.tooltip": "The pinnacle of wood, §dHardwood Alloys§r,\nA late game item used for advanced crafting recipes and processes",
-
-
-
-  "tooltip.woodmek.hardwood_hammer.tooltip": "The hammer only mines blocks of the §dsame type§r as the initially broken block.",
-  "tooltip.woodmek.hardwood_hammer.tooltip2": "Mines in a §d§l3x3§r area.",
-  "tooltip.woodmek.hardwood_hammer.tooltip3": "The hammer has been blessed by the gods of thunder,",
-  "tooltip.woodmek.hardwood_hammer.tooltip4": "Only those worthy can bare the god of thunder.",
-
-
-  "block.woodmek.hardwood_stairs": "Hard Wood Stairs",
-  "block.woodmek.hardwood_button": "Hard Wood Button",
-  "block.woodmek.hardwood_door": "Hard Wood Door",
-  "block.woodmek.hardwood_fence": "Hard Wood Fence",
-  "block.woodmek.hardwood_slab": "Hard Wood Slab",
-  "block.woodmek.hardwood_fence_gate": "Hard Wood Fence Gate",
-  "block.woodmek.hardwood_wall": "Hard Wood Wall",
-  "block.woodmek.hardwood_pressure_plate": "Hard Wood Pressure Plate",
-  "block.woodmek.hardwood_trapdoor": "Hard Wood Trapdoor",
-
-  "block.woodmek.hardwood_lamp": "Hard Wood Lamp",
-
-  "item.woodmek.flaregun": "Flare Gun",
-  "tooltip.woodmek.flaregun.tooltip": "Hold §eShift§r for more info",
-
   "item.woodmek.liquid_sap_bucket": "Liquid Sap Bucket",
-  "block.woodmek.liquid_sap_block": "Liquid Sap",
-  "fluid.woodmek.liquid_sap_fluid": "Liquid Sap",
-  "fluid_type.woodmek.liquid_sap_fluid_type": "Liquid Sap",
-
-
-  "item.woodmek.wood_essence_bucket": "Wood Essence Bucket",
-  "item.woodmek.enriched_wood_essence_bucket": "Enriched Wood Essence Bucket",
-
-  "fluid_type.woodmek.wood_essence_fluid_type": "Wood Essence",
-  "fluid_type.woodmek.enriched_wood_essence_fluid_type": "Enriched Wood Essence",
-
-  "infuse_type.woodmek.wood_essence": "Wood Essence",
-  "infuse_type.woodmek.enriched_wood_essence": "Enriched Wood Essence",
 
   "gas.woodmek.wood_essence": "Wood Essence",
+  "infuse_type.woodmek.enriched_wood_essence": "§5Enriched Wood Essence§r",
 
-  "effect.woodmek.spider": "Spider",
-  "effect.woodmek.shield": "God of Thunder",
+  "tooltip.woodmek.hardwood_alloy.tooltip": "A refined hardwood material",
+  "tooltip.woodmek.wood_essence_alloy.tooltip": "Infused with wood essence energy",
+  "tooltip.woodmek.enriched_wood_essence_alloy.tooltip": "Enhanced with enriched wood essence power",
 
-  "item.minecraft.potion.effect.wm_shield_potion": "Shield Potion",
-  "item.minecraft.splash_potion.effect.wm_shield_potion": "Shield Splash Potion",
-  "item.minecraft.lingering_potion.effect.wm_shield_potion": "Shield Lingering Potion",
+  "creativetab.woodmek.wood_items": "WoodMek Items",
+  "creativetab.woodmek.custom_items": "WoodMek Blocks",
 
-  "item.minecraft.potion.effect.wm_spider_potion": "Spider Potion",
-  "item.minecraft.splash_potion.effect.wm_spider_potion": "Spider Splash Potion",
-  "item.minecraft.lingering_potion.effect.wm_spider_potion": "Spider Lingering Potion"
+  "block.woodmek.transformer_block": "Transformer Block",
+  "block.woodmek.hardwood_block": "Hardwood Block",
+  "block.woodmek.hardwood_brick": "Hardwood Brick",
+  "block.woodmek.iron_grate": "Iron Grate",
+  "block.woodmek.hardwood_brick_hole": "Hardwood Brick with Hole",
+  "block.woodmek.hardwood_brick_nohole": "Solid Hardwood Brick",
+  "block.woodmek.hazard_block": "Hazard Block",
+  "block.woodmek.half_hazard_block": "Half Hazard Block",
+  "block.woodmek.centre_hazard_block": "Centre Hazard Block",
+  "block.woodmek.mini_hazard_block": "Mini Hazard Block",
+  "block.woodmek.hardwood_stairs": "Hardwood Stairs",
+  "block.woodmek.hardwood_button": "Hardwood Button",
+  "block.woodmek.hardwood_door": "Hardwood Door",
+  "block.woodmek.hardwood_fence": "Hardwood Fence",
+  "block.woodmek.hardwood_slab": "Hardwood Slab",
+  "block.woodmek.hardwood_fence_gate": "Hardwood Fence Gate",
+  "block.woodmek.hardwood_wall": "Hardwood Wall",
+  "block.woodmek.hardwood_pressure_plate": "Hardwood Pressure Plate",
+  "block.woodmek.hardwood_trapdoor": "Hardwood Trapdoor",
+  "block.woodmek.hardwood_lamp": "Hardwood Lamp",
+
+  "effect.woodmek.shield": "Shield",
+  "effect.woodmek.spider": "Spider Climb",
+
+  "potion.woodmek.shield_potion": "Shield Potion",
+  "potion.woodmek.spider_potion": "Spider Climb Potion",
+
+  "sound.woodmek.flare_hit": "Flare Impact"
 }

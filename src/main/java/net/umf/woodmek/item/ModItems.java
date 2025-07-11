@@ -14,6 +14,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
+// Updated item names for wood essence alloys
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(BlockMod.MOD_ID);
 
@@ -37,21 +38,21 @@ public class ModItems {
     public static final DeferredItem<Item> WOOD_DUST = ITEMS.register("wood_dust",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> CONGEALED_WOOD_ESSENCE = ITEMS.register("congealed_wood_essence",
+    public static final DeferredItem<Item> WOOD_ESSENCE_ALLOY = ITEMS.register("wood_essence_alloy",
             () -> new Item(new Item.Properties()){
                 @Override
                 public void appendHoverText(@NotNull ItemStack stack, @NotNull Item.TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
-                    tooltipComponents.add(Component.translatable("tooltip.woodmek.hardwood_alloy.tooltip"));
+                    tooltipComponents.add(Component.translatable("tooltip.woodmek.wood_essence_alloy.tooltip"));
 
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
 
-    public static final DeferredItem<Item> CONGEALED_ENRICHED_WOOD_ESSENCE = ITEMS.register("congealed_enriched_wood_essence",
+    public static final DeferredItem<Item> ENRICHED_WOOD_ESSENCE_ALLOY = ITEMS.register("enriched_wood_essence_alloy",
             () -> new Item(new Item.Properties()){
                 @Override
                 public void appendHoverText(@NotNull ItemStack stack, @NotNull Item.TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
-                    tooltipComponents.add(Component.translatable("tooltip.woodmek.hardwood_alloy.tooltip"));
+                    tooltipComponents.add(Component.translatable("tooltip.woodmek.enriched_wood_essence_alloy.tooltip"));
 
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }

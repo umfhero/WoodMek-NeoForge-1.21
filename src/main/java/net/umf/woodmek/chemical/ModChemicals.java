@@ -57,7 +57,7 @@ public class ModChemicals {
 
             event.register(registryKey, enrichedWoodEssenceId, () -> {
                 System.out.println("=== Creating enriched_wood_essence InfuseType ===");
-                InfuseType enrichedWoodEssence = new InfuseType(InfuseTypeBuilder.builder().tint(0x6B8E23));
+                InfuseType enrichedWoodEssence = new InfuseType(InfuseTypeBuilder.builder().tint(0x8A2BE2)); // Purple color
                 ENRICHED_WOOD_ESSENCE_INFUSE_TYPE = enrichedWoodEssence;
                 System.out.println("=== InfuseType created: " + enrichedWoodEssence + " ===");
                 return enrichedWoodEssence;

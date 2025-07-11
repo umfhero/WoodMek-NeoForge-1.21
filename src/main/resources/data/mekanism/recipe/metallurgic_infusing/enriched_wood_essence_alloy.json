@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:metallurgic_infusing",
+  "chemical_input": {
+    "amount": 10,
+    "tag": "woodmek:enriched_wood_essence"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "woodmek:hardwood_alloy"
+  },
+  "output": {
+    "count": 1,
+    "id": "woodmek:enriched_wood_essence_alloy"
+  }
+}
+

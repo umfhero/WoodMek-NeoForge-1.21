@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "woodmek:item/enriched_wood_essence_alloy"
+    "layer0": "woodmek:item/wood_essence_alloy"
   }
 }
+

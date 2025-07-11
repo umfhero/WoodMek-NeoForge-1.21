@@ -24,8 +24,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.WOOD_DUST.get());
         basicItem(ModItems.HARDWOOD.get());
         basicItem(ModItems.HARDWOOD_ALLOY.get());
-        basicItem(ModItems.CONGEALED_WOOD_ESSENCE.get());
-        basicItem(ModItems.CONGEALED_ENRICHED_WOOD_ESSENCE.get());
+        // Wood essence alloy items
+        basicItem(ModItems.WOOD_ESSENCE_ALLOY.get());
+        basicItem(ModItems.ENRICHED_WOOD_ESSENCE_ALLOY.get());
 
         buttonItem(ModBlocks.HARDWOOD_BUTTON, ModBlocks.HARDWOOD_BLOCK);
         fenceItem(ModBlocks.HARDWOOD_FENCE, ModBlocks.HARDWOOD_BLOCK);
