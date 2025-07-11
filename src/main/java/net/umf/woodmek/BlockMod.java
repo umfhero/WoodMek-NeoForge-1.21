@@ -3,13 +3,9 @@ package net.umf.woodmek;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.umf.woodmek.block.ModBlocks;
 import net.umf.woodmek.block.component.ModDataComponents;
-import net.umf.woodmek.chemical.ModChemicals;
-import net.umf.woodmek.effect.ModEffects;
 import net.umf.woodmek.fluid.ModFluidTypes;
 import net.umf.woodmek.fluid.ModFluids;
-import net.umf.woodmek.item.ModCreativeModeTabs;
 import net.umf.woodmek.item.ModItems;
-import net.umf.woodmek.potion.ModPotions;
 import net.umf.woodmek.sound.ModSounds;
 import net.umf.woodmek.util.ModItemProperties;
 import org.slf4j.Logger;
@@ -41,22 +37,14 @@ public class BlockMod {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
-        // Register effects early since potions depend on them
-        ModEffects.register(modEventBus);
-
-        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModDataComponents.register(modEventBus);
-        ModChemicals.register(modEventBus);
-        net.umf.woodmek.entity.ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
         ModFluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-
-        ModPotions.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -77,12 +65,6 @@ public class BlockMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
-        }
-
-        @SubscribeEvent
-        public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
-            event.registerEntityRenderer(net.umf.woodmek.entity.ModEntities.FLARE.get(),
-                net.umf.woodmek.entity.client.FlareRenderer::new);
         }
     }
 }
