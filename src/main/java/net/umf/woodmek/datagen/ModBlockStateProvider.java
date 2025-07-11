@@ -27,22 +27,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.HARDWOOD_BRICK_NOHOLE);
         blockWithItem(ModBlocks.HAZARD_BLOCK);
         blockWithItem(ModBlocks.HALF_HAZARD_BLOCK);
-        blockWithItem(ModBlocks.HAZARD_BLOCK2);
-        blockWithItem(ModBlocks.HALF_HAZARD_BLOCK2);
         blockWithItem(ModBlocks.CENTRE_HAZARD_BLOCK);
         blockWithItem(ModBlocks.MINI_HAZARD_BLOCK);
+        blockWithItem(ModBlocks.IRON_GRATE);
         blockWithItem(ModBlocks.TRANSFORMER_BLOCK);
 
-        simpleBlockWithItem(ModBlocks.IRON_GRATE.get(),
-            models().cubeAll("iron_grate", blockTexture(ModBlocks.IRON_GRATE.get())).renderType("cutout"));
-
-
         stairsBlock(ModBlocks.HARDWOOD_STAIRS.get(), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()));
-
         slabBlock(ModBlocks.HARDWOOD_SLAB.get(), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()));
 
-        buttonBlock(ModBlocks.HARDWOOD_BUTTON.get(), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()));
         pressurePlateBlock(ModBlocks.HARDWOOD_PRESSURE_PLATE.get(), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()));
+        buttonBlock(ModBlocks.HARDWOOD_BUTTON.get(), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()));
+
         fenceBlock(ModBlocks.HARDWOOD_FENCE.get(), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()));
         fenceGateBlock(ModBlocks.HARDWOOD_FENCE_GATE.get(), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()));
         wallBlock(ModBlocks.HARDWOOD_WALL.get(), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()));
@@ -50,11 +45,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(ModBlocks.HARDWOOD_DOOR.get(), modLoc("block/hardwood_door_bottom"), modLoc("block/hardwood_door_top"), "cutout");
         trapdoorBlockWithRenderType(ModBlocks.HARDWOOD_TRAPDOOR.get(), modLoc("block/hardwood_trapdoor"), true, "cutout");
 
-        blockItem(ModBlocks.HARDWOOD_STAIRS);
-        blockItem(ModBlocks.HARDWOOD_SLAB);
-        blockItem(ModBlocks.HARDWOOD_PRESSURE_PLATE);
-        blockItem(ModBlocks.HARDWOOD_FENCE_GATE);
-        blockItem(ModBlocks.HARDWOOD_TRAPDOOR, "_bottom");
 
         customLamp();
     }
