@@ -6,7 +6,11 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.animal.Pig;
 import net.minecraft.world.entity.animal.Sheep;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.Potions;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.umf.woodmek.BlockMod;
 import net.minecraft.core.BlockPos;
@@ -17,6 +21,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.umf.woodmek.item.ModItems;
 import net.umf.woodmek.item.custom.HammerItem;
+import net.umf.woodmek.potion.ModPotions;
 
 import java.util.HashSet;
 import java.util.List;
@@ -76,5 +81,11 @@ public class ModEvents {
         }
     }
 
+    @SubscribeEvent
+    public static void onBrewingRecipeRegister(RegisterBrewingRecipesEvent event) {
+        PotionBrewing.Builder builder = event.getBuilder();
+
+        builder.addMix(Potions.AWKWARD, Items.NETHER_STAR, ModPotions.SHIELD_POTION);
+    }
 
 }

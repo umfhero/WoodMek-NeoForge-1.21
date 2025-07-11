@@ -9,6 +9,7 @@ import net.umf.woodmek.fluid.ModFluidTypes;
 import net.umf.woodmek.fluid.ModFluids;
 import net.umf.woodmek.item.ModCreativeModeTabs;
 import net.umf.woodmek.item.ModItems;
+import net.umf.woodmek.potion.ModPotions;
 import net.umf.woodmek.sound.ModSounds;
 import net.umf.woodmek.util.ModItemProperties;
 import org.slf4j.Logger;
@@ -50,7 +51,9 @@ public class BlockMod {
         ModFluids.register(modEventBus);
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
         ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

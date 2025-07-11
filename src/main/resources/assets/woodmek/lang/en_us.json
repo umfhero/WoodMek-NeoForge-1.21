@@ -86,5 +86,9 @@
   "gas.woodmek.wood_essence": "Wood Essence",
 
   "effect.woodmek.spider": "Spider",
-  "effect.woodmek.shield": "God of Thunder"
+  "effect.woodmek.shield": "God of Thunder",
+
+  "item.minecraft.potion.effect.wm_shield_potion": "Shield Potion",
+  "item.minecraft.splash_potion.effect.wm_shield_potion": "Shield Splash Potion",
+  "item.minecraft.lingering_potion.effect.wm_shield_potion": "Shield Lingering Potion"
 }
