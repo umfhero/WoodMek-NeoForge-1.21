@@ -41,7 +41,7 @@ public class BlockMod {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
-        // Register effects early since potions depend on them
+
         ModEffects.register(modEventBus);
 
         ModCreativeModeTabs.register(modEventBus);
