@@ -23,7 +23,7 @@
 
 <br><br>
 
-Wood Mekanism or WoodMek for short is a 1.21.1 NeoForge Minecraft Mod which adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
+Wood Mekanism or WoodMek for short is a 1.21.1 NeoForge Minecraft Mod which adds wood-based materials with deep Mekanism integration and cross-mod compatibility.
 
 </div>
 
