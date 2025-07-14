@@ -32,6 +32,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.IRON_GRATE);
         blockWithItem(ModBlocks.TRANSFORMER_BLOCK);
 
+        blockItem(ModBlocks.HARDWOOD_STAIRS);
+        blockItem(ModBlocks.HARDWOOD_SLAB);
+        blockItem(ModBlocks.HARDWOOD_PRESSURE_PLATE);
+        blockItem(ModBlocks.HARDWOOD_FENCE_GATE);
+        blockItem(ModBlocks.HARDWOOD_TRAPDOOR, "_bottom");
+
         stairsBlock(ModBlocks.HARDWOOD_STAIRS.get(), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()));
         slabBlock(ModBlocks.HARDWOOD_SLAB.get(), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()), blockTexture(ModBlocks.HARDWOOD_BLOCK.get()));
 
