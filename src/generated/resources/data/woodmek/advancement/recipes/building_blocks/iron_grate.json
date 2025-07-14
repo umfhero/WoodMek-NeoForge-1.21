@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hardwood_alloy": {
+    "has_iron": {
       "conditions": {
         "items": [
           {
-            "items": "woodmek:hardwood_alloy"
+            "items": "minecraft:iron_ingot"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "woodmek:azalea_sword"
+        "recipe": "woodmek:iron_grate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_hardwood_alloy"
+      "has_iron"
     ]
   ],
   "rewards": {
     "recipes": [
-      "woodmek:azalea_sword"
+      "woodmek:iron_grate"
     ]
   }
 }

@@ -114,6 +114,19 @@ public class ModItems {
             () -> new HammerItem(ModToolTiers.HARDWOOD, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.HARDWOOD, 3, 3))));
 
+    // Hardwood Armor
+    public static final DeferredItem<ArmorItem> HARDWOOD_HELMET = ITEMS.register("hardwood_helmet",
+            () -> new ArmorItem(ModArmorMaterials.HARDWOOD, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final DeferredItem<ArmorItem> HARDWOOD_CHESTPLATE = ITEMS.register("hardwood_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.HARDWOOD, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final DeferredItem<ArmorItem> HARDWOOD_LEGGINGS = ITEMS.register("hardwood_leggings",
+            () -> new ArmorItem(ModArmorMaterials.HARDWOOD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final DeferredItem<ArmorItem> HARDWOOD_BOOTS = ITEMS.register("hardwood_boots",
+            () -> new ArmorItem(ModArmorMaterials.HARDWOOD, ArmorItem.Type.BOOTS, new Item.Properties()));
+
     // Liquid Sap Bucket
     public static final DeferredItem<BucketItem> LIQUID_SAP_BUCKET = ITEMS.register("liquid_sap_bucket",
             () -> new BucketItem(ModFluids.SOURCE_LIQUID_SAP_FLUID.get(), new Item.Properties().stacksTo(1)));

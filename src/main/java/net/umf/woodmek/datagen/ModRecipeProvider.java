@@ -215,54 +215,49 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
                 .save(recipeOutput);
 
-
-
-        // AZ tools
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AZALEA_SWORD.get())
+        // Hardwood Armor - Temporarily commented out until armor materials are properly imported
+        /*
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HARDWOOD_HELMET.get())
                 .pattern("AAA")
-                .pattern("ATA")
-                .pattern("AAA")
-                .define('A', Items.AZALEA)
-                .define('T', ModItems.HARDWOOD_SWORD.get())
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', ModItems.HARDWOOD_ALLOY.get())
                 .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AZALEA_PICKAXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HARDWOOD_CHESTPLATE.get())
+                .pattern("A A")
                 .pattern("AAA")
-                .pattern("ATA")
                 .pattern("AAA")
-                .define('A', Items.AZALEA)
-                .define('T', ModItems.HARDWOOD_PICKAXE.get())
+                .define('A', ModItems.HARDWOOD_ALLOY.get())
                 .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AZALEA_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HARDWOOD_LEGGINGS.get())
                 .pattern("AAA")
-                .pattern("ATA")
-                .pattern("AAA")
-                .define('A', Items.AZALEA)
-                .define('T', ModItems.HARDWOOD_AXE.get())
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.HARDWOOD_ALLOY.get())
                 .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AZALEA_SHOVEL.get())
-                .pattern("AAA")
-                .pattern("ATA")
-                .pattern("AAA")
-                .define('A', Items.AZALEA)
-                .define('T', ModItems.HARDWOOD_SHOVEL.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HARDWOOD_BOOTS.get())
+                .pattern("   ")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.HARDWOOD_ALLOY.get())
                 .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
                 .save(recipeOutput);
+        */
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AZALEA_HOE.get())
-                .pattern("AAA")
-                .pattern("ATA")
-                .pattern("AAA")
-                .define('A', Items.AZALEA)
-                .define('T', ModItems.HARDWOOD_HOE.get())
-                .unlockedBy("has_hardwood_alloy", has(ModItems.HARDWOOD_ALLOY.get()))
+        // Iron Grate
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_GRATE.get())
+                .pattern("I I")
+                .pattern(" I ")
+                .pattern("I I")
+                .define('I', Items.IRON_INGOT)
+                .unlockedBy("has_iron", has(Items.IRON_INGOT))
                 .save(recipeOutput);
-
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
@@ -272,17 +267,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     protected static void oreBlasting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
-                                      float pExperience, int pCookingTime, String pGroup) {
+                                      float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(recipeOutput, RecipeSerializer.BLASTING_RECIPE, BlastingRecipe::new, pIngredients, pCategory, pResult,
-                pExperience, pCookingTime, pGroup, "_from_blasting");
+                pExperience, pCookingTIme, pGroup, "_from_blasting");
     }
 
     protected static <T extends AbstractCookingRecipe> void oreCooking(RecipeOutput recipeOutput, RecipeSerializer<T> pCookingSerializer, AbstractCookingRecipe.Factory<T> factory,
                                                                        List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
         for(ItemLike itemlike : pIngredients) {
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer, factory).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
-                    .save(recipeOutput, BlockMod.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
+                    .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike)));
         }
     }
-
 }

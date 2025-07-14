@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-09T03:51:25.1003761	Recipes
+// 1.21.1	2025-07-14T18:28:58.5498027	Recipes
 f802c15abdfac184576bdac4ddcf73bc29cb8f0b data/woodmek/advancement/recipes/building_blocks/centre_hazard_block.json
 dd429667e8933d7f43efa6ccadc552d786bddfa6 data/woodmek/advancement/recipes/building_blocks/half_hazard_block.json
 061803c75bcd4165479c8dcb44724e17c37eafcc data/woodmek/advancement/recipes/building_blocks/hardwood_brick.json
@@ -9,8 +9,8 @@ d24637c581636ebcd5921897c0fa36de4d9b4ad0 data/woodmek/advancement/recipes/buildi
 97d6e07eaa91ea75a2b150d3326c87900a88d5b3 data/woodmek/advancement/recipes/building_blocks/hardwood_stairs.json
 6f41488f77aab8f686c9df833448392047b8d3d2 data/woodmek/advancement/recipes/building_blocks/hardwood_wall.json
 f4fccf27f9709d61788d28eeb85ab11130df3a52 data/woodmek/advancement/recipes/building_blocks/hazard_block.json
+b059d18f812a8fc1c5b61518de48aa01c78640de data/woodmek/advancement/recipes/building_blocks/iron_grate.json
 e177ae4268accdf57863d9c626ac38b1f4d99961 data/woodmek/advancement/recipes/building_blocks/mini_hazard_block.json
-8ecb17b0f6070ca32d9d3877289dd432d9e9464a data/woodmek/advancement/recipes/combat/azalea_sword.json
 9f9aa7034858b2dca5c8096ef7f0a5dfcb8eb1fa data/woodmek/advancement/recipes/combat/hardwood_sword.json
 b0cf687bfec6baa3835321259208e8056a79c56e data/woodmek/advancement/recipes/decorations/hardwood_fence.json
 1b2bdfe55c3e0d17e891d4626a95dac8e04b007c data/woodmek/advancement/recipes/misc/chisel.json
@@ -24,20 +24,11 @@ d409b45d6232f776e2edfdfdc592f4b05b0e0620 data/woodmek/advancement/recipes/redsto
 e5f847186d1eb366c5a9b26ffbdf80c81e8c7ff9 data/woodmek/advancement/recipes/redstone/hardwood_lamp.json
 4c07ac48f3235c80c68b6aaea09b9c287fbddcd5 data/woodmek/advancement/recipes/redstone/hardwood_pressure_plate.json
 b9c0fd6cb0ef330be66b711c3836dd1418181c31 data/woodmek/advancement/recipes/redstone/hardwood_trapdoor.json
-1efcddc1f34275dfd8d6f570420aedd83e2a6360 data/woodmek/advancement/recipes/tools/azalea_axe.json
-42a88f6e9cbbfeabc11033de4115ee4a1f9ff36f data/woodmek/advancement/recipes/tools/azalea_hoe.json
-a3ea78cbee2cc6e8ec117273d7114cd0dc3f1402 data/woodmek/advancement/recipes/tools/azalea_pickaxe.json
-32bac9d160b050cc7262870986b4f820bb489832 data/woodmek/advancement/recipes/tools/azalea_shovel.json
 a92c5a591cc6b911e94baf9865ecf5dba11b51c2 data/woodmek/advancement/recipes/tools/hardwood_axe.json
 fcd3dc2c1e37fd4fd5dad76226622e1468d3aa9d data/woodmek/advancement/recipes/tools/hardwood_hammer.json
 05d43ee5d1ac3cfbddb0611f8344cb272d9b1671 data/woodmek/advancement/recipes/tools/hardwood_hoe.json
 3e485a06b7383b66347a7689e6897a88105dc9b6 data/woodmek/advancement/recipes/tools/hardwood_pickaxe.json
 53c70e4a3b1f5971361f5bf0b57ad9e1781db381 data/woodmek/advancement/recipes/tools/hardwood_shovel.json
-18e1306b5cfa584d765dff4cf79b92ea3328928c data/woodmek/recipe/azalea_axe.json
-c12cbbbbbe7be41f090ce10f4de7c23f65b32692 data/woodmek/recipe/azalea_hoe.json
-664248a72c25510940680db562c088a2c3469c0f data/woodmek/recipe/azalea_pickaxe.json
-b9f8d2ba54a55a63f12930dcd4b49416d151badb data/woodmek/recipe/azalea_shovel.json
-1c44f844dab68ace5f6868d51da8436b2a292c22 data/woodmek/recipe/azalea_sword.json
 db8cf348a2e578e4fa417523e4addd86c0b928df data/woodmek/recipe/centre_hazard_block.json
 a5350ead71135fa7fcb82cd0787ad526cd7174ff data/woodmek/recipe/chisel.json
 9093b1119be1ad9c1096dc7a5a85bd83e0ea31e2 data/woodmek/recipe/half_hazard_block.json
@@ -65,5 +56,6 @@ ec141b3bfb5f19a7fc97f02c1ce523a9a15d4ebc data/woodmek/recipe/hardwood_sword.json
 5bddd5672c90cc0ff963bf8802c07868a5c21218 data/woodmek/recipe/hardwood_trapdoor.json
 011a6e7f3cc7d18904e6fc06af8a0fbc22ab3219 data/woodmek/recipe/hardwood_wall.json
 8a2d2dd9f4fbc3d26e59b2c75878f641a690313a data/woodmek/recipe/hazard_block.json
+1c9ddcd642152405e88744bdc2effa1697ba968f data/woodmek/recipe/iron_grate.json
 7874072aea18552983cd36eb70ef6ae69840f181 data/woodmek/recipe/mini_hazard_block.json
 4bd07b42699345ab8398c1dc7c05747f06d30a57 data/woodmek/recipe/transformer_block.json
