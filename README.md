@@ -15,7 +15,7 @@
 ![Issues](https://img.shields.io/github/issues/umfhero/WoodMek-NeoForge-1.21)
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 <br>
-### Latest Release 8.2.0
+### Latest Release 9.0.0
 
 <a href="https://www.curseforge.com/minecraft/mc-mods/woodmek">
   CurseForge Mod Page
@@ -23,7 +23,7 @@
 
 <br><br>
 
-Wood Mekanism or WoodMek for short is a 1.21.1 NeoForge Minecraft Mod which adds wood-based materials with deep Mekanism integration and cross-mod compatibility. Features custom recipes via datapacks.
+Wood Mekanism or WoodMek for short is a 1.21.1 NeoForge Minecraft Mod which adds wood-based materials with deep Mekanism integration and cross-mod compatibility.
 
 </div>
 
