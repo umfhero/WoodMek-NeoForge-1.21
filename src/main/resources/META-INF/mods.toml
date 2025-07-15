@@ -1,0 +1,30 @@
+# ...existing code...
+modId="woodmek"
+version="9.0.0"
+displayName="WoodMek"
+authors="Majid"
+description='''
+WoodMek is a NEOFORGE 1.21.1 mod for more uses for wood in tech! Aimed at being compatible with Mekanism & more.
+'''
+
+[[dependencies.woodmek]]
+    modId="neoforge"
+    mandatory=true
+    versionRange="[21.1.172,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.woodmek]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.1,1.22)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.woodmek]]
+    modId="mekanism"
+    mandatory=true
+    versionRange="[10.7.14,)"
+    ordering="AFTER"
+    side="BOTH"
+

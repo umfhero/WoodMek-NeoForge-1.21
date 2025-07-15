@@ -1,70 +1,31 @@
 package net.umf.woodmek.chemical;
 
-import mekanism.api.chemical.gas.Gas;
-import mekanism.api.chemical.gas.GasBuilder;
-import mekanism.api.chemical.infuse.InfuseType;
-import mekanism.api.chemical.infuse.InfuseTypeBuilder;
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.umf.woodmek.BlockMod;
 
 public class ModChemicals {
+    // TODO: Re-enable Mekanism integration when dependency is properly resolved
+    // For now, we'll comment out the Mekanism-specific code to allow compilation
+
+    /*
     // Wood essence as a gas (for oxidizing recipes)
-    public static Gas WOOD_ESSENCE_GAS = null;
+    public static final DeferredRegister<Gas> GASES = DeferredRegister.create(MekanismAPI.GAS_REGISTRY_NAME, BlockMod.MOD_ID);
+    public static final DeferredHolder<Gas, Gas> WOOD_ESSENCE_GAS = GASES.register("wood_essence", () -> new Gas(GasBuilder.builder().tint(0x8B4513)));
 
     // Enriched wood essence as an infuse type (for metallurgic infusing)
-    public static InfuseType ENRICHED_WOOD_ESSENCE_INFUSE_TYPE = null;
+    public static final DeferredRegister<InfuseType> INFUSE_TYPES = DeferredRegister.create(MekanismAPI.INFUSE_TYPE_REGISTRY_NAME, BlockMod.MOD_ID);
+    public static final DeferredHolder<InfuseType, InfuseType> ENRICHED_WOOD_ESSENCE_INFUSE_TYPE = INFUSE_TYPES.register("enriched_wood_essence", () -> new InfuseType(InfuseTypeBuilder.builder().tint(0x8A2BE2)));
+    */
 
     public static void register(IEventBus eventBus) {
         System.out.println("=== ModChemicals.register() CALLED ===");
-        eventBus.register(ModChemicals.class);
-        System.out.println("=== Registered for RegisterEvent ===");
-    }
-
-    @SuppressWarnings("unchecked")
-    @SubscribeEvent
-    public static void onRegisterEvent(RegisterEvent event) {
-        System.out.println("=== RegisterEvent triggered for: " + event.getRegistryKey().location() + " ===");
-
-        // Register wood essence as a gas
-        if (event.getRegistryKey().location().toString().equals("mekanism:gas")) {
-            System.out.println("=== Found Mekanism Gas registry! ===");
-
-            ResourceKey<Registry<Gas>> registryKey = (ResourceKey<Registry<Gas>>) event.getRegistryKey();
-            ResourceLocation woodEssenceId = ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "wood_essence");
-
-            event.register(registryKey, woodEssenceId, () -> {
-                System.out.println("=== Creating wood_essence Gas ===");
-                Gas woodEssenceGas = new Gas(GasBuilder.builder().tint(0x8B4513));
-                WOOD_ESSENCE_GAS = woodEssenceGas;
-                System.out.println("=== Gas created: " + woodEssenceGas + " ===");
-                return woodEssenceGas;
-            });
-
-            System.out.println("=== Registered wood_essence gas with ID: " + woodEssenceId + " ===");
-        }
-
-        // Register enriched wood essence as an infuse type
-        if (event.getRegistryKey().location().toString().equals("mekanism:infuse_type")) {
-            System.out.println("=== Found Mekanism InfuseType registry! ===");
-
-            ResourceKey<Registry<InfuseType>> registryKey = (ResourceKey<Registry<InfuseType>>) event.getRegistryKey();
-            ResourceLocation enrichedWoodEssenceId = ResourceLocation.fromNamespaceAndPath(BlockMod.MOD_ID, "enriched_wood_essence");
-
-            event.register(registryKey, enrichedWoodEssenceId, () -> {
-                System.out.println("=== Creating enriched_wood_essence InfuseType ===");
-                InfuseType enrichedWoodEssence = new InfuseType(InfuseTypeBuilder.builder().tint(0x8A2BE2)); // Purple color
-                ENRICHED_WOOD_ESSENCE_INFUSE_TYPE = enrichedWoodEssence;
-                System.out.println("=== InfuseType created: " + enrichedWoodEssence + " ===");
-                return enrichedWoodEssence;
-            });
-
-            System.out.println("=== Registered enriched_wood_essence infuse type with ID: " + enrichedWoodEssenceId + " ===");
-        }
+        // TODO: Uncomment when Mekanism dependency is working
+        // GASES.register(eventBus);
+        // INFUSE_TYPES.register(eventBus);
+        System.out.println("=== Mekanism chemicals temporarily disabled ===");
     }
 
     // Helper methods

@@ -25,7 +25,10 @@ public class ModBlocks {
             DeferredRegister.createBlocks(BlockMod.MOD_ID);
 
     public static final DeferredBlock<Block> HARDWOOD_BLOCK = registerBlock("hardwood_block",
-            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.BAMBOO).strength(3f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.BAMBOO).strength(3f).requiresCorrectToolForDrops()));
+
+
 
     public static final DeferredBlock<Block> HARDWOOD_BRICK = registerBlock("hardwood_brick",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.TUFF_BRICKS).strength(3f).requiresCorrectToolForDrops()));

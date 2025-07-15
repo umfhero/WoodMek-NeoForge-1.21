@@ -134,13 +134,7 @@ configurations {
 dependencies {
     // Mekanism API dependency - Updated for NeoForge 1.21.1
     compileOnly "mekanism:Mekanism:${mekanism_version}:api"
-    compileOnly "mekanism:Mekanism:${mekanism_version}:all"
-
-    // If you want to test/use Mekanism & its modules during `runClient` invocation, use the following
-    runtimeOnly "mekanism:Mekanism:${mekanism_version}" // Mekanism
-    runtimeOnly "mekanism:Mekanism:${mekanism_version}:additions" // Mekanism: Additions
-    runtimeOnly "mekanism:Mekanism:${mekanism_version}:generators" // Mekanism: Generators
-    runtimeOnly "mekanism:Mekanism:${mekanism_version}:tools" // Mekanism: Tools
+    localRuntime "mekanism:Mekanism:${mekanism_version}:all"
 
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
@@ -185,7 +179,14 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
     expand replaceProperties
     from "src/main/templates"
     into "build/generated/sources/modMetadata"
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
+
+// Configure processResources to handle duplicates
+tasks.named('processResources', ProcessResources) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 // Include the output of "generateModMetadata" as an input directory for the build
 // this works with both building through Gradle and the IDE.
 sourceSets.main.resources.srcDir generateModMetadata
