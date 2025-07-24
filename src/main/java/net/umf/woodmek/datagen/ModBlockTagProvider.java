@@ -24,7 +24,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.HAZARD_BLOCK.get())
+                .add(ModBlocks.HAZARD_BLOCK2.get())
                 .add(ModBlocks.HALF_HAZARD_BLOCK.get())
+                .add(ModBlocks.HALF_HAZARD_BLOCK2.get())
                 .add(ModBlocks.IRON_GRATE.get())
                 .add(ModBlocks.TRANSFORMER_BLOCK.get());
         tag(BlockTags.MINEABLE_WITH_AXE)
@@ -43,7 +45,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.HAZARD_BLOCK.get())
+                .add(ModBlocks.HAZARD_BLOCK2.get())
                 .add(ModBlocks.HALF_HAZARD_BLOCK.get())
+                .add(ModBlocks.HALF_HAZARD_BLOCK2.get())
                 .add(ModBlocks.IRON_GRATE.get())
                 .add(ModBlocks.HARDWOOD_BLOCK.get())
                 .add(ModBlocks.HARDWOOD_STAIRS.get())
