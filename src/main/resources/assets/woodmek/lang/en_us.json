@@ -23,7 +23,7 @@
   "item.woodmek.azalea_shovel": "Azalea Shovel",
   "item.woodmek.azalea_hoe": "Azalea Hoe",
 
-  "item.woodmek.hardwood_hammer": "Mjölnir the lightning-maker",
+  "item.woodmek.hardwood_hammer": "§6Mjölnir the Lightning-Maker§r",
   "item.woodmek.liquid_sap_bucket": "Liquid Sap Bucket",
 
   "gas.woodmek.wood_essence": "Wood Essence",
@@ -32,6 +32,14 @@
   "tooltip.woodmek.hardwood_alloy.tooltip": "A refined hardwood material",
   "tooltip.woodmek.wood_essence_alloy.tooltip": "Infused with wood essence energy",
   "tooltip.woodmek.enriched_wood_essence_alloy.tooltip": "Enhanced with enriched wood essence power",
+  "tooltip.woodmek.chisel.tooltip": "Right-click to change block variants for preset rotational blocks",
+  "tooltip.woodmek.shiftchisel.tooltip": "Transforms blocks between their different visual variants",
+  "tooltip.woodmek.flaregun.tooltip": "Shoots a distress flare to signal for help",
+  "tooltip.woodmek.shiftflaregun.tooltip": "Use with caution - has a 5 second cooldown",
+  "tooltip.woodmek.hardwood_hammer.tooltip": "Mines blocks in a 3x3 area of the same block type",
+  "tooltip.woodmek.hardwood_hammer.tooltip2": "§6Mjölnir the Lightning-Maker§r",
+  "tooltip.woodmek.hardwood_hammer.tooltip3": "§7Special Ability:§r",
+  "tooltip.woodmek.hardwood_hammer.tooltip4": "Drink a Lightning Potion to be granted the power of lightning",
 
   "creativetab.woodmek.wood_items": "WoodMek Items",
   "creativetab.woodmek.custom_items": "WoodMek Blocks",
@@ -59,11 +67,21 @@
   "block.woodmek.hardwood_trapdoor": "Hardwood Trapdoor",
   "block.woodmek.hardwood_lamp": "Hardwood Lamp",
 
-  "effect.woodmek.shield": "Shield",
+  "effect.woodmek.shield": "Lightning",
   "effect.woodmek.spider": "Spider Climb",
 
-  "potion.woodmek.shield_potion": "Shield Potion",
+  "potion.woodmek.shield_potion": "Lightning Potion",
   "potion.woodmek.spider_potion": "Spider Climb Potion",
+
+  "item.minecraft.potion.effect.wm_shield_potion": "Lightning Potion",
+  "item.minecraft.splash_potion.effect.wm_shield_potion": "Splash Lightning Potion",
+  "item.minecraft.lingering_potion.effect.wm_shield_potion": "Lingering Lightning Potion",
+  "item.minecraft.tipped_arrow.effect.wm_shield_potion": "Arrow of Lightning",
+
+  "item.minecraft.potion.effect.wm_spider_potion": "Spider Climb Potion",
+  "item.minecraft.splash_potion.effect.wm_spider_potion": "Splash Spider Climb Potion",
+  "item.minecraft.lingering_potion.effect.wm_spider_potion": "Lingering Spider Climb Potion",
+  "item.minecraft.tipped_arrow.effect.wm_spider_potion": "Arrow of Spider Climb",
 
   "sound.woodmek.flare_hit": "Flare Impact"
 }

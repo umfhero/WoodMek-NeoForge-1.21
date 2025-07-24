@@ -58,7 +58,6 @@ public class HammerItem extends DiggerItem {
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents,
                                 TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.translatable("tooltip.woodmek.hardwood_hammer.tooltip2"));
         tooltipComponents.add(Component.translatable("tooltip.woodmek.hardwood_hammer.tooltip"));
         tooltipComponents.add(Component.translatable("tooltip.woodmek.hardwood_hammer.tooltip3"));
         tooltipComponents.add(Component.translatable("tooltip.woodmek.hardwood_hammer.tooltip4"));
